@@ -1,0 +1,290 @@
+event,date,doi,numberOfSelectedPubs,additionalData
+Import Pub,15:23:3,10.1137/1.9781611972788.22,0
+Import Pub,15:23:3,10.1109/ijcnn.2014.6889941,0
+Update,15:23:3,,2
+Pub is suggested,15:23:3,10.2139/ssrn.3550115,2
+Pub is suggested,15:23:4,10.1109/bracis.2019.00113,2
+Pub is suggested,15:23:4,10.1109/access.2019.2935089,2
+Pub is suggested,15:23:4,10.1007/978-3-319-23528-8_16,2
+Pub is suggested,15:23:4,10.1109/tpami.2021.3056510,2
+Pub is suggested,15:23:4,10.1007/s10618-021-00778-0,2
+Pub is suggested,15:23:4,10.1007/978-3-319-27212-2_22,2
+Pub is suggested,15:23:4,10.1007/978-3-319-91476-3_25,2
+Pub is suggested,15:23:5,10.1007/978-3-319-75429-1_10,2
+Pub is suggested,15:23:5,10.1109/tcyb.2020.2983073,2
+Pub is suggested,15:23:5,10.1145/3447548.3467125,2
+Pub is suggested,15:23:5,10.1109/tkde.2018.2791525,2
+Pub is suggested,15:23:5,10.1109/candar.2015.61,2
+Pub is suggested,15:23:5,10.1108/k-09-2015-0236,2
+Pub is suggested,15:23:5,10.1109/tpami.2020.3010953,2
+Pub is suggested,15:23:5,10.4018/978-1-7998-1839-7.ch006,2
+Pub is suggested,15:23:5,10.1109/mlsp.2012.6349771,2
+Pub is suggested,15:23:5,10.1016/j.sigpro.2008.07.005,2
+Pub is suggested,15:23:5,10.1109/tnnls.2012.2195027,2
+Pub is suggested,15:23:5,10.1109/mc.2017.3571051,2
+Pub is suggested,15:23:5,10.1016/j.knosys.2020.105738,2
+Pub is suggested,15:23:6,10.1109/nafips.2016.7851603,2
+Pub is suggested,15:23:6,10.1007/s00180-022-01209-4,2
+Pub is suggested,15:23:6,10.1101/2021.08.05.21261677,2
+Pub is suggested,15:23:6,10.1145/3230967,2
+Pub is suggested,15:23:6,10.1109/mobilware.2013.26,2
+Pub is suggested,15:23:6,10.1109/synasc.2011.57,2
+Pub is suggested,15:23:6,10.1007/978-3-031-21047-1_1,2
+Pub is suggested,15:23:6,10.1109/icste.2010.5608801,2
+Pub is suggested,15:23:6,10.1002/spe.3068,2
+Pub is suggested,15:23:6,10.1080/02664763.2021.2022607,2
+Pub is suggested,15:23:6,10.1016/j.inffus.2006.05.006,2
+Pub is suggested,15:23:6,10.1145/3534678.3539155,2
+Pub is suggested,15:23:6,10.1007/978-3-642-31686-9_43,2
+Pub is suggested,15:23:7,10.1109/ijcnn.2014.6889798,2
+Pub is suggested,15:23:7,10.1007/978-3-030-05127-3_5,2
+Pub is suggested,15:23:7,10.1016/j.ins.2012.07.045,2
+Pub is suggested,15:23:7,10.1007/978-3-642-20847-8_39,2
+Pub is suggested,15:23:7,10.1287/inte.2019.0985,2
+Pub is suggested,15:23:8,10.1007/978-3-642-20291-9_19,2
+Pub is suggested,15:23:8,10.1016/j.eswa.2014.12.002,2
+Pub is suggested,15:23:8,10.1007/s10115-017-1027-3,2
+Pub is suggested,15:23:8,10.1145/3312739,2
+Pub is suggested,15:23:9,10.1007/978-3-642-40994-3_33,2
+Pub is suggested,15:23:9,10.1016/j.patrec.2004.04.004,2
+Pub is suggested,15:23:9,10.1109/access.2019.2903568,2
+Pub is suggested,15:23:9,10.1186/s12911-016-0318-z,2
+Pub is suggested,15:23:9,10.1016/j.knosys.2009.12.003,2
+Pub is suggested,15:23:10,10.1007/bf01896809,2
+Pub is suggested,15:23:11,10.1109/surv.2013.052213.00046,2
+Suggestions updated,15:23:11,,2
+Import Pub,15:23:32,10.1080/01621459.2019.1604370,2
+Update,15:23:32,,3
+Pub is suggested,15:23:32,10.1007/978-3-319-27212-2_22,3
+Pub is suggested,15:23:32,10.1007/s10618-021-00778-0,3
+Pub is suggested,15:23:32,10.1109/bracis.2019.00113,3
+Pub is suggested,15:23:32,10.1109/tcyb.2020.2983073,3
+Pub is suggested,15:23:32,10.1007/978-3-031-21047-1_1,3
+Pub is suggested,15:23:32,10.1007/978-3-319-75429-1_10,3
+Pub is suggested,15:23:32,10.2139/ssrn.3550115,3
+Pub is suggested,15:23:32,10.1007/978-3-319-23528-8_16,3
+Pub is suggested,15:23:32,10.1007/978-3-319-91476-3_25,3
+Pub is suggested,15:23:32,10.1109/access.2019.2935089,3
+Pub is suggested,15:23:32,10.1109/icste.2010.5608801,3
+Pub is suggested,15:23:32,10.1109/tpami.2021.3056510,3
+Pub is suggested,15:23:32,10.1007/978-1-4615-0953-0_4,3
+Pub is suggested,15:23:32,10.1109/tpami.2020.3010953,3
+Pub is suggested,15:23:32,10.3233/ida-183930,3
+Pub is suggested,15:23:34,10.1002/j.1538-7305.1948.tb01338.x,3
+Pub is suggested,15:23:34,10.1109/tkde.2018.2791525,3
+Pub is suggested,15:23:34,10.1109/mc.2017.3571051,3
+Pub is suggested,15:23:34,10.1007/978-3-319-93034-3_47,3
+Pub is suggested,15:23:34,10.1109/informatics47936.2019.9119264,3
+Pub is suggested,15:23:34,10.1016/j.inffus.2006.05.006,3
+Pub is suggested,15:23:35,10.1109/bdcloud.2018.00161,3
+Pub is suggested,15:23:35,10.1049/joe.2014.0303,3
+Pub is suggested,15:23:35,10.1007/s10489-019-01583-5,3
+Pub is suggested,15:23:35,10.1109/tsmc.2016.2600405,3
+Pub is suggested,15:23:35,10.1007/978-0-85729-130-1_15,3
+Pub is suggested,15:23:35,10.1109/tcss.2020.3017501,3
+Pub is suggested,15:23:35,10.1109/ivs.2019.8813774,3
+Pub is suggested,15:23:42,10.1109/saci.2018.8440987,3
+Pub is suggested,15:23:42,10.2118/163700-ms,3
+Pub is suggested,15:23:42,10.1007/978-3-030-93119-3_11,3
+Pub is suggested,15:23:42,10.1145/3538712.3538742,3
+Pub is suggested,15:23:42,10.1109/percom.2015.7146505,3
+Pub is suggested,15:23:42,10.1371/journal.pcbi.1010184,3
+Pub is suggested,15:23:42,10.1002/9781118029145.biblio,3
+Pub is suggested,15:23:42,10.1214/aoms/1177699260,3
+Pub is suggested,15:23:42,10.1108/imds-04-2015-0130,3
+Pub is suggested,15:23:42,10.1214/009053607000000505,3
+Pub is suggested,15:23:42,10.1109/tvcg.2016.2598876,3
+Pub is suggested,15:23:42,10.1016/j.mejo.2011.11.003,3
+Pub is suggested,15:23:42,10.2139/ssrn.2870834,3
+Pub is suggested,15:23:42,10.1007/s11042-021-11255-7,3
+Pub is suggested,15:23:42,10.1371/journal.pgen.1005012,3
+Pub is suggested,15:23:42,10.1109/ciet.2018.8660777,3
+Pub is suggested,15:23:42,10.1093/biomet/45.3-4.549,3
+Pub is suggested,15:23:42,10.1109/ijcnn52387.2021.9534162,3
+Pub is suggested,15:23:43,10.1037/h0026256,3
+Pub is suggested,15:23:43,10.1007/s11042-017-5501-4,3
+Pub is suggested,15:23:43,10.4018/978-1-4666-2455-9.ch009,3
+Pub is suggested,15:23:43,10.2466/pms.1996.82.2.411,3
+Suggestions updated,15:23:43,,3
+Activate Paper,15:24:0,10.1109/tcyb.2020.2983073,3,Activated in: selected
+DOI clicked,15:24:3,10.1109/tcyb.2020.2983073,
+Suggested Pub selected,15:24:56,10.1109/tcyb.2020.2983073,3,1
+Activate Paper,15:25:3,10.1109/tpami.2021.3056510,3,Activated in: selected
+DOI clicked,15:25:18,10.1109/tpami.2021.3056510,
+Suggested Pub selected,15:26:7,10.1109/tpami.2021.3056510,3,2
+Activate Paper,15:26:9,10.1007/s10618-021-00778-0,3,Activated in: selected
+DOI clicked,15:26:13,10.1007/s10618-021-00778-0,
+Pub excluded,15:26:47,10.1007/s10618-021-00778-0,3,suggested,3
+Activate Paper,15:26:50,10.1007/978-3-319-23528-8_16,3,Activated in: selected
+DOI clicked,15:26:53,10.1007/978-3-319-23528-8_16,
+Update,15:28:46,,5
+Pub is suggested,15:28:46,10.1145/2133360.2133361,5
+Pub is suggested,15:28:46,10.1016/j.eswa.2014.09.012,5
+Pub is suggested,15:28:46,10.1016/j.patrec.2006.06.006,5
+Pub is suggested,15:28:46,10.1109/tnnls.2019.2899381,5
+Pub is suggested,15:28:46,10.1007/978-3-031-21047-1_1,5
+Pub is suggested,15:28:46,10.1007/978-3-319-75429-1_10,5
+Pub is suggested,15:28:46,10.1109/tpami.2020.3010953,5
+Pub is suggested,15:28:46,10.1109/tkde.2018.2808532,5
+Pub is suggested,15:28:46,10.1109/bracis.2019.00113,5
+Pub is suggested,15:28:46,10.1109/access.2019.2935089,5
+Pub is suggested,15:28:46,10.2139/ssrn.3550115,5
+Pub is suggested,15:28:46,10.1109/icste.2010.5608801,5
+Pub is suggested,15:28:46,10.1007/978-3-319-91476-3_25,5
+Pub is suggested,15:28:46,10.1007/978-3-319-27212-2_22,5
+Pub is suggested,15:28:46,10.1007/978-3-319-23528-8_16,5
+Pub is suggested,15:28:46,10.1109/icaipr.2016.7585211,5
+Pub is suggested,15:28:46,10.2139/ssrn.2870834,5
+Pub is suggested,15:28:46,10.1007/978-0-85729-130-1_15,5
+Pub is suggested,15:28:46,10.1145/3534678.3539155,5
+Pub is suggested,15:28:46,10.1109/synasc.2011.57,5
+Pub is suggested,15:28:46,10.1109/percom.2015.7146505,5
+Pub is suggested,15:28:47,10.1007/978-3-030-01851-1_24,5
+Pub is suggested,15:28:48,10.1609/aaai.v34i04.6168,5
+Pub is suggested,15:28:48,10.1007/978-3-030-03402-3_22,5
+Pub is suggested,15:28:48,10.1016/j.neucom.2021.08.050,5
+Pub is suggested,15:28:48,10.1007/978-3-030-65621-8_17,5
+Pub is suggested,15:28:48,10.2307/2528080,5
+Pub is suggested,15:28:49,10.1016/j.patrec.2005.06.002,5
+Pub is suggested,15:28:49,10.1007/978-3-642-03915-7_8,5
+Pub is suggested,15:28:50,10.1214/aoms/1177729346,5
+Pub is suggested,15:28:51,10.1109/tnnls.2015.2436432,5
+Pub is suggested,15:28:51,10.1016/j.asoc.2014.04.018,5
+Pub is suggested,15:28:51,10.1016/j.patcog.2015.09.027,5
+Pub is suggested,15:28:52,10.1109/tnnls.2017.2728138,5
+Pub is suggested,15:28:52,10.1109/tnnls.2015.2451151,5
+Pub is suggested,15:28:52,10.1109/tkde.2018.2848902,5
+Pub is suggested,15:28:53,10.1145/1015330.1015404,5
+Pub is suggested,15:28:54,10.1016/j.patcog.2011.04.024,5
+Pub is suggested,15:28:54,10.1109/34.993562,5
+Pub is suggested,15:28:55,10.1016/j.patcog.2003.11.003,5
+Pub is suggested,15:28:55,10.1007/978-3-642-04277-5_18,5
+Pub is suggested,15:28:56,10.1109/tpami.2006.168,5
+Pub is suggested,15:28:58,10.1002/9780470594001,5
+Pub is suggested,15:28:58,10.1109/tnn.2008.2005601,5
+Pub is suggested,15:28:58,10.1214/aoms/1177729080,5
+Pub is suggested,15:28:59,10.1002/bs.3830120210,5
+Pub is suggested,15:28:59,10.2307/2284239,5
+Pub is suggested,15:28:59,10.1023/a:1009769707641,5
+Pub is suggested,15:29:12,10.1145/331499.331504,5
+Pub is suggested,15:29:28,10.1214/aoms/1177729694,5
+Suggestions updated,15:29:29,,5
+Activate Paper,15:29:53,10.1002/9780470594001,5,Activated in: selected
+DOI clicked,15:29:56,10.1002/9780470594001,
+Activate Paper,15:30:9,10.1007/978-3-030-01851-1_24,5,Activated in: selected
+Suggested Pub selected,15:34:58,10.1002/9780470594001,5,4
+Update,15:35:16,,6
+Pub is suggested,15:35:16,10.1109/tnnls.2019.2899381,6
+Pub is suggested,15:35:16,10.1016/j.patrec.2006.06.006,6
+Pub is suggested,15:35:16,10.1016/j.patrec.2005.06.002,6
+Pub is suggested,15:35:16,10.1145/2133360.2133361,6
+Pub is suggested,15:35:16,10.1023/a:1009769707641,6
+Pub is suggested,15:35:16,10.1016/j.eswa.2014.09.012,6
+Pub is suggested,15:35:16,10.1109/tnnls.2015.2436432,6
+Pub is suggested,15:35:16,10.1007/978-3-319-23528-8_16,6
+Pub is suggested,15:35:16,10.1145/1015330.1015404,6
+Pub is suggested,15:35:16,10.1007/978-3-319-91476-3_25,6
+Pub is suggested,15:35:16,10.1007/978-3-030-01851-1_24,6
+Pub is suggested,15:35:16,10.1007/978-3-031-21047-1_1,6
+Pub is suggested,15:35:16,10.1016/j.neucom.2021.08.050,6
+Pub is suggested,15:35:16,10.1016/j.patcog.2003.11.003,6
+Pub is suggested,15:35:16,10.2307/2284239,6
+Pub is suggested,15:35:16,10.1109/icste.2010.5608801,6
+Pub is suggested,15:35:16,10.1016/j.patcog.2015.09.027,6
+Pub is suggested,15:35:16,10.1145/3312739,6
+Pub is suggested,15:35:16,10.1007/978-3-319-27212-2_22,6
+Pub is suggested,15:35:16,10.1007/978-3-642-03915-7_8,6
+Pub is suggested,15:35:16,10.2307/2528080,6
+Pub is suggested,15:35:16,10.2139/ssrn.3550115,6
+Pub is suggested,15:35:16,10.1016/j.patcog.2011.04.024,6
+Pub is suggested,15:35:16,10.1109/tnn.2008.2005601,6
+Pub is suggested,15:35:16,10.1109/tnnls.2017.2728138,6
+Pub is suggested,15:35:16,10.1109/34.993562,6
+Pub is suggested,15:35:16,10.1109/access.2019.2935089,6
+Pub is suggested,15:35:16,10.1145/331499.331504,6
+Pub is suggested,15:35:16,10.1007/978-3-030-83819-5_5,6
+Pub is suggested,15:35:16,10.1109/tkde.2018.2848902,6
+Pub is suggested,15:35:16,10.1002/bs.3830120210,6
+Pub is suggested,15:35:16,10.1080/08982112.2021.1896732,6
+Pub is suggested,15:35:16,10.1109/tnnls.2015.2451151,6
+Pub is suggested,15:35:16,10.1214/aoms/1177729694,6
+Pub is suggested,15:35:16,10.1109/tkde.2018.2808532,6
+Pub is suggested,15:35:16,10.1109/tpami.2020.3010953,6
+Pub is suggested,15:35:16,10.1109/bracis.2019.00113,6
+Pub is suggested,15:35:16,10.1007/978-3-319-75429-1_10,6
+Pub is suggested,15:35:16,10.1007/978-3-642-04277-5_18,6
+Pub is suggested,15:35:16,10.1145/3132847.3132987,6
+Pub is suggested,15:35:16,10.1007/s00500-018-03724-3,6
+Pub is suggested,15:35:16,10.4018/978-1-7998-1839-7.ch006,6
+Pub is suggested,15:35:17,10.1007/s10489-022-03271-3,6
+Pub is suggested,15:35:17,10.1109/dft.2010.25,6
+Pub is suggested,15:35:17,10.1007/s40858-021-00446-0,6
+Pub is suggested,15:35:17,10.1177/0899764020937779,6
+Pub is suggested,15:35:17,10.1075/is.18.2.01mol,6
+Pub is suggested,15:35:18,10.1007/s11063-015-9423-8,6
+Pub is suggested,15:35:18,10.1057/s41264-020-00078-6,6
+Pub is suggested,15:35:18,10.1007/s00357-019-09317-5,6
+Suggestions updated,15:35:18,,6
+Activate Paper,15:35:23,10.1109/tnnls.2015.2436432,6,Activated in: selected
+Activate Paper,15:35:57,10.1007/978-3-030-01851-1_24,6,Activated in: selected
+DOI clicked,15:35:59,10.1007/978-3-030-01851-1_24,
+Suggested Pub selected,15:36:47,10.1007/978-3-030-01851-1_24,6,5
+Update,15:37:1,,7
+Pub is suggested,15:37:1,10.1109/tnnls.2019.2899381,7
+Pub is suggested,15:37:1,10.1016/j.patrec.2006.06.006,7
+Pub is suggested,15:37:1,10.1109/tnnls.2015.2436432,7
+Pub is suggested,15:37:1,10.1016/j.patrec.2005.06.002,7
+Pub is suggested,15:37:1,10.1016/j.eswa.2014.09.012,7
+Pub is suggested,15:37:1,10.1023/a:1009769707641,7
+Pub is suggested,15:37:1,10.1007/978-3-642-03915-7_8,7
+Pub is suggested,15:37:1,10.1145/2133360.2133361,7
+Pub is suggested,15:37:1,10.1109/tnnls.2015.2451151,7
+Pub is suggested,15:37:1,10.1016/j.patcog.2011.04.024,7
+Pub is suggested,15:37:1,10.1007/978-3-319-27212-2_22,7
+Pub is suggested,15:37:1,10.1007/978-3-319-75429-1_10,7
+Pub is suggested,15:37:1,10.2307/2284239,7
+Pub is suggested,15:37:1,10.1080/08982112.2021.1896732,7
+Pub is suggested,15:37:1,10.1109/icste.2010.5608801,7
+Pub is suggested,15:37:1,10.1007/978-3-642-04277-5_18,7
+Pub is suggested,15:37:1,10.1016/j.neucom.2021.08.050,7
+Pub is suggested,15:37:1,10.1109/tkde.2018.2848902,7
+Pub is suggested,15:37:1,10.1109/tnn.2008.2005601,7
+Pub is suggested,15:37:1,10.1145/1015330.1015404,7
+Pub is suggested,15:37:1,10.1109/tkde.2018.2808532,7
+Pub is suggested,15:37:1,10.1016/j.patcog.2015.09.027,7
+Pub is suggested,15:37:1,10.1109/tnnls.2017.2728138,7
+Pub is suggested,15:37:1,10.1007/978-3-030-83819-5_5,7
+Pub is suggested,15:37:1,10.1007/978-3-319-23528-8_16,7
+Pub is suggested,15:37:1,10.1002/bs.3830120210,7
+Pub is suggested,15:37:1,10.1109/access.2019.2935089,7
+Pub is suggested,15:37:1,10.1109/tpami.2020.3010953,7
+Pub is suggested,15:37:1,10.1109/bracis.2019.00113,7
+Pub is suggested,15:37:1,10.1016/j.patcog.2003.11.003,7
+Pub is suggested,15:37:1,10.2307/2528080,7
+Pub is suggested,15:37:1,10.2139/ssrn.3550115,7
+Pub is suggested,15:37:1,10.1109/34.993562,7
+Pub is suggested,15:37:1,10.1145/331499.331504,7
+Pub is suggested,15:37:1,10.1214/aoms/1177729694,7
+Pub is suggested,15:37:1,10.1145/3312739,7
+Pub is suggested,15:37:1,10.1007/978-3-319-91476-3_25,7
+Pub is suggested,15:37:1,10.1007/978-3-031-21047-1_1,7
+Pub is suggested,15:37:1,10.1007/s00357-019-09317-5,7
+Pub is suggested,15:37:1,10.1007/bf00114265,7
+Pub is suggested,15:37:2,10.1002/asi.24707,7
+Pub is suggested,15:37:2,10.1080/19466315.2016.1258006,7
+Pub is suggested,15:37:2,10.1109/dsc.2017.87,7
+Pub is suggested,15:37:2,10.1111/apel.12315,7
+Pub is suggested,15:37:2,10.1080/03610918.2020.1775850,7
+Pub is suggested,15:37:2,10.1007/s11205-020-02387-8,7
+Pub is suggested,15:37:3,10.1142/s0129183111016567,7
+Pub is suggested,15:37:3,10.1186/s12889-021-10631-0,7
+Pub is suggested,15:37:4,10.1007/s00455-017-9809-z,7
+Pub is suggested,15:37:4,10.1007/s10484-011-9148-z,7
+Suggestions updated,15:37:4,,7
+Activate Paper,15:37:52,10.1214/aoms/1177729694,7,Activated in: networkVis
+Activate Paper,15:37:52,10.1214/aoms/1177729694,7,Activated in: selected
+Activate Paper,15:38:2,10.1007/bf00114265,7,Activated in: networkVis
+Activate Paper,15:38:2,10.1007/bf00114265,7,Activated in: selected
+Activate Paper,15:38:35,10.1016/j.eswa.2014.09.012,7,Activated in: networkVis
+Activate Paper,15:38:35,10.1016/j.eswa.2014.09.012,7,Activated in: selected
+DOI clicked,15:38:40,10.1016/j.eswa.2014.09.012,

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Graph Visualization</title>
+<style>
+  body {
+    margin: 50px;
+    font-family: Arial;
+  }
+
+  h2 {
+    clear: both;
+  }
+
+  svg {
+    float: left;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  div {
+    height: 300px;
+    width: 1200px;
+    overflow: scroll;
+  }
+</style>
+
+<body>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <div id="vis"></div>
+
+  <script>
+    "use strict";
+    async function loadData() {
+      const session = await d3.csv("data/session-long.csv");
+      return session;
+    }
+
+    async function main() {
+      let session = await loadData();
+      let width = window.innerWidth * 0.9;
+      let height = window.innerHeight * 0.9;
+      let pubLineHeight = 60;
+      let topPadding = 10;
+      let actionLineHeight = topPadding + 100;
+
+      function mouseout(mouseData) {
+        svg.select("#tooltip").remove();
+      }
+
+      function mouseover(mouseData) {
+        svg.append("g").attr("id", "tooltip");
+        let tooltipX = event.pageX;
+        let tooltipY = event.pageY;
+        d3.select("#tooltip")
+          .append("rect")
+          .attr("x", tooltipX)
+          .attr("y", tooltipY)
+          .attr("width", 200)
+          .attr("height", 30)
+          .attr("fill", "white")
+          .attr("stroke", "black");
+        d3.select("#tooltip")
+          .append("text")
+          .attr("x", tooltipX + 10)
+          .attr("y", tooltipY + 20)
+          .attr("stroke", "black")
+          .text(mouseData);
+      }
+
+      function getPubLineHeight(index) {
+        return actionLineHeight + pubLineHeight + index * pubLineHeight;
+      }
+
+      //Zeit umrechnen in Sekunden seit Start
+      session.map(
+        (event) =>
+          (event.date =
+            parseInt(event.date.split(":")[0] * 60 * 60) +
+            parseInt(event.date.split(":")[1] * 60) +
+            parseInt(event.date.split(":")[2]))
+      );
+      let start = session[0].date;
+      session.map((event) => (event.date = event.date - start));
+
+      //Pubevents: Filtern nach Pubs, die einmal in der Auswahl waren
+
+      let dois = [];
+      session
+        .filter(
+          (event) =>
+            event.event == "Suggested Pub selected" ||
+            event.event == "Import Pub"
+        )
+        .forEach((event) => {
+          dois.push(event.doi);
+        });
+
+      var uniqueDois = Array.from([...new Set(dois)]);
+
+      //Hier nicht die Anzahl der finalen Pubs sondern Anzahl aller Pubs, die im Laufe der Session ausgewählt wurden
+      let numberOfPubs = uniqueDois.length;
+      session = session.filter((event) => {
+        if (event.doi) {
+          return uniqueDois.includes(event.doi);
+        } else {
+          //keep action logs without pub doi
+          return true;
+        }
+      });
+
+      //Fenstergröße an die Anzahl der Pubs anpassen
+      d3.select("#vis")
+        .style("width", window.innerWidth * 0.9 + "px")
+        .style("height", window.innerHeight * 0.9 + "px");
+
+      //svg
+      var svg = d3
+        .select("#vis")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", getPubLineHeight(numberOfPubs + 1))
+        .style("background-color", "white");
+
+      var xScale = d3
+        .scaleLinear()
+        .domain([session[0].date, session[session.length - 1].date])
+        .range([100, width - 100])
+        .nice();
+
+      //Axis
+      svg
+        .append("g")
+        .attr("transform", "translate(0," + actionLineHeight + ")")
+        .call(d3.axisBottom(xScale));
+
+      // Add Y axis
+      var yScale = d3
+        .scaleLinear()
+        .domain([0, d3.max(session, (event) => event.numberOfSelectedPubs)])
+        .range([100, 0]);
+
+      const yAxisTicks = yScale
+        .ticks()
+        .filter((tick) => Number.isInteger(tick));
+
+      const yAxis = d3
+        .axisLeft(yScale)
+        .tickValues(yAxisTicks)
+        .tickFormat(d3.format("d"));
+
+      svg
+        .append("g")
+        .attr("transform", "translate(100," + topPadding + ")")
+        .call(yAxis);
+
+      svg
+        .selectAll("pubaxes")
+        .data(Array.from({ length: numberOfPubs }, (value, index) => index))
+        .enter()
+        .append("g")
+        .attr("id", "pubAxes")
+        .attr(
+          "transform",
+          (d, i) => "translate (0, " + getPubLineHeight(i) + ")"
+        )
+        .call(d3.axisBottom(xScale));
+
+      let updateEvents = session.filter((event) => event.event == "Update");
+      svg
+        .selectAll("mybar")
+        .data(updateEvents)
+        .enter()
+        .append("rect")
+        .attr("x", function (d) {
+          return xScale(d.date);
+        })
+        .attr("y", function (d) {
+          return 10 + yScale(d.numberOfSelectedPubs);
+        })
+        .attr("width", (d, i) => {
+          if (updateEvents[i + 1]) {
+            return xScale(updateEvents[i + 1].date) - xScale(d.date);
+          } else {
+            console.log(session[session.length - 1].date);
+            return xScale(session[session.length - 1].date) - xScale(d.date);
+          }
+        })
+        .attr("height", function (d) {
+          return 100 - yScale(d.numberOfSelectedPubs);
+        })
+        .attr("fill", "#69b3a2");
+
+      //TODO: change Keywords, Filter, interact with networkvis...
+      let mainPubInteractionEvents = ["Suggested Pub selected", "Import Pub","Pub excluded","Activate Paper"]
+      let actionEvents = ["Update"]
+      svg
+        .selectAll("whatevs")
+        .data(session.filter(event => mainPubInteractionEvents.includes(event.event) || actionEvents.includes(event.event)))
+        .enter()
+        .append("circle")
+        .attr("r", 5)
+        .attr("fill", (event) => {
+          console.log(event);
+          if (event.event == "Suggested Pub selected" || event.event == "Import Pub") {
+            return "green";
+          } else if (event.event == "Activate Paper") {
+            return "pink";
+          } else if (event.event == "Pub excluded") {
+            return "red";
+          } else if (event.event == "Update") {
+            return "grey"
+          }
+        })
+        .attr("cx", (event) => xScale(new Date(event.date)))
+        .attr("cy", (event) => 105)
+        .on("mouseover", (event) => mouseover(event.event))
+        .on("mouseout", (d, a) => mouseout(d, a));
+
+     
+      svg
+        .selectAll("whatevs")
+        .data(uniqueDois)
+        .enter()
+        .append("text")
+        .attr("x", 5)
+        .attr("y", (doi, index) => getPubLineHeight(index))
+        .text((doi) => doi)
+        .style("fill", "black")
+        .style("font-size", "8px");
+
+      //Filtern nach allen Lifecycleevents von Puubs, dann nach der Zeit sortieren und für jede Doi einzeln zeichnen
+      let pubLifeCycleEvents = session.filter(
+        (event) =>
+          event.event == "Suggested Pub selected" ||
+          event.event == "Import Pub" ||
+          event.event == "Pub excluded" ||
+          event.event == "Pub is suggested"
+      );
+
+      uniqueDois.forEach((doi) => {
+        let pubEvents = pubLifeCycleEvents.filter((event) => event.doi == doi);
+        pubEvents.unshift({ event: "start", date: 0, doi: doi });
+        svg
+          .selectAll("mybar")
+          .data(pubEvents)
+          .enter()
+          .append("rect")
+          .attr("x", function (d) {
+            return xScale(d.date);
+          })
+          .attr("y", function (d) {
+            return (
+              getPubLineHeight(uniqueDois.findIndex((doi) => doi == d.doi)) - 15
+            );
+          })
+          .attr("width", (d, i) => {
+            if (pubEvents[i + 1]) {
+              return xScale(pubEvents[i + 1].date) - xScale(d.date);
+            } else {
+              return xScale(session[session.length - 1].date) - xScale(d.date);
+            }
+          })
+          .attr("height", function (d) {
+            return 15;
+            return 100 - yScale(d.numberOfSelectedPubs);
+          })
+          .attr("fill", (d) => {
+            if (d.event == "Suggested Pub selected") {
+              return "green";
+            } else if (d.event == "Import Pub") {
+              return "green";
+            } else if (d.event == "Pub excluded") {
+              return "red";
+            } else if (d.event == "Pub is suggested") {
+              return "yellow";
+            } else if (d.event == "start") {
+              return "grey";
+            }
+          })
+          .on("mouseover", (event) => mouseover(event.event))
+          .on("mouseout", (d, a) => mouseout(d, a));
+      });
+
+
+       //Liste erstellen mit PubEventDaten (Status (idle, suggested (=> Platz in Suggested, Boostfaktor, Punktzahl, Keywordmatch), selected (die gleichen wie vorher), excluded)
+      //Pubevents, die den Status nicht verändern: Activate, CheckPub
+      let consideredStatusEvents = [
+        "DOI clicked",
+        "Scholar clicked",
+        "Bibtex clicked",
+        "Activate Paper",
+      ];
+      svg
+        .selectAll("whatevs")
+        .data(
+          session.filter((event) =>
+            consideredStatusEvents.includes(event.event)
+          )
+        )
+        .enter()
+        .append("circle")
+        .attr("r", 5)
+        .attr("fill", (event) => {
+          if (
+            ["DOI clicked", "Scholar clicked", "Bibtex clicked"].includes(
+              event.event
+            )
+          ) {
+            return "blue";
+          } else if (event.event == "Activate Paper") {
+            return "pink";
+          }
+        })
+        .attr("cx", (event) => xScale(new Date(event.date)))
+        .attr("cy", (event) =>
+          getPubLineHeight(uniqueDois.findIndex((elem) => elem == event.doi))-5
+        )
+        .on("mouseover", (event) => mouseover(event.event))
+        .on("mouseout", (d, a) => mouseout(d, a));
+
+
+
+    }
+
+    main();
+  </script>
+</body>
