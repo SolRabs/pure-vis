@@ -1,290 +1,1320 @@
-event,date,doi,numberOfSelectedPubs,additionalData
-Import Pub,15:23:3,10.1137/1.9781611972788.22,0
-Import Pub,15:23:3,10.1109/ijcnn.2014.6889941,0
-Update,15:23:3,,2
-Pub is suggested,15:23:3,10.2139/ssrn.3550115,2
-Pub is suggested,15:23:4,10.1109/bracis.2019.00113,2
-Pub is suggested,15:23:4,10.1109/access.2019.2935089,2
-Pub is suggested,15:23:4,10.1007/978-3-319-23528-8_16,2
-Pub is suggested,15:23:4,10.1109/tpami.2021.3056510,2
-Pub is suggested,15:23:4,10.1007/s10618-021-00778-0,2
-Pub is suggested,15:23:4,10.1007/978-3-319-27212-2_22,2
-Pub is suggested,15:23:4,10.1007/978-3-319-91476-3_25,2
-Pub is suggested,15:23:5,10.1007/978-3-319-75429-1_10,2
-Pub is suggested,15:23:5,10.1109/tcyb.2020.2983073,2
-Pub is suggested,15:23:5,10.1145/3447548.3467125,2
-Pub is suggested,15:23:5,10.1109/tkde.2018.2791525,2
-Pub is suggested,15:23:5,10.1109/candar.2015.61,2
-Pub is suggested,15:23:5,10.1108/k-09-2015-0236,2
-Pub is suggested,15:23:5,10.1109/tpami.2020.3010953,2
-Pub is suggested,15:23:5,10.4018/978-1-7998-1839-7.ch006,2
-Pub is suggested,15:23:5,10.1109/mlsp.2012.6349771,2
-Pub is suggested,15:23:5,10.1016/j.sigpro.2008.07.005,2
-Pub is suggested,15:23:5,10.1109/tnnls.2012.2195027,2
-Pub is suggested,15:23:5,10.1109/mc.2017.3571051,2
-Pub is suggested,15:23:5,10.1016/j.knosys.2020.105738,2
-Pub is suggested,15:23:6,10.1109/nafips.2016.7851603,2
-Pub is suggested,15:23:6,10.1007/s00180-022-01209-4,2
-Pub is suggested,15:23:6,10.1101/2021.08.05.21261677,2
-Pub is suggested,15:23:6,10.1145/3230967,2
-Pub is suggested,15:23:6,10.1109/mobilware.2013.26,2
-Pub is suggested,15:23:6,10.1109/synasc.2011.57,2
-Pub is suggested,15:23:6,10.1007/978-3-031-21047-1_1,2
-Pub is suggested,15:23:6,10.1109/icste.2010.5608801,2
-Pub is suggested,15:23:6,10.1002/spe.3068,2
-Pub is suggested,15:23:6,10.1080/02664763.2021.2022607,2
-Pub is suggested,15:23:6,10.1016/j.inffus.2006.05.006,2
-Pub is suggested,15:23:6,10.1145/3534678.3539155,2
-Pub is suggested,15:23:6,10.1007/978-3-642-31686-9_43,2
-Pub is suggested,15:23:7,10.1109/ijcnn.2014.6889798,2
-Pub is suggested,15:23:7,10.1007/978-3-030-05127-3_5,2
-Pub is suggested,15:23:7,10.1016/j.ins.2012.07.045,2
-Pub is suggested,15:23:7,10.1007/978-3-642-20847-8_39,2
-Pub is suggested,15:23:7,10.1287/inte.2019.0985,2
-Pub is suggested,15:23:8,10.1007/978-3-642-20291-9_19,2
-Pub is suggested,15:23:8,10.1016/j.eswa.2014.12.002,2
-Pub is suggested,15:23:8,10.1007/s10115-017-1027-3,2
-Pub is suggested,15:23:8,10.1145/3312739,2
-Pub is suggested,15:23:9,10.1007/978-3-642-40994-3_33,2
-Pub is suggested,15:23:9,10.1016/j.patrec.2004.04.004,2
-Pub is suggested,15:23:9,10.1109/access.2019.2903568,2
-Pub is suggested,15:23:9,10.1186/s12911-016-0318-z,2
-Pub is suggested,15:23:9,10.1016/j.knosys.2009.12.003,2
-Pub is suggested,15:23:10,10.1007/bf01896809,2
-Pub is suggested,15:23:11,10.1109/surv.2013.052213.00046,2
-Suggestions updated,15:23:11,,2
-Import Pub,15:23:32,10.1080/01621459.2019.1604370,2
-Update,15:23:32,,3
-Pub is suggested,15:23:32,10.1007/978-3-319-27212-2_22,3
-Pub is suggested,15:23:32,10.1007/s10618-021-00778-0,3
-Pub is suggested,15:23:32,10.1109/bracis.2019.00113,3
-Pub is suggested,15:23:32,10.1109/tcyb.2020.2983073,3
-Pub is suggested,15:23:32,10.1007/978-3-031-21047-1_1,3
-Pub is suggested,15:23:32,10.1007/978-3-319-75429-1_10,3
-Pub is suggested,15:23:32,10.2139/ssrn.3550115,3
-Pub is suggested,15:23:32,10.1007/978-3-319-23528-8_16,3
-Pub is suggested,15:23:32,10.1007/978-3-319-91476-3_25,3
-Pub is suggested,15:23:32,10.1109/access.2019.2935089,3
-Pub is suggested,15:23:32,10.1109/icste.2010.5608801,3
-Pub is suggested,15:23:32,10.1109/tpami.2021.3056510,3
-Pub is suggested,15:23:32,10.1007/978-1-4615-0953-0_4,3
-Pub is suggested,15:23:32,10.1109/tpami.2020.3010953,3
-Pub is suggested,15:23:32,10.3233/ida-183930,3
-Pub is suggested,15:23:34,10.1002/j.1538-7305.1948.tb01338.x,3
-Pub is suggested,15:23:34,10.1109/tkde.2018.2791525,3
-Pub is suggested,15:23:34,10.1109/mc.2017.3571051,3
-Pub is suggested,15:23:34,10.1007/978-3-319-93034-3_47,3
-Pub is suggested,15:23:34,10.1109/informatics47936.2019.9119264,3
-Pub is suggested,15:23:34,10.1016/j.inffus.2006.05.006,3
-Pub is suggested,15:23:35,10.1109/bdcloud.2018.00161,3
-Pub is suggested,15:23:35,10.1049/joe.2014.0303,3
-Pub is suggested,15:23:35,10.1007/s10489-019-01583-5,3
-Pub is suggested,15:23:35,10.1109/tsmc.2016.2600405,3
-Pub is suggested,15:23:35,10.1007/978-0-85729-130-1_15,3
-Pub is suggested,15:23:35,10.1109/tcss.2020.3017501,3
-Pub is suggested,15:23:35,10.1109/ivs.2019.8813774,3
-Pub is suggested,15:23:42,10.1109/saci.2018.8440987,3
-Pub is suggested,15:23:42,10.2118/163700-ms,3
-Pub is suggested,15:23:42,10.1007/978-3-030-93119-3_11,3
-Pub is suggested,15:23:42,10.1145/3538712.3538742,3
-Pub is suggested,15:23:42,10.1109/percom.2015.7146505,3
-Pub is suggested,15:23:42,10.1371/journal.pcbi.1010184,3
-Pub is suggested,15:23:42,10.1002/9781118029145.biblio,3
-Pub is suggested,15:23:42,10.1214/aoms/1177699260,3
-Pub is suggested,15:23:42,10.1108/imds-04-2015-0130,3
-Pub is suggested,15:23:42,10.1214/009053607000000505,3
-Pub is suggested,15:23:42,10.1109/tvcg.2016.2598876,3
-Pub is suggested,15:23:42,10.1016/j.mejo.2011.11.003,3
-Pub is suggested,15:23:42,10.2139/ssrn.2870834,3
-Pub is suggested,15:23:42,10.1007/s11042-021-11255-7,3
-Pub is suggested,15:23:42,10.1371/journal.pgen.1005012,3
-Pub is suggested,15:23:42,10.1109/ciet.2018.8660777,3
-Pub is suggested,15:23:42,10.1093/biomet/45.3-4.549,3
-Pub is suggested,15:23:42,10.1109/ijcnn52387.2021.9534162,3
-Pub is suggested,15:23:43,10.1037/h0026256,3
-Pub is suggested,15:23:43,10.1007/s11042-017-5501-4,3
-Pub is suggested,15:23:43,10.4018/978-1-4666-2455-9.ch009,3
-Pub is suggested,15:23:43,10.2466/pms.1996.82.2.411,3
-Suggestions updated,15:23:43,,3
-Activate Paper,15:24:0,10.1109/tcyb.2020.2983073,3,Activated in: selected
-DOI clicked,15:24:3,10.1109/tcyb.2020.2983073,
-Suggested Pub selected,15:24:56,10.1109/tcyb.2020.2983073,3,1
-Activate Paper,15:25:3,10.1109/tpami.2021.3056510,3,Activated in: selected
-DOI clicked,15:25:18,10.1109/tpami.2021.3056510,
-Suggested Pub selected,15:26:7,10.1109/tpami.2021.3056510,3,2
-Activate Paper,15:26:9,10.1007/s10618-021-00778-0,3,Activated in: selected
-DOI clicked,15:26:13,10.1007/s10618-021-00778-0,
-Pub excluded,15:26:47,10.1007/s10618-021-00778-0,3,suggested,3
-Activate Paper,15:26:50,10.1007/978-3-319-23528-8_16,3,Activated in: selected
-DOI clicked,15:26:53,10.1007/978-3-319-23528-8_16,
-Update,15:28:46,,5
-Pub is suggested,15:28:46,10.1145/2133360.2133361,5
-Pub is suggested,15:28:46,10.1016/j.eswa.2014.09.012,5
-Pub is suggested,15:28:46,10.1016/j.patrec.2006.06.006,5
-Pub is suggested,15:28:46,10.1109/tnnls.2019.2899381,5
-Pub is suggested,15:28:46,10.1007/978-3-031-21047-1_1,5
-Pub is suggested,15:28:46,10.1007/978-3-319-75429-1_10,5
-Pub is suggested,15:28:46,10.1109/tpami.2020.3010953,5
-Pub is suggested,15:28:46,10.1109/tkde.2018.2808532,5
-Pub is suggested,15:28:46,10.1109/bracis.2019.00113,5
-Pub is suggested,15:28:46,10.1109/access.2019.2935089,5
-Pub is suggested,15:28:46,10.2139/ssrn.3550115,5
-Pub is suggested,15:28:46,10.1109/icste.2010.5608801,5
-Pub is suggested,15:28:46,10.1007/978-3-319-91476-3_25,5
-Pub is suggested,15:28:46,10.1007/978-3-319-27212-2_22,5
-Pub is suggested,15:28:46,10.1007/978-3-319-23528-8_16,5
-Pub is suggested,15:28:46,10.1109/icaipr.2016.7585211,5
-Pub is suggested,15:28:46,10.2139/ssrn.2870834,5
-Pub is suggested,15:28:46,10.1007/978-0-85729-130-1_15,5
-Pub is suggested,15:28:46,10.1145/3534678.3539155,5
-Pub is suggested,15:28:46,10.1109/synasc.2011.57,5
-Pub is suggested,15:28:46,10.1109/percom.2015.7146505,5
-Pub is suggested,15:28:47,10.1007/978-3-030-01851-1_24,5
-Pub is suggested,15:28:48,10.1609/aaai.v34i04.6168,5
-Pub is suggested,15:28:48,10.1007/978-3-030-03402-3_22,5
-Pub is suggested,15:28:48,10.1016/j.neucom.2021.08.050,5
-Pub is suggested,15:28:48,10.1007/978-3-030-65621-8_17,5
-Pub is suggested,15:28:48,10.2307/2528080,5
-Pub is suggested,15:28:49,10.1016/j.patrec.2005.06.002,5
-Pub is suggested,15:28:49,10.1007/978-3-642-03915-7_8,5
-Pub is suggested,15:28:50,10.1214/aoms/1177729346,5
-Pub is suggested,15:28:51,10.1109/tnnls.2015.2436432,5
-Pub is suggested,15:28:51,10.1016/j.asoc.2014.04.018,5
-Pub is suggested,15:28:51,10.1016/j.patcog.2015.09.027,5
-Pub is suggested,15:28:52,10.1109/tnnls.2017.2728138,5
-Pub is suggested,15:28:52,10.1109/tnnls.2015.2451151,5
-Pub is suggested,15:28:52,10.1109/tkde.2018.2848902,5
-Pub is suggested,15:28:53,10.1145/1015330.1015404,5
-Pub is suggested,15:28:54,10.1016/j.patcog.2011.04.024,5
-Pub is suggested,15:28:54,10.1109/34.993562,5
-Pub is suggested,15:28:55,10.1016/j.patcog.2003.11.003,5
-Pub is suggested,15:28:55,10.1007/978-3-642-04277-5_18,5
-Pub is suggested,15:28:56,10.1109/tpami.2006.168,5
-Pub is suggested,15:28:58,10.1002/9780470594001,5
-Pub is suggested,15:28:58,10.1109/tnn.2008.2005601,5
-Pub is suggested,15:28:58,10.1214/aoms/1177729080,5
-Pub is suggested,15:28:59,10.1002/bs.3830120210,5
-Pub is suggested,15:28:59,10.2307/2284239,5
-Pub is suggested,15:28:59,10.1023/a:1009769707641,5
-Pub is suggested,15:29:12,10.1145/331499.331504,5
-Pub is suggested,15:29:28,10.1214/aoms/1177729694,5
-Suggestions updated,15:29:29,,5
-Activate Paper,15:29:53,10.1002/9780470594001,5,Activated in: selected
-DOI clicked,15:29:56,10.1002/9780470594001,
-Activate Paper,15:30:9,10.1007/978-3-030-01851-1_24,5,Activated in: selected
-Suggested Pub selected,15:34:58,10.1002/9780470594001,5,4
-Update,15:35:16,,6
-Pub is suggested,15:35:16,10.1109/tnnls.2019.2899381,6
-Pub is suggested,15:35:16,10.1016/j.patrec.2006.06.006,6
-Pub is suggested,15:35:16,10.1016/j.patrec.2005.06.002,6
-Pub is suggested,15:35:16,10.1145/2133360.2133361,6
-Pub is suggested,15:35:16,10.1023/a:1009769707641,6
-Pub is suggested,15:35:16,10.1016/j.eswa.2014.09.012,6
-Pub is suggested,15:35:16,10.1109/tnnls.2015.2436432,6
-Pub is suggested,15:35:16,10.1007/978-3-319-23528-8_16,6
-Pub is suggested,15:35:16,10.1145/1015330.1015404,6
-Pub is suggested,15:35:16,10.1007/978-3-319-91476-3_25,6
-Pub is suggested,15:35:16,10.1007/978-3-030-01851-1_24,6
-Pub is suggested,15:35:16,10.1007/978-3-031-21047-1_1,6
-Pub is suggested,15:35:16,10.1016/j.neucom.2021.08.050,6
-Pub is suggested,15:35:16,10.1016/j.patcog.2003.11.003,6
-Pub is suggested,15:35:16,10.2307/2284239,6
-Pub is suggested,15:35:16,10.1109/icste.2010.5608801,6
-Pub is suggested,15:35:16,10.1016/j.patcog.2015.09.027,6
-Pub is suggested,15:35:16,10.1145/3312739,6
-Pub is suggested,15:35:16,10.1007/978-3-319-27212-2_22,6
-Pub is suggested,15:35:16,10.1007/978-3-642-03915-7_8,6
-Pub is suggested,15:35:16,10.2307/2528080,6
-Pub is suggested,15:35:16,10.2139/ssrn.3550115,6
-Pub is suggested,15:35:16,10.1016/j.patcog.2011.04.024,6
-Pub is suggested,15:35:16,10.1109/tnn.2008.2005601,6
-Pub is suggested,15:35:16,10.1109/tnnls.2017.2728138,6
-Pub is suggested,15:35:16,10.1109/34.993562,6
-Pub is suggested,15:35:16,10.1109/access.2019.2935089,6
-Pub is suggested,15:35:16,10.1145/331499.331504,6
-Pub is suggested,15:35:16,10.1007/978-3-030-83819-5_5,6
-Pub is suggested,15:35:16,10.1109/tkde.2018.2848902,6
-Pub is suggested,15:35:16,10.1002/bs.3830120210,6
-Pub is suggested,15:35:16,10.1080/08982112.2021.1896732,6
-Pub is suggested,15:35:16,10.1109/tnnls.2015.2451151,6
-Pub is suggested,15:35:16,10.1214/aoms/1177729694,6
-Pub is suggested,15:35:16,10.1109/tkde.2018.2808532,6
-Pub is suggested,15:35:16,10.1109/tpami.2020.3010953,6
-Pub is suggested,15:35:16,10.1109/bracis.2019.00113,6
-Pub is suggested,15:35:16,10.1007/978-3-319-75429-1_10,6
-Pub is suggested,15:35:16,10.1007/978-3-642-04277-5_18,6
-Pub is suggested,15:35:16,10.1145/3132847.3132987,6
-Pub is suggested,15:35:16,10.1007/s00500-018-03724-3,6
-Pub is suggested,15:35:16,10.4018/978-1-7998-1839-7.ch006,6
-Pub is suggested,15:35:17,10.1007/s10489-022-03271-3,6
-Pub is suggested,15:35:17,10.1109/dft.2010.25,6
-Pub is suggested,15:35:17,10.1007/s40858-021-00446-0,6
-Pub is suggested,15:35:17,10.1177/0899764020937779,6
-Pub is suggested,15:35:17,10.1075/is.18.2.01mol,6
-Pub is suggested,15:35:18,10.1007/s11063-015-9423-8,6
-Pub is suggested,15:35:18,10.1057/s41264-020-00078-6,6
-Pub is suggested,15:35:18,10.1007/s00357-019-09317-5,6
-Suggestions updated,15:35:18,,6
-Activate Paper,15:35:23,10.1109/tnnls.2015.2436432,6,Activated in: selected
-Activate Paper,15:35:57,10.1007/978-3-030-01851-1_24,6,Activated in: selected
-DOI clicked,15:35:59,10.1007/978-3-030-01851-1_24,
-Suggested Pub selected,15:36:47,10.1007/978-3-030-01851-1_24,6,5
-Update,15:37:1,,7
-Pub is suggested,15:37:1,10.1109/tnnls.2019.2899381,7
-Pub is suggested,15:37:1,10.1016/j.patrec.2006.06.006,7
-Pub is suggested,15:37:1,10.1109/tnnls.2015.2436432,7
-Pub is suggested,15:37:1,10.1016/j.patrec.2005.06.002,7
-Pub is suggested,15:37:1,10.1016/j.eswa.2014.09.012,7
-Pub is suggested,15:37:1,10.1023/a:1009769707641,7
-Pub is suggested,15:37:1,10.1007/978-3-642-03915-7_8,7
-Pub is suggested,15:37:1,10.1145/2133360.2133361,7
-Pub is suggested,15:37:1,10.1109/tnnls.2015.2451151,7
-Pub is suggested,15:37:1,10.1016/j.patcog.2011.04.024,7
-Pub is suggested,15:37:1,10.1007/978-3-319-27212-2_22,7
-Pub is suggested,15:37:1,10.1007/978-3-319-75429-1_10,7
-Pub is suggested,15:37:1,10.2307/2284239,7
-Pub is suggested,15:37:1,10.1080/08982112.2021.1896732,7
-Pub is suggested,15:37:1,10.1109/icste.2010.5608801,7
-Pub is suggested,15:37:1,10.1007/978-3-642-04277-5_18,7
-Pub is suggested,15:37:1,10.1016/j.neucom.2021.08.050,7
-Pub is suggested,15:37:1,10.1109/tkde.2018.2848902,7
-Pub is suggested,15:37:1,10.1109/tnn.2008.2005601,7
-Pub is suggested,15:37:1,10.1145/1015330.1015404,7
-Pub is suggested,15:37:1,10.1109/tkde.2018.2808532,7
-Pub is suggested,15:37:1,10.1016/j.patcog.2015.09.027,7
-Pub is suggested,15:37:1,10.1109/tnnls.2017.2728138,7
-Pub is suggested,15:37:1,10.1007/978-3-030-83819-5_5,7
-Pub is suggested,15:37:1,10.1007/978-3-319-23528-8_16,7
-Pub is suggested,15:37:1,10.1002/bs.3830120210,7
-Pub is suggested,15:37:1,10.1109/access.2019.2935089,7
-Pub is suggested,15:37:1,10.1109/tpami.2020.3010953,7
-Pub is suggested,15:37:1,10.1109/bracis.2019.00113,7
-Pub is suggested,15:37:1,10.1016/j.patcog.2003.11.003,7
-Pub is suggested,15:37:1,10.2307/2528080,7
-Pub is suggested,15:37:1,10.2139/ssrn.3550115,7
-Pub is suggested,15:37:1,10.1109/34.993562,7
-Pub is suggested,15:37:1,10.1145/331499.331504,7
-Pub is suggested,15:37:1,10.1214/aoms/1177729694,7
-Pub is suggested,15:37:1,10.1145/3312739,7
-Pub is suggested,15:37:1,10.1007/978-3-319-91476-3_25,7
-Pub is suggested,15:37:1,10.1007/978-3-031-21047-1_1,7
-Pub is suggested,15:37:1,10.1007/s00357-019-09317-5,7
-Pub is suggested,15:37:1,10.1007/bf00114265,7
-Pub is suggested,15:37:2,10.1002/asi.24707,7
-Pub is suggested,15:37:2,10.1080/19466315.2016.1258006,7
-Pub is suggested,15:37:2,10.1109/dsc.2017.87,7
-Pub is suggested,15:37:2,10.1111/apel.12315,7
-Pub is suggested,15:37:2,10.1080/03610918.2020.1775850,7
-Pub is suggested,15:37:2,10.1007/s11205-020-02387-8,7
-Pub is suggested,15:37:3,10.1142/s0129183111016567,7
-Pub is suggested,15:37:3,10.1186/s12889-021-10631-0,7
-Pub is suggested,15:37:4,10.1007/s00455-017-9809-z,7
-Pub is suggested,15:37:4,10.1007/s10484-011-9148-z,7
-Suggestions updated,15:37:4,,7
-Activate Paper,15:37:52,10.1214/aoms/1177729694,7,Activated in: networkVis
-Activate Paper,15:37:52,10.1214/aoms/1177729694,7,Activated in: selected
-Activate Paper,15:38:2,10.1007/bf00114265,7,Activated in: networkVis
-Activate Paper,15:38:2,10.1007/bf00114265,7,Activated in: selected
-Activate Paper,15:38:35,10.1016/j.eswa.2014.09.012,7,Activated in: networkVis
-Activate Paper,15:38:35,10.1016/j.eswa.2014.09.012,7,Activated in: selected
-DOI clicked,15:38:40,10.1016/j.eswa.2014.09.012,
+event,date,doi,selectedPublicationsCount,posInSuggestions,activationSourceComponent,actionDetails
+Pub added,9:33:46,10.1080/01621459.2019.1604370,,,
+Pub added,9:33:46,10.1016/j.patrec.2005.06.002,,,
+Pub added,9:33:46,10.1137/1.9781611972788.22,,,
+Pub added,9:33:46,10.1007/978-3-030-01851-1_24,,,
+Update,9:33:46,,,,,4
+Pub suggested,9:33:55,10.1109/tcyb.2020.2983073,4,1,
+Pub suggested,9:33:55,10.1109/tpami.2021.3056510,4,2,
+Pub suggested,9:33:55,10.1109/tnnls.2015.2436432,4,3,
+Pub suggested,9:33:55,10.1109/tpami.2020.3010953,4,4,
+Pub suggested,9:33:55,10.1109/tcyb.2020.3004437,4,5,
+Pub suggested,9:33:55,10.1109/iciscae52414.2021.9590713,4,6,
+Pub suggested,9:33:55,10.1109/tnnls.2019.2899381,4,7,
+Pub suggested,9:33:55,10.1007/s00500-019-04586-z,4,8,
+Pub suggested,9:33:55,10.1007/s00500-018-3170-5,4,9,
+Pub suggested,9:33:55,10.1109/tkde.2018.2791525,4,10,
+Pub suggested,9:33:55,10.1007/978-3-319-75429-1_10,4,11,
+Pub suggested,9:33:55,10.1007/978-3-319-23528-8_16,4,12,
+Pub suggested,9:33:55,10.1109/ijcnn.2014.6889941,4,13,
+Pub suggested,9:33:55,10.1109/ijcnn.2014.6889890,4,14,
+Pub suggested,9:33:55,10.1007/s11042-014-1914-5,4,15,
+Pub suggested,9:33:55,10.1007/978-3-642-20291-9_6,4,16,
+Pub suggested,9:33:55,10.1109/icste.2010.5608801,4,17,
+Pub suggested,9:33:55,10.1007/s00180-022-01209-4,4,18,
+Pub suggested,9:33:55,10.1109/pacificvis53943.2022.00019,4,19,
+Pub suggested,9:33:55,10.1016/j.csda.2021.107381,4,20,
+Pub suggested,9:33:55,10.7717/peerj-cs.430,4,21,
+Pub suggested,9:33:55,10.1007/s10618-021-00778-0,4,22,
+Pub suggested,9:33:55,10.12677/hjdm.2021.113014,4,23,
+Pub suggested,9:33:55,10.1002/sim.9089,4,24,
+Pub suggested,9:33:55,10.1111/jtsa.12625,4,25,
+Pub suggested,9:33:55,10.1177/1059712319859650,4,26,
+Pub suggested,9:33:55,10.1007/978-981-13-6661-1_6,4,27,
+Pub suggested,9:33:55,10.1109/etfa.2019.8869315,4,28,
+Pub suggested,9:33:55,10.1016/j.jocs.2019.101024,4,29,
+Pub suggested,9:33:55,10.1145/3312739,4,30,
+Pub suggested,9:33:55,10.1109/ciet.2018.8660777,4,31,
+Pub suggested,9:33:55,10.1002/9781119097013,4,32,
+Pub suggested,9:33:55,10.1101/333005,4,33,
+Pub suggested,9:33:55,10.1007/978-3-319-53474-9_2,4,34,
+Pub suggested,9:33:55,10.1109/compcomm.2017.8322957,4,35,
+Pub suggested,9:33:55,10.1016/j.patcog.2015.09.027,4,36,
+Pub suggested,9:33:55,10.1007/978-3-319-18038-0_14,4,37,
+Pub suggested,9:33:55,10.1101/gr.184325.114,4,38,
+Pub suggested,9:33:55,10.1109/tkde.2014.2349913,4,39,
+Pub suggested,9:33:55,10.1145/2533988,4,40,
+Pub suggested,9:33:55,10.1145/2683483.2683532,4,41,
+Pub suggested,9:33:55,10.1109/icpr.2014.263,4,42,
+Pub suggested,9:33:55,10.1109/mobilware.2013.26,4,43,
+Pub suggested,9:33:55,10.1016/j.ins.2012.07.045,4,44,
+Pub suggested,9:33:55,10.1109/embc.2013.6609567,4,45,
+Pub suggested,9:33:55,10.1007/978-3-642-38073-0_19,4,46,
+Pub suggested,9:33:55,10.1590/s0101-41612010000300008,4,47,
+Pub suggested,9:33:55,10.1109/tkde.2005.97,4,48,
+Pub suggested,9:33:55,10.1093/biomet/45.3-4.549,4,49,
+Pub suggested,9:33:55,10.1093/biomet/28.3-4.428,4,50,
+Keywords updated,9:34:4,,,,,Ordinal_ distance
+Pub suggested,9:34:4,10.1109/tcyb.2020.2983073,4,1,
+Pub suggested,9:34:4,10.1109/tpami.2021.3056510,4,2,
+Pub suggested,9:34:4,10.1109/tnnls.2019.2899381,4,3,
+Pub suggested,9:34:4,10.1109/tnnls.2015.2436432,4,4,
+Pub suggested,9:34:4,10.1007/978-3-319-23528-8_16,4,5,
+Pub suggested,9:34:4,10.1109/ijcnn.2014.6889941,4,6,
+Pub suggested,9:34:4,10.1109/ijcnn.2014.6889890,4,7,
+Pub suggested,9:34:4,10.1007/978-3-642-20291-9_6,4,8,
+Pub suggested,9:34:4,10.1109/icste.2010.5608801,4,9,
+Pub suggested,9:34:4,10.1109/tpami.2020.3010953,4,10,
+Pub suggested,9:34:4,10.1109/tcyb.2020.3004437,4,11,
+Pub suggested,9:34:4,10.1016/j.csda.2021.107381,4,12,
+Pub suggested,9:34:4,10.1109/iciscae52414.2021.9590713,4,13,
+Pub suggested,9:34:4,10.1007/s10618-021-00778-0,4,14,
+Pub suggested,9:34:4,10.1111/jtsa.12625,4,15,
+Pub suggested,9:34:4,10.1007/s00500-019-04586-z,4,16,
+Pub suggested,9:34:4,10.1007/s00500-018-3170-5,4,17,
+Pub suggested,9:34:4,10.1109/tkde.2018.2791525,4,18,
+Pub suggested,9:34:4,10.1007/978-3-319-75429-1_10,4,19,
+Pub suggested,9:34:4,10.1109/ciet.2018.8660777,4,20,
+Pub suggested,9:34:4,10.1016/j.patcog.2015.09.027,4,21,
+Pub suggested,9:34:4,10.1007/s11042-014-1914-5,4,22,
+Pub suggested,9:34:4,10.1016/j.ins.2012.07.045,4,23,
+Pub suggested,9:34:4,10.1007/s00180-022-01209-4,4,24,
+Pub suggested,9:34:4,10.1109/pacificvis53943.2022.00019,4,25,
+Pub suggested,9:34:4,10.7717/peerj-cs.430,4,26,
+Pub suggested,9:34:4,10.12677/hjdm.2021.113014,4,27,
+Pub suggested,9:34:4,10.1002/sim.9089,4,28,
+Pub suggested,9:34:4,10.1177/1059712319859650,4,29,
+Pub suggested,9:34:4,10.1007/978-981-13-6661-1_6,4,30,
+Pub suggested,9:34:4,10.1109/etfa.2019.8869315,4,31,
+Pub suggested,9:34:4,10.1016/j.jocs.2019.101024,4,32,
+Pub suggested,9:34:4,10.1145/3312739,4,33,
+Pub suggested,9:34:4,10.1002/9781119097013,4,34,
+Pub suggested,9:34:4,10.1101/333005,4,35,
+Pub suggested,9:34:4,10.1007/978-3-319-53474-9_2,4,36,
+Pub suggested,9:34:4,10.1109/compcomm.2017.8322957,4,37,
+Pub suggested,9:34:4,10.1007/978-3-319-18038-0_14,4,38,
+Pub suggested,9:34:4,10.1101/gr.184325.114,4,39,
+Pub suggested,9:34:4,10.1109/tkde.2014.2349913,4,40,
+Pub suggested,9:34:4,10.1145/2533988,4,41,
+Pub suggested,9:34:4,10.1145/2683483.2683532,4,42,
+Pub suggested,9:34:4,10.1109/icpr.2014.263,4,43,
+Pub suggested,9:34:4,10.1109/mobilware.2013.26,4,44,
+Pub suggested,9:34:4,10.1109/embc.2013.6609567,4,45,
+Pub suggested,9:34:4,10.1007/978-3-642-38073-0_19,4,46,
+Pub suggested,9:34:4,10.1590/s0101-41612010000300008,4,47,
+Pub suggested,9:34:4,10.1109/tkde.2005.97,4,48,
+Pub suggested,9:34:4,10.1093/biomet/45.3-4.549,4,49,
+Pub suggested,9:34:4,10.1093/biomet/28.3-4.428,4,50,
+Pub activated,9:34:13,10.1109/tcyb.2020.2983073,4,1,suggested
+Pub qd for selected,9:34:50,10.1109/tcyb.2020.2983073,4,1,suggested
+Pub activated,9:35:21,10.1109/tpami.2021.3056510,4,2,suggested
+Pub qd for selected,9:36:0,10.1109/tpami.2021.3056510,4,2,suggested
+Pub activated,9:36:3,10.1109/tnnls.2019.2899381,4,3,suggested
+Pub activated,9:36:9,10.1007/978-3-319-23528-8_16,4,5,suggested
+Pub qd for selected,9:36:57,10.1109/ijcnn.2014.6889941,4,6,suggested
+Pub qd for selected,9:37:2,10.1007/978-3-319-23528-8_16,4,5,suggested
+Pub added,9:37:9,10.1109/tcyb.2020.2983073,,,
+Pub added,9:37:9,10.1109/tpami.2021.3056510,,,
+Pub added,9:37:9,10.1109/ijcnn.2014.6889941,,,
+Pub added,9:37:9,10.1007/978-3-319-23528-8_16,,,
+Pub suggested,9:37:20,10.1109/tnnls.2019.2899381,8,1,
+Pub suggested,9:37:20,10.1109/tnnls.2015.2436432,8,2,
+Pub suggested,9:37:20,10.1016/j.patrec.2006.06.006,8,3,
+Pub suggested,9:37:20,10.1007/978-3-642-03915-7_8,8,4,
+Pub suggested,9:37:20,10.1109/ijcnn.2014.6889890,8,5,
+Pub suggested,9:37:20,10.1145/2133360.2133361,8,6,
+Pub suggested,9:37:20,10.1109/icste.2010.5608801,8,7,
+Pub suggested,9:37:20,10.1002/9780470594001,8,8,
+Pub suggested,9:37:20,10.1007/s10618-021-00778-0,8,9,
+Pub suggested,9:37:20,10.1007/978-3-319-75429-1_10,8,10,
+Pub suggested,9:37:20,10.1016/j.patcog.2015.09.027,8,11,
+Pub suggested,9:37:20,10.1007/978-3-642-20291-9_6,8,12,
+Pub suggested,9:37:20,10.1109/tpami.2020.3010953,8,13,
+Pub suggested,9:37:20,10.1109/tnnls.2017.2728138,8,14,
+Pub suggested,9:37:20,10.1016/j.eswa.2014.09.012,8,15,
+Pub suggested,9:37:20,10.1023/a:1009769707641,8,16,
+Pub suggested,9:37:20,10.2307/2528080,8,17,
+Pub suggested,9:37:20,10.1214/aoms/1177729694,8,18,
+Pub suggested,9:37:20,10.1007/978-3-031-21047-1_1,8,19,
+Pub suggested,9:37:20,10.1109/tcyb.2020.3004437,8,20,
+Pub suggested,9:37:20,10.1016/j.neucom.2021.08.050,8,21,
+Pub suggested,9:37:20,10.1109/iciscae52414.2021.9590713,8,22,
+Pub suggested,9:37:20,10.1109/tnnls.2019.2911118,8,23,
+Pub suggested,9:37:20,10.1007/s41237-019-00103-6,8,24,
+Pub suggested,9:37:20,10.2139/ssrn.3550115,8,25,
+Pub suggested,9:37:20,10.1007/s00500-019-04586-z,8,26,
+Pub suggested,9:37:20,10.1109/bracis.2019.00113,8,27,
+Pub suggested,9:37:20,10.1109/tkde.2018.2848902,8,28,
+Pub suggested,9:37:20,10.1109/access.2019.2935089,8,29,
+Pub suggested,9:37:20,10.1007/978-3-319-91476-3_25,8,30,
+Pub suggested,9:37:20,10.1109/bdcloud.2018.00161,8,31,
+Pub suggested,9:37:20,10.1007/s00500-018-3170-5,8,32,
+Pub suggested,9:37:20,10.1109/tkde.2018.2808532,8,33,
+Pub suggested,9:37:20,10.1109/tkde.2018.2791525,8,34,
+Pub suggested,9:37:20,10.1016/j.neucom.2016.01.089,8,35,
+Pub suggested,9:37:20,10.1109/tnnls.2015.2451151,8,36,
+Pub suggested,9:37:20,10.1007/978-3-319-27212-2_22,8,37,
+Pub suggested,9:37:20,10.1007/s11042-014-1914-5,8,38,
+Pub suggested,9:37:20,10.1016/j.patcog.2011.04.024,8,39,
+Pub suggested,9:37:20,10.1007/978-3-642-04277-5_18,8,40,
+Pub suggested,9:37:20,10.1109/tnn.2008.2005601,8,41,
+Pub suggested,9:37:20,10.1109/tcbb.2005.17,8,42,
+Pub suggested,9:37:20,10.1016/j.patcog.2003.11.003,8,43,
+Pub suggested,9:37:20,10.1145/1015330.1015404,8,44,
+Pub suggested,9:37:20,10.1109/34.993562,8,45,
+Pub suggested,9:37:20,10.1145/331499.331504,8,46,
+Pub suggested,9:37:20,10.1007/bf01896809,8,47,
+Pub suggested,9:37:20,10.1002/bs.3830120210,8,48,
+Pub suggested,9:37:20,10.1111/j.1469-8137.1912.tb05611.x,8,49,
+Pub suggested,9:37:20,10.2307/2284239,8,50,
+Update,9:37:21,,,,,8
+Filter updated,9:37:23,,,,,___
+Pub filtered,9:37:23,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:23,10.1109/tnnls.2015.2436432,8,2,
+Pub filtered,9:37:23,10.1016/j.patrec.2006.06.006,8,3,
+Pub filtered,9:37:23,10.1007/978-3-642-03915-7_8,8,4,
+Pub filtered,9:37:23,10.1109/ijcnn.2014.6889890,8,5,
+Pub filtered,9:37:23,10.1145/2133360.2133361,8,6,
+Pub filtered,9:37:23,10.1109/icste.2010.5608801,8,7,
+Pub filtered,9:37:23,10.1002/9780470594001,8,8,
+Pub filtered,9:37:23,10.1007/s10618-021-00778-0,8,9,
+Pub filtered,9:37:23,10.1007/978-3-319-75429-1_10,8,10,
+Pub filtered,9:37:23,10.1016/j.patcog.2015.09.027,8,11,
+Pub filtered,9:37:23,10.1007/978-3-642-20291-9_6,8,12,
+Pub filtered,9:37:23,10.1109/tpami.2020.3010953,8,13,
+Pub filtered,9:37:23,10.1109/tnnls.2017.2728138,8,14,
+Pub filtered,9:37:23,10.1016/j.eswa.2014.09.012,8,15,
+Pub filtered,9:37:23,10.1023/a:1009769707641,8,16,
+Pub filtered,9:37:23,10.2307/2528080,8,17,
+Pub filtered,9:37:23,10.1214/aoms/1177729694,8,18,
+Pub filtered,9:37:23,10.1007/978-3-031-21047-1_1,8,19,
+Pub filtered,9:37:23,10.1109/tcyb.2020.3004437,8,20,
+Pub filtered,9:37:23,10.1016/j.neucom.2021.08.050,8,21,
+Pub filtered,9:37:23,10.1109/iciscae52414.2021.9590713,8,22,
+Pub filtered,9:37:23,10.1109/tnnls.2019.2911118,8,23,
+Pub filtered,9:37:23,10.1007/s41237-019-00103-6,8,24,
+Pub filtered,9:37:23,10.2139/ssrn.3550115,8,25,
+Pub filtered,9:37:23,10.1007/s00500-019-04586-z,8,26,
+Pub filtered,9:37:23,10.1109/bracis.2019.00113,8,27,
+Pub filtered,9:37:23,10.1109/tkde.2018.2848902,8,28,
+Pub filtered,9:37:23,10.1109/access.2019.2935089,8,29,
+Pub filtered,9:37:23,10.1007/978-3-319-91476-3_25,8,30,
+Pub filtered,9:37:23,10.1109/bdcloud.2018.00161,8,31,
+Pub filtered,9:37:23,10.1007/s00500-018-3170-5,8,32,
+Pub filtered,9:37:23,10.1109/tkde.2018.2808532,8,33,
+Pub filtered,9:37:23,10.1109/tkde.2018.2791525,8,34,
+Pub filtered,9:37:23,10.1016/j.neucom.2016.01.089,8,35,
+Pub filtered,9:37:23,10.1109/tnnls.2015.2451151,8,36,
+Pub filtered,9:37:23,10.1007/978-3-319-27212-2_22,8,37,
+Pub filtered,9:37:23,10.1007/s11042-014-1914-5,8,38,
+Pub filtered,9:37:23,10.1016/j.patcog.2011.04.024,8,39,
+Pub filtered,9:37:23,10.1007/978-3-642-04277-5_18,8,40,
+Pub filtered,9:37:23,10.1109/tnn.2008.2005601,8,41,
+Pub filtered,9:37:23,10.1109/tcbb.2005.17,8,42,
+Pub filtered,9:37:23,10.1016/j.patcog.2003.11.003,8,43,
+Pub filtered,9:37:23,10.1145/1015330.1015404,8,44,
+Pub filtered,9:37:23,10.1109/34.993562,8,45,
+Pub filtered,9:37:23,10.1145/331499.331504,8,46,
+Pub filtered,9:37:23,10.1007/bf01896809,8,47,
+Pub filtered,9:37:23,10.1002/bs.3830120210,8,48,
+Pub filtered,9:37:23,10.1111/j.1469-8137.1912.tb05611.x,8,49,
+Filter updated,9:37:25,,,,,o___
+Pub filtered,9:37:25,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:25,10.1109/tnnls.2015.2436432,8,2,
+Pub filtered,9:37:25,10.1016/j.patrec.2006.06.006,8,3,
+Pub filtered,9:37:25,10.1007/978-3-642-03915-7_8,8,4,
+Pub filtered,9:37:25,10.1109/ijcnn.2014.6889890,8,5,
+Pub filtered,9:37:25,10.1145/2133360.2133361,8,6,
+Pub filtered,9:37:25,10.1109/icste.2010.5608801,8,7,
+Pub filtered,9:37:25,10.1002/9780470594001,8,8,
+Pub filtered,9:37:25,10.1007/s10618-021-00778-0,8,9,
+Pub filtered,9:37:25,10.1007/978-3-319-75429-1_10,8,10,
+Pub filtered,9:37:25,10.1016/j.patcog.2015.09.027,8,11,
+Pub filtered,9:37:25,10.1007/978-3-642-20291-9_6,8,12,
+Pub filtered,9:37:25,10.1109/tpami.2020.3010953,8,13,
+Pub filtered,9:37:25,10.1109/tnnls.2017.2728138,8,14,
+Pub filtered,9:37:25,10.1016/j.eswa.2014.09.012,8,15,
+Pub filtered,9:37:25,10.1023/a:1009769707641,8,16,
+Pub filtered,9:37:25,10.2307/2528080,8,17,
+Pub filtered,9:37:25,10.1214/aoms/1177729694,8,18,
+Pub filtered,9:37:25,10.1007/978-3-031-21047-1_1,8,19,
+Pub filtered,9:37:25,10.1109/tcyb.2020.3004437,8,20,
+Pub filtered,9:37:25,10.1016/j.neucom.2021.08.050,8,21,
+Pub filtered,9:37:25,10.1109/iciscae52414.2021.9590713,8,22,
+Pub filtered,9:37:25,10.1109/tnnls.2019.2911118,8,23,
+Pub filtered,9:37:25,10.1007/s41237-019-00103-6,8,24,
+Pub filtered,9:37:25,10.2139/ssrn.3550115,8,25,
+Pub filtered,9:37:25,10.1007/s00500-019-04586-z,8,26,
+Pub filtered,9:37:25,10.1109/bracis.2019.00113,8,27,
+Pub filtered,9:37:25,10.1109/tkde.2018.2848902,8,28,
+Pub filtered,9:37:25,10.1109/access.2019.2935089,8,29,
+Pub filtered,9:37:25,10.1007/978-3-319-91476-3_25,8,30,
+Pub filtered,9:37:25,10.1109/bdcloud.2018.00161,8,31,
+Pub filtered,9:37:25,10.1007/s00500-018-3170-5,8,32,
+Pub filtered,9:37:25,10.1109/tkde.2018.2808532,8,33,
+Pub filtered,9:37:25,10.1109/tkde.2018.2791525,8,34,
+Pub filtered,9:37:25,10.1016/j.neucom.2016.01.089,8,35,
+Pub filtered,9:37:25,10.1109/tnnls.2015.2451151,8,36,
+Pub filtered,9:37:25,10.1007/978-3-319-27212-2_22,8,37,
+Pub filtered,9:37:25,10.1007/s11042-014-1914-5,8,38,
+Pub filtered,9:37:25,10.1016/j.patcog.2011.04.024,8,39,
+Pub filtered,9:37:25,10.1007/978-3-642-04277-5_18,8,40,
+Pub filtered,9:37:25,10.1109/tnn.2008.2005601,8,41,
+Pub filtered,9:37:25,10.1109/tcbb.2005.17,8,42,
+Pub filtered,9:37:25,10.1016/j.patcog.2003.11.003,8,43,
+Pub filtered,9:37:25,10.1145/1015330.1015404,8,44,
+Pub filtered,9:37:25,10.1109/34.993562,8,45,
+Pub filtered,9:37:25,10.1145/331499.331504,8,46,
+Pub filtered,9:37:25,10.1007/bf01896809,8,47,
+Pub filtered,9:37:25,10.1002/bs.3830120210,8,48,
+Pub filtered,9:37:25,10.1111/j.1469-8137.1912.tb05611.x,8,49,
+Filter updated,9:37:25,,,,,or___
+Pub filtered,9:37:25,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:25,10.1109/tnnls.2015.2436432,8,2,
+Pub filtered,9:37:25,10.1016/j.patrec.2006.06.006,8,3,
+Pub filtered,9:37:25,10.1007/978-3-642-03915-7_8,8,4,
+Pub filtered,9:37:25,10.1109/ijcnn.2014.6889890,8,5,
+Pub filtered,9:37:25,10.1145/2133360.2133361,8,6,
+Pub filtered,9:37:25,10.1109/icste.2010.5608801,8,7,
+Pub filtered,9:37:25,10.1002/9780470594001,8,8,
+Pub filtered,9:37:25,10.1007/s10618-021-00778-0,8,9,
+Pub filtered,9:37:25,10.1007/978-3-319-75429-1_10,8,10,
+Pub filtered,9:37:25,10.1016/j.patcog.2015.09.027,8,11,
+Pub filtered,9:37:25,10.1109/tpami.2020.3010953,8,12,
+Pub filtered,9:37:25,10.1109/tnnls.2017.2728138,8,13,
+Pub filtered,9:37:25,10.1016/j.eswa.2014.09.012,8,14,
+Pub filtered,9:37:25,10.1214/aoms/1177729694,8,15,
+Pub filtered,9:37:25,10.1007/978-3-031-21047-1_1,8,16,
+Pub filtered,9:37:25,10.1109/tcyb.2020.3004437,8,17,
+Pub filtered,9:37:25,10.1016/j.neucom.2021.08.050,8,18,
+Pub filtered,9:37:25,10.1109/iciscae52414.2021.9590713,8,19,
+Pub filtered,9:37:25,10.1109/tnnls.2019.2911118,8,20,
+Pub filtered,9:37:25,10.1007/s41237-019-00103-6,8,21,
+Pub filtered,9:37:25,10.2139/ssrn.3550115,8,22,
+Pub filtered,9:37:25,10.1007/s00500-019-04586-z,8,23,
+Pub filtered,9:37:25,10.1109/bracis.2019.00113,8,24,
+Pub filtered,9:37:25,10.1109/tkde.2018.2848902,8,25,
+Pub filtered,9:37:25,10.1109/access.2019.2935089,8,26,
+Pub filtered,9:37:25,10.1007/978-3-319-91476-3_25,8,27,
+Pub filtered,9:37:25,10.1109/bdcloud.2018.00161,8,28,
+Pub filtered,9:37:25,10.1007/s00500-018-3170-5,8,29,
+Pub filtered,9:37:25,10.1109/tkde.2018.2808532,8,30,
+Pub filtered,9:37:25,10.1109/tkde.2018.2791525,8,31,
+Pub filtered,9:37:25,10.1016/j.neucom.2016.01.089,8,32,
+Pub filtered,9:37:25,10.1109/tnnls.2015.2451151,8,33,
+Pub filtered,9:37:25,10.1007/978-3-319-27212-2_22,8,34,
+Pub filtered,9:37:25,10.1007/s11042-014-1914-5,8,35,
+Pub filtered,9:37:25,10.1016/j.patcog.2011.04.024,8,36,
+Pub filtered,9:37:25,10.1007/978-3-642-04277-5_18,8,37,
+Pub filtered,9:37:25,10.1109/tnn.2008.2005601,8,38,
+Pub filtered,9:37:25,10.1109/tcbb.2005.17,8,39,
+Pub filtered,9:37:25,10.1016/j.patcog.2003.11.003,8,40,
+Pub filtered,9:37:25,10.1145/1015330.1015404,8,41,
+Pub filtered,9:37:25,10.1109/34.993562,8,42,
+Pub filtered,9:37:25,10.1002/bs.3830120210,8,43,
+Pub filtered,9:37:25,10.1111/j.1469-8137.1912.tb05611.x,8,44,
+Filter updated,9:37:25,,,,,ord___
+Pub filtered,9:37:25,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:25,10.1002/9780470594001,8,2,
+Filter updated,9:37:25,,,,,ordi___
+Pub filtered,9:37:25,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:25,10.1002/9780470594001,8,2,
+Filter updated,9:37:25,,,,,ordin___
+Pub filtered,9:37:25,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:25,10.1002/9780470594001,8,2,
+Filter updated,9:37:25,,,,,ordina___
+Pub filtered,9:37:25,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:25,10.1002/9780470594001,8,2,
+Filter updated,9:37:26,,,,,ordinal___
+Pub filtered,9:37:26,10.1109/tnnls.2019.2899381,8,1,
+Pub filtered,9:37:26,10.1002/9780470594001,8,2,
+Pub activated,9:37:28,10.1002/9780470594001,8,8,suggested
+Pub qd for selected,9:37:43,10.1002/9780470594001,8,8,suggested
+Pub activated,9:37:46,10.1109/tnnls.2019.2899381,8,1,suggested
+Pub excluded,9:37:47,10.1109/tnnls.2019.2899381,8,1,suggested
+Pub added,9:37:51,10.1002/9780470594001,,,
+Pub suggested,9:37:52,10.1109/tnnls.2015.2436432,9,1,
+Pub suggested,9:37:52,10.1016/j.patrec.2006.06.006,9,2,
+Pub suggested,9:37:52,10.1007/978-3-642-03915-7_8,9,3,
+Pub suggested,9:37:52,10.1109/ijcnn.2014.6889890,9,4,
+Pub suggested,9:37:52,10.1145/2133360.2133361,9,5,
+Pub suggested,9:37:52,10.1109/icste.2010.5608801,9,6,
+Pub suggested,9:37:52,10.1007/s10618-021-00778-0,9,7,
+Pub suggested,9:37:52,10.1007/978-3-319-75429-1_10,9,8,
+Pub suggested,9:37:52,10.1016/j.patcog.2015.09.027,9,9,
+Pub suggested,9:37:52,10.1007/978-3-642-20291-9_6,9,10,
+Pub suggested,9:37:52,10.1109/tpami.2020.3010953,9,11,
+Pub suggested,9:37:52,10.1109/tnnls.2017.2728138,9,12,
+Pub suggested,9:37:52,10.1016/j.eswa.2014.09.012,9,13,
+Pub suggested,9:37:52,10.1023/a:1009769707641,9,14,
+Pub suggested,9:37:52,10.2307/2528080,9,15,
+Pub suggested,9:37:52,10.1214/aoms/1177729694,9,16,
+Pub suggested,9:37:52,10.1109/tcyb.2020.3004437,9,17,
+Pub suggested,9:37:52,10.1007/978-3-031-21047-1_1,9,18,
+Pub suggested,9:37:52,10.1109/iciscae52414.2021.9590713,9,19,
+Pub suggested,9:37:52,10.1007/978-3-030-83819-5_5,9,20,
+Pub suggested,9:37:52,10.1016/j.neucom.2021.08.050,9,21,
+Pub suggested,9:37:52,10.1080/08982112.2021.1896732,9,22,
+Pub suggested,9:37:52,10.2139/ssrn.3550115,9,23,
+Pub suggested,9:37:52,10.1109/tnnls.2019.2911118,9,24,
+Pub suggested,9:37:52,10.1007/s41237-019-00103-6,9,25,
+Pub suggested,9:37:52,10.1109/tkde.2018.2848902,9,26,
+Pub suggested,9:37:52,10.1109/access.2019.2935089,9,27,
+Pub suggested,9:37:52,10.1109/bracis.2019.00113,9,28,
+Pub suggested,9:37:52,10.1007/s00500-019-04586-z,9,29,
+Pub suggested,9:37:52,10.1145/3312739,9,30,
+Pub suggested,9:37:52,10.1109/bdcloud.2018.00161,9,31,
+Pub suggested,9:37:52,10.1007/978-3-319-91476-3_25,9,32,
+Pub suggested,9:37:52,10.1007/s00500-018-3170-5,9,33,
+Pub suggested,9:37:52,10.1109/tkde.2018.2808532,9,34,
+Pub suggested,9:37:52,10.1109/tkde.2018.2791525,9,35,
+Pub suggested,9:37:52,10.1109/tnnls.2015.2451151,9,36,
+Pub suggested,9:37:52,10.1016/j.neucom.2016.01.089,9,37,
+Pub suggested,9:37:52,10.1007/978-3-319-27212-2_22,9,38,
+Pub suggested,9:37:52,10.1007/s11042-014-1914-5,9,39,
+Pub suggested,9:37:52,10.1016/j.patcog.2011.04.024,9,40,
+Pub suggested,9:37:52,10.1109/tnn.2008.2005601,9,41,
+Pub suggested,9:37:52,10.1007/978-3-642-04277-5_18,9,42,
+Pub suggested,9:37:52,10.1109/tcbb.2005.17,9,43,
+Pub suggested,9:37:52,10.1016/j.patcog.2003.11.003,9,44,
+Pub suggested,9:37:52,10.1109/34.993562,9,45,
+Pub suggested,9:37:52,10.1145/331499.331504,9,46,
+Pub suggested,9:37:52,10.1007/bf01896809,9,47,
+Pub suggested,9:37:52,10.1002/bs.3830120210,9,48,
+Pub suggested,9:37:52,10.1111/j.1469-8137.1912.tb05611.x,9,49,
+Pub suggested,9:37:52,10.2307/2284239,9,50,
+Update,9:37:52,,,,,9
+Filter updated,9:38:0,,,,,o___
+Pub filtered,9:38:0,10.1109/tnnls.2015.2436432,9,1,
+Pub filtered,9:38:0,10.1016/j.patrec.2006.06.006,9,2,
+Pub filtered,9:38:0,10.1007/978-3-642-03915-7_8,9,3,
+Pub filtered,9:38:0,10.1109/ijcnn.2014.6889890,9,4,
+Pub filtered,9:38:0,10.1145/2133360.2133361,9,5,
+Pub filtered,9:38:0,10.1109/icste.2010.5608801,9,6,
+Pub filtered,9:38:0,10.1007/s10618-021-00778-0,9,7,
+Pub filtered,9:38:0,10.1007/978-3-319-75429-1_10,9,8,
+Pub filtered,9:38:0,10.1016/j.patcog.2015.09.027,9,9,
+Pub filtered,9:38:0,10.1007/978-3-642-20291-9_6,9,10,
+Pub filtered,9:38:0,10.1109/tpami.2020.3010953,9,11,
+Pub filtered,9:38:0,10.1109/tnnls.2017.2728138,9,12,
+Pub filtered,9:38:0,10.1016/j.eswa.2014.09.012,9,13,
+Pub filtered,9:38:0,10.1023/a:1009769707641,9,14,
+Pub filtered,9:38:0,10.2307/2528080,9,15,
+Pub filtered,9:38:0,10.1214/aoms/1177729694,9,16,
+Pub filtered,9:38:0,10.1109/tcyb.2020.3004437,9,17,
+Pub filtered,9:38:0,10.1007/978-3-031-21047-1_1,9,18,
+Pub filtered,9:38:0,10.1109/iciscae52414.2021.9590713,9,19,
+Pub filtered,9:38:0,10.1007/978-3-030-83819-5_5,9,20,
+Pub filtered,9:38:0,10.1016/j.neucom.2021.08.050,9,21,
+Pub filtered,9:38:0,10.1080/08982112.2021.1896732,9,22,
+Pub filtered,9:38:0,10.2139/ssrn.3550115,9,23,
+Pub filtered,9:38:0,10.1109/tnnls.2019.2911118,9,24,
+Pub filtered,9:38:0,10.1007/s41237-019-00103-6,9,25,
+Pub filtered,9:38:0,10.1109/tkde.2018.2848902,9,26,
+Pub filtered,9:38:0,10.1109/access.2019.2935089,9,27,
+Pub filtered,9:38:0,10.1109/bracis.2019.00113,9,28,
+Pub filtered,9:38:0,10.1007/s00500-019-04586-z,9,29,
+Pub filtered,9:38:0,10.1145/3312739,9,30,
+Pub filtered,9:38:0,10.1109/bdcloud.2018.00161,9,31,
+Pub filtered,9:38:0,10.1007/978-3-319-91476-3_25,9,32,
+Pub filtered,9:38:0,10.1007/s00500-018-3170-5,9,33,
+Pub filtered,9:38:0,10.1109/tkde.2018.2808532,9,34,
+Pub filtered,9:38:0,10.1109/tkde.2018.2791525,9,35,
+Pub filtered,9:38:0,10.1109/tnnls.2015.2451151,9,36,
+Pub filtered,9:38:0,10.1016/j.neucom.2016.01.089,9,37,
+Pub filtered,9:38:0,10.1007/978-3-319-27212-2_22,9,38,
+Pub filtered,9:38:0,10.1007/s11042-014-1914-5,9,39,
+Pub filtered,9:38:0,10.1016/j.patcog.2011.04.024,9,40,
+Pub filtered,9:38:0,10.1109/tnn.2008.2005601,9,41,
+Pub filtered,9:38:0,10.1007/978-3-642-04277-5_18,9,42,
+Pub filtered,9:38:0,10.1109/tcbb.2005.17,9,43,
+Pub filtered,9:38:0,10.1016/j.patcog.2003.11.003,9,44,
+Pub filtered,9:38:0,10.1109/34.993562,9,45,
+Pub filtered,9:38:0,10.1145/331499.331504,9,46,
+Pub filtered,9:38:0,10.1007/bf01896809,9,47,
+Pub filtered,9:38:0,10.1002/bs.3830120210,9,48,
+Pub filtered,9:38:0,10.1111/j.1469-8137.1912.tb05611.x,9,49,
+Filter updated,9:38:1,,,,,or___
+Pub filtered,9:38:1,10.1109/tnnls.2015.2436432,9,1,
+Pub filtered,9:38:1,10.1016/j.patrec.2006.06.006,9,2,
+Pub filtered,9:38:1,10.1007/978-3-642-03915-7_8,9,3,
+Pub filtered,9:38:1,10.1109/ijcnn.2014.6889890,9,4,
+Pub filtered,9:38:1,10.1145/2133360.2133361,9,5,
+Pub filtered,9:38:1,10.1109/icste.2010.5608801,9,6,
+Pub filtered,9:38:1,10.1007/s10618-021-00778-0,9,7,
+Pub filtered,9:38:1,10.1007/978-3-319-75429-1_10,9,8,
+Pub filtered,9:38:1,10.1016/j.patcog.2015.09.027,9,9,
+Pub filtered,9:38:1,10.1109/tpami.2020.3010953,9,10,
+Pub filtered,9:38:1,10.1109/tnnls.2017.2728138,9,11,
+Pub filtered,9:38:1,10.1016/j.eswa.2014.09.012,9,12,
+Pub filtered,9:38:1,10.1214/aoms/1177729694,9,13,
+Pub filtered,9:38:1,10.1109/tcyb.2020.3004437,9,14,
+Pub filtered,9:38:1,10.1007/978-3-031-21047-1_1,9,15,
+Pub filtered,9:38:1,10.1109/iciscae52414.2021.9590713,9,16,
+Pub filtered,9:38:1,10.1007/978-3-030-83819-5_5,9,17,
+Pub filtered,9:38:1,10.1016/j.neucom.2021.08.050,9,18,
+Pub filtered,9:38:1,10.1080/08982112.2021.1896732,9,19,
+Pub filtered,9:38:1,10.2139/ssrn.3550115,9,20,
+Pub filtered,9:38:1,10.1109/tnnls.2019.2911118,9,21,
+Pub filtered,9:38:1,10.1007/s41237-019-00103-6,9,22,
+Pub filtered,9:38:1,10.1109/tkde.2018.2848902,9,23,
+Pub filtered,9:38:1,10.1109/access.2019.2935089,9,24,
+Pub filtered,9:38:1,10.1109/bracis.2019.00113,9,25,
+Pub filtered,9:38:1,10.1007/s00500-019-04586-z,9,26,
+Pub filtered,9:38:1,10.1145/3312739,9,27,
+Pub filtered,9:38:1,10.1109/bdcloud.2018.00161,9,28,
+Pub filtered,9:38:1,10.1007/978-3-319-91476-3_25,9,29,
+Pub filtered,9:38:1,10.1007/s00500-018-3170-5,9,30,
+Pub filtered,9:38:1,10.1109/tkde.2018.2808532,9,31,
+Pub filtered,9:38:1,10.1109/tkde.2018.2791525,9,32,
+Pub filtered,9:38:1,10.1109/tnnls.2015.2451151,9,33,
+Pub filtered,9:38:1,10.1016/j.neucom.2016.01.089,9,34,
+Pub filtered,9:38:1,10.1007/978-3-319-27212-2_22,9,35,
+Pub filtered,9:38:1,10.1007/s11042-014-1914-5,9,36,
+Pub filtered,9:38:1,10.1016/j.patcog.2011.04.024,9,37,
+Pub filtered,9:38:1,10.1109/tnn.2008.2005601,9,38,
+Pub filtered,9:38:1,10.1007/978-3-642-04277-5_18,9,39,
+Pub filtered,9:38:1,10.1109/tcbb.2005.17,9,40,
+Pub filtered,9:38:1,10.1016/j.patcog.2003.11.003,9,41,
+Pub filtered,9:38:1,10.1109/34.993562,9,42,
+Pub filtered,9:38:1,10.1002/bs.3830120210,9,43,
+Pub filtered,9:38:1,10.1111/j.1469-8137.1912.tb05611.x,9,44,
+Filter updated,9:38:1,,,,,ord___
+Filter updated,9:38:2,,,,,orde___
+Filter updated,9:38:2,,,,,order___
+Filter updated,9:38:2,,,,,ordere___
+Filter updated,9:38:2,,,,,ordered___
+Filter updated,9:38:3,,,,,ordere___
+Filter updated,9:38:3,,,,,order___
+Filter updated,9:38:3,,,,,orde___
+Filter updated,9:38:3,,,,,ord___
+Filter updated,9:38:5,,,,,or___
+Pub filtered,9:38:5,10.1109/tnnls.2015.2436432,9,1,
+Pub filtered,9:38:5,10.1016/j.patrec.2006.06.006,9,2,
+Pub filtered,9:38:5,10.1007/978-3-642-03915-7_8,9,3,
+Pub filtered,9:38:5,10.1109/ijcnn.2014.6889890,9,4,
+Pub filtered,9:38:5,10.1145/2133360.2133361,9,5,
+Pub filtered,9:38:5,10.1109/icste.2010.5608801,9,6,
+Pub filtered,9:38:5,10.1007/s10618-021-00778-0,9,7,
+Pub filtered,9:38:5,10.1007/978-3-319-75429-1_10,9,8,
+Pub filtered,9:38:5,10.1016/j.patcog.2015.09.027,9,9,
+Pub filtered,9:38:5,10.1109/tpami.2020.3010953,9,10,
+Pub filtered,9:38:5,10.1109/tnnls.2017.2728138,9,11,
+Pub filtered,9:38:5,10.1016/j.eswa.2014.09.012,9,12,
+Pub filtered,9:38:5,10.1214/aoms/1177729694,9,13,
+Pub filtered,9:38:5,10.1109/tcyb.2020.3004437,9,14,
+Pub filtered,9:38:5,10.1007/978-3-031-21047-1_1,9,15,
+Pub filtered,9:38:5,10.1109/iciscae52414.2021.9590713,9,16,
+Pub filtered,9:38:5,10.1007/978-3-030-83819-5_5,9,17,
+Pub filtered,9:38:5,10.1016/j.neucom.2021.08.050,9,18,
+Pub filtered,9:38:5,10.1080/08982112.2021.1896732,9,19,
+Pub filtered,9:38:5,10.2139/ssrn.3550115,9,20,
+Pub filtered,9:38:5,10.1109/tnnls.2019.2911118,9,21,
+Pub filtered,9:38:5,10.1007/s41237-019-00103-6,9,22,
+Pub filtered,9:38:5,10.1109/tkde.2018.2848902,9,23,
+Pub filtered,9:38:5,10.1109/access.2019.2935089,9,24,
+Pub filtered,9:38:5,10.1109/bracis.2019.00113,9,25,
+Pub filtered,9:38:5,10.1007/s00500-019-04586-z,9,26,
+Pub filtered,9:38:5,10.1145/3312739,9,27,
+Pub filtered,9:38:5,10.1109/bdcloud.2018.00161,9,28,
+Pub filtered,9:38:5,10.1007/978-3-319-91476-3_25,9,29,
+Pub filtered,9:38:5,10.1007/s00500-018-3170-5,9,30,
+Pub filtered,9:38:5,10.1109/tkde.2018.2808532,9,31,
+Pub filtered,9:38:5,10.1109/tkde.2018.2791525,9,32,
+Pub filtered,9:38:5,10.1109/tnnls.2015.2451151,9,33,
+Pub filtered,9:38:5,10.1016/j.neucom.2016.01.089,9,34,
+Pub filtered,9:38:5,10.1007/978-3-319-27212-2_22,9,35,
+Pub filtered,9:38:5,10.1007/s11042-014-1914-5,9,36,
+Pub filtered,9:38:5,10.1016/j.patcog.2011.04.024,9,37,
+Pub filtered,9:38:5,10.1109/tnn.2008.2005601,9,38,
+Pub filtered,9:38:5,10.1007/978-3-642-04277-5_18,9,39,
+Pub filtered,9:38:5,10.1109/tcbb.2005.17,9,40,
+Pub filtered,9:38:5,10.1016/j.patcog.2003.11.003,9,41,
+Pub filtered,9:38:5,10.1109/34.993562,9,42,
+Pub filtered,9:38:5,10.1002/bs.3830120210,9,43,
+Pub filtered,9:38:5,10.1111/j.1469-8137.1912.tb05611.x,9,44,
+Filter updated,9:38:5,,,,,o___
+Pub filtered,9:38:5,10.1109/tnnls.2015.2436432,9,1,
+Pub filtered,9:38:5,10.1016/j.patrec.2006.06.006,9,2,
+Pub filtered,9:38:5,10.1007/978-3-642-03915-7_8,9,3,
+Pub filtered,9:38:5,10.1109/ijcnn.2014.6889890,9,4,
+Pub filtered,9:38:5,10.1145/2133360.2133361,9,5,
+Pub filtered,9:38:5,10.1109/icste.2010.5608801,9,6,
+Pub filtered,9:38:5,10.1007/s10618-021-00778-0,9,7,
+Pub filtered,9:38:5,10.1007/978-3-319-75429-1_10,9,8,
+Pub filtered,9:38:5,10.1016/j.patcog.2015.09.027,9,9,
+Pub filtered,9:38:5,10.1007/978-3-642-20291-9_6,9,10,
+Pub filtered,9:38:5,10.1109/tpami.2020.3010953,9,11,
+Pub filtered,9:38:5,10.1109/tnnls.2017.2728138,9,12,
+Pub filtered,9:38:5,10.1016/j.eswa.2014.09.012,9,13,
+Pub filtered,9:38:5,10.1023/a:1009769707641,9,14,
+Pub filtered,9:38:5,10.2307/2528080,9,15,
+Pub filtered,9:38:5,10.1214/aoms/1177729694,9,16,
+Pub filtered,9:38:5,10.1109/tcyb.2020.3004437,9,17,
+Pub filtered,9:38:5,10.1007/978-3-031-21047-1_1,9,18,
+Pub filtered,9:38:5,10.1109/iciscae52414.2021.9590713,9,19,
+Pub filtered,9:38:5,10.1007/978-3-030-83819-5_5,9,20,
+Pub filtered,9:38:5,10.1016/j.neucom.2021.08.050,9,21,
+Pub filtered,9:38:5,10.1080/08982112.2021.1896732,9,22,
+Pub filtered,9:38:5,10.2139/ssrn.3550115,9,23,
+Pub filtered,9:38:5,10.1109/tnnls.2019.2911118,9,24,
+Pub filtered,9:38:5,10.1007/s41237-019-00103-6,9,25,
+Pub filtered,9:38:5,10.1109/tkde.2018.2848902,9,26,
+Pub filtered,9:38:5,10.1109/access.2019.2935089,9,27,
+Pub filtered,9:38:5,10.1109/bracis.2019.00113,9,28,
+Pub filtered,9:38:5,10.1007/s00500-019-04586-z,9,29,
+Pub filtered,9:38:5,10.1145/3312739,9,30,
+Pub filtered,9:38:5,10.1109/bdcloud.2018.00161,9,31,
+Pub filtered,9:38:5,10.1007/978-3-319-91476-3_25,9,32,
+Pub filtered,9:38:5,10.1007/s00500-018-3170-5,9,33,
+Pub filtered,9:38:5,10.1109/tkde.2018.2808532,9,34,
+Pub filtered,9:38:5,10.1109/tkde.2018.2791525,9,35,
+Pub filtered,9:38:5,10.1109/tnnls.2015.2451151,9,36,
+Pub filtered,9:38:5,10.1016/j.neucom.2016.01.089,9,37,
+Pub filtered,9:38:5,10.1007/978-3-319-27212-2_22,9,38,
+Pub filtered,9:38:5,10.1007/s11042-014-1914-5,9,39,
+Pub filtered,9:38:5,10.1016/j.patcog.2011.04.024,9,40,
+Pub filtered,9:38:5,10.1109/tnn.2008.2005601,9,41,
+Pub filtered,9:38:5,10.1007/978-3-642-04277-5_18,9,42,
+Pub filtered,9:38:5,10.1109/tcbb.2005.17,9,43,
+Pub filtered,9:38:5,10.1016/j.patcog.2003.11.003,9,44,
+Pub filtered,9:38:5,10.1109/34.993562,9,45,
+Pub filtered,9:38:5,10.1145/331499.331504,9,46,
+Pub filtered,9:38:5,10.1007/bf01896809,9,47,
+Pub filtered,9:38:5,10.1002/bs.3830120210,9,48,
+Pub filtered,9:38:5,10.1111/j.1469-8137.1912.tb05611.x,9,49,
+Filter updated,9:38:5,,,,,___
+Pub filtered,9:38:5,10.1109/tnnls.2015.2436432,9,1,
+Pub filtered,9:38:5,10.1016/j.patrec.2006.06.006,9,2,
+Pub filtered,9:38:5,10.1007/978-3-642-03915-7_8,9,3,
+Pub filtered,9:38:5,10.1109/ijcnn.2014.6889890,9,4,
+Pub filtered,9:38:5,10.1145/2133360.2133361,9,5,
+Pub filtered,9:38:5,10.1109/icste.2010.5608801,9,6,
+Pub filtered,9:38:5,10.1007/s10618-021-00778-0,9,7,
+Pub filtered,9:38:5,10.1007/978-3-319-75429-1_10,9,8,
+Pub filtered,9:38:5,10.1016/j.patcog.2015.09.027,9,9,
+Pub filtered,9:38:5,10.1007/978-3-642-20291-9_6,9,10,
+Pub filtered,9:38:5,10.1109/tpami.2020.3010953,9,11,
+Pub filtered,9:38:5,10.1109/tnnls.2017.2728138,9,12,
+Pub filtered,9:38:5,10.1016/j.eswa.2014.09.012,9,13,
+Pub filtered,9:38:5,10.1023/a:1009769707641,9,14,
+Pub filtered,9:38:5,10.2307/2528080,9,15,
+Pub filtered,9:38:5,10.1214/aoms/1177729694,9,16,
+Pub filtered,9:38:5,10.1109/tcyb.2020.3004437,9,17,
+Pub filtered,9:38:5,10.1007/978-3-031-21047-1_1,9,18,
+Pub filtered,9:38:5,10.1109/iciscae52414.2021.9590713,9,19,
+Pub filtered,9:38:5,10.1007/978-3-030-83819-5_5,9,20,
+Pub filtered,9:38:5,10.1016/j.neucom.2021.08.050,9,21,
+Pub filtered,9:38:5,10.1080/08982112.2021.1896732,9,22,
+Pub filtered,9:38:5,10.2139/ssrn.3550115,9,23,
+Pub filtered,9:38:5,10.1109/tnnls.2019.2911118,9,24,
+Pub filtered,9:38:5,10.1007/s41237-019-00103-6,9,25,
+Pub filtered,9:38:5,10.1109/tkde.2018.2848902,9,26,
+Pub filtered,9:38:5,10.1109/access.2019.2935089,9,27,
+Pub filtered,9:38:5,10.1109/bracis.2019.00113,9,28,
+Pub filtered,9:38:5,10.1007/s00500-019-04586-z,9,29,
+Pub filtered,9:38:5,10.1145/3312739,9,30,
+Pub filtered,9:38:5,10.1109/bdcloud.2018.00161,9,31,
+Pub filtered,9:38:5,10.1007/978-3-319-91476-3_25,9,32,
+Pub filtered,9:38:5,10.1007/s00500-018-3170-5,9,33,
+Pub filtered,9:38:5,10.1109/tkde.2018.2808532,9,34,
+Pub filtered,9:38:5,10.1109/tkde.2018.2791525,9,35,
+Pub filtered,9:38:5,10.1109/tnnls.2015.2451151,9,36,
+Pub filtered,9:38:5,10.1016/j.neucom.2016.01.089,9,37,
+Pub filtered,9:38:5,10.1007/978-3-319-27212-2_22,9,38,
+Pub filtered,9:38:5,10.1007/s11042-014-1914-5,9,39,
+Pub filtered,9:38:5,10.1016/j.patcog.2011.04.024,9,40,
+Pub filtered,9:38:5,10.1109/tnn.2008.2005601,9,41,
+Pub filtered,9:38:5,10.1007/978-3-642-04277-5_18,9,42,
+Pub filtered,9:38:5,10.1109/tcbb.2005.17,9,43,
+Pub filtered,9:38:5,10.1016/j.patcog.2003.11.003,9,44,
+Pub filtered,9:38:5,10.1109/34.993562,9,45,
+Pub filtered,9:38:5,10.1145/331499.331504,9,46,
+Pub filtered,9:38:5,10.1007/bf01896809,9,47,
+Pub filtered,9:38:5,10.1002/bs.3830120210,9,48,
+Pub filtered,9:38:5,10.1111/j.1469-8137.1912.tb05611.x,9,49,
+Filter removed,9:38:7,,,,,___
+Pub suggested,9:38:7,10.1109/tnnls.2015.2436432,9,1,
+Pub suggested,9:38:7,10.1016/j.patrec.2006.06.006,9,2,
+Pub suggested,9:38:7,10.1007/978-3-642-03915-7_8,9,3,
+Pub suggested,9:38:7,10.1109/ijcnn.2014.6889890,9,4,
+Pub suggested,9:38:7,10.1145/2133360.2133361,9,5,
+Pub suggested,9:38:7,10.1109/icste.2010.5608801,9,6,
+Pub suggested,9:38:7,10.1007/s10618-021-00778-0,9,7,
+Pub suggested,9:38:7,10.1007/978-3-319-75429-1_10,9,8,
+Pub suggested,9:38:7,10.1016/j.patcog.2015.09.027,9,9,
+Pub suggested,9:38:7,10.1007/978-3-642-20291-9_6,9,10,
+Pub suggested,9:38:7,10.1109/tpami.2020.3010953,9,11,
+Pub suggested,9:38:7,10.1109/tnnls.2017.2728138,9,12,
+Pub suggested,9:38:7,10.1016/j.eswa.2014.09.012,9,13,
+Pub suggested,9:38:7,10.1023/a:1009769707641,9,14,
+Pub suggested,9:38:7,10.2307/2528080,9,15,
+Pub suggested,9:38:7,10.1214/aoms/1177729694,9,16,
+Pub suggested,9:38:7,10.1109/tcyb.2020.3004437,9,17,
+Pub suggested,9:38:7,10.1007/978-3-031-21047-1_1,9,18,
+Pub suggested,9:38:7,10.1109/iciscae52414.2021.9590713,9,19,
+Pub suggested,9:38:7,10.1007/978-3-030-83819-5_5,9,20,
+Pub suggested,9:38:7,10.1016/j.neucom.2021.08.050,9,21,
+Pub suggested,9:38:7,10.1080/08982112.2021.1896732,9,22,
+Pub suggested,9:38:7,10.2139/ssrn.3550115,9,23,
+Pub suggested,9:38:7,10.1109/tnnls.2019.2911118,9,24,
+Pub suggested,9:38:7,10.1007/s41237-019-00103-6,9,25,
+Pub suggested,9:38:7,10.1109/tkde.2018.2848902,9,26,
+Pub suggested,9:38:7,10.1109/access.2019.2935089,9,27,
+Pub suggested,9:38:7,10.1109/bracis.2019.00113,9,28,
+Pub suggested,9:38:7,10.1007/s00500-019-04586-z,9,29,
+Pub suggested,9:38:7,10.1145/3312739,9,30,
+Pub suggested,9:38:7,10.1109/bdcloud.2018.00161,9,31,
+Pub suggested,9:38:7,10.1007/978-3-319-91476-3_25,9,32,
+Pub suggested,9:38:7,10.1007/s00500-018-3170-5,9,33,
+Pub suggested,9:38:7,10.1109/tkde.2018.2808532,9,34,
+Pub suggested,9:38:7,10.1109/tkde.2018.2791525,9,35,
+Pub suggested,9:38:7,10.1109/tnnls.2015.2451151,9,36,
+Pub suggested,9:38:7,10.1016/j.neucom.2016.01.089,9,37,
+Pub suggested,9:38:7,10.1007/978-3-319-27212-2_22,9,38,
+Pub suggested,9:38:7,10.1007/s11042-014-1914-5,9,39,
+Pub suggested,9:38:7,10.1016/j.patcog.2011.04.024,9,40,
+Pub suggested,9:38:7,10.1109/tnn.2008.2005601,9,41,
+Pub suggested,9:38:7,10.1007/978-3-642-04277-5_18,9,42,
+Pub suggested,9:38:7,10.1109/tcbb.2005.17,9,43,
+Pub suggested,9:38:7,10.1016/j.patcog.2003.11.003,9,44,
+Pub suggested,9:38:7,10.1109/34.993562,9,45,
+Pub suggested,9:38:7,10.1145/331499.331504,9,46,
+Pub suggested,9:38:7,10.1007/bf01896809,9,47,
+Pub suggested,9:38:7,10.1002/bs.3830120210,9,48,
+Pub suggested,9:38:7,10.1111/j.1469-8137.1912.tb05611.x,9,49,
+Pub suggested,9:38:7,10.2307/2284239,9,50,
+Pub activated,9:38:13,10.1016/j.patrec.2006.06.006,9,2,suggested
+Pub suggested,9:38:20,10.1109/tnnls.2015.2436432,9,1,
+Pub suggested,9:38:20,10.1016/j.patrec.2006.06.006,9,2,
+Pub suggested,9:38:20,10.1007/978-3-642-03915-7_8,9,3,
+Pub suggested,9:38:20,10.1109/ijcnn.2014.6889890,9,4,
+Pub suggested,9:38:20,10.1145/2133360.2133361,9,5,
+Pub suggested,9:38:20,10.1109/icste.2010.5608801,9,6,
+Pub suggested,9:38:20,10.1007/s10618-021-00778-0,9,7,
+Pub suggested,9:38:20,10.1007/978-3-319-75429-1_10,9,8,
+Pub suggested,9:38:20,10.1016/j.patcog.2015.09.027,9,9,
+Pub suggested,9:38:20,10.1007/978-3-642-20291-9_6,9,10,
+Pub suggested,9:38:20,10.1109/tpami.2020.3010953,9,11,
+Pub suggested,9:38:20,10.1109/tnnls.2017.2728138,9,12,
+Pub suggested,9:38:20,10.1016/j.eswa.2014.09.012,9,13,
+Pub suggested,9:38:20,10.1023/a:1009769707641,9,14,
+Pub suggested,9:38:20,10.2307/2528080,9,15,
+Pub suggested,9:38:20,10.1214/aoms/1177729694,9,16,
+Pub suggested,9:38:20,10.1109/tcyb.2020.3004437,9,17,
+Pub suggested,9:38:20,10.1007/978-3-031-21047-1_1,9,18,
+Pub suggested,9:38:20,10.1109/iciscae52414.2021.9590713,9,19,
+Pub suggested,9:38:20,10.1007/978-3-030-83819-5_5,9,20,
+Pub suggested,9:38:20,10.1016/j.neucom.2021.08.050,9,21,
+Pub suggested,9:38:20,10.1080/08982112.2021.1896732,9,22,
+Pub suggested,9:38:20,10.2139/ssrn.3550115,9,23,
+Pub suggested,9:38:20,10.1109/tnnls.2019.2911118,9,24,
+Pub suggested,9:38:20,10.1007/s41237-019-00103-6,9,25,
+Pub suggested,9:38:20,10.1109/tkde.2018.2848902,9,26,
+Pub suggested,9:38:20,10.1109/access.2019.2935089,9,27,
+Pub suggested,9:38:20,10.1109/bracis.2019.00113,9,28,
+Pub suggested,9:38:20,10.1007/s00500-019-04586-z,9,29,
+Pub suggested,9:38:20,10.1145/3312739,9,30,
+Pub suggested,9:38:20,10.1109/bdcloud.2018.00161,9,31,
+Pub suggested,9:38:20,10.1007/978-3-319-91476-3_25,9,32,
+Pub suggested,9:38:20,10.1007/s00500-018-3170-5,9,33,
+Pub suggested,9:38:20,10.1109/tkde.2018.2808532,9,34,
+Pub suggested,9:38:20,10.1109/tkde.2018.2791525,9,35,
+Pub suggested,9:38:20,10.1109/tnnls.2015.2451151,9,36,
+Pub suggested,9:38:20,10.1016/j.neucom.2016.01.089,9,37,
+Pub suggested,9:38:20,10.1007/978-3-319-27212-2_22,9,38,
+Pub suggested,9:38:20,10.1007/s11042-014-1914-5,9,39,
+Pub suggested,9:38:20,10.1016/j.patcog.2011.04.024,9,40,
+Pub suggested,9:38:20,10.1109/tnn.2008.2005601,9,41,
+Pub suggested,9:38:20,10.1007/978-3-642-04277-5_18,9,42,
+Pub suggested,9:38:20,10.1109/tcbb.2005.17,9,43,
+Pub suggested,9:38:20,10.1016/j.patcog.2003.11.003,9,44,
+Pub suggested,9:38:20,10.1109/34.993562,9,45,
+Pub suggested,9:38:20,10.1145/331499.331504,9,46,
+Pub suggested,9:38:20,10.1007/bf01896809,9,47,
+Pub suggested,9:38:20,10.1002/bs.3830120210,9,48,
+Pub suggested,9:38:20,10.1111/j.1469-8137.1912.tb05611.x,9,49,
+Pub suggested,9:38:20,10.2307/2284239,9,50,
+Pub excluded,9:38:38,10.1016/j.patrec.2006.06.006,9,2,suggested
+Pub activated,9:38:40,10.1109/tnnls.2015.2436432,9,1,suggested
+Pub activated,9:38:47,10.1145/2133360.2133361,9,5,suggested
+Pub qd for selected,9:39:12,10.1145/2133360.2133361,9,5,suggested
+Pub excluded,9:39:22,10.1007/978-3-642-03915-7_8,9,3,suggested
+Pub added,9:39:24,10.1145/2133360.2133361,,,
+Pub suggested,9:39:30,10.1109/tnnls.2015.2436432,10,1,
+Pub suggested,9:39:30,10.1007/s10618-021-00778-0,10,2,
+Pub suggested,9:39:30,10.1109/ijcnn.2014.6889890,10,3,
+Pub suggested,9:39:30,10.1109/icste.2010.5608801,10,4,
+Pub suggested,9:39:30,10.1007/978-3-319-75429-1_10,10,5,
+Pub suggested,9:39:30,10.1109/tpami.2020.3010953,10,6,
+Pub suggested,9:39:30,10.3233/ida-183930,10,7,
+Pub suggested,9:39:30,10.1109/tnnls.2017.2728138,10,8,
+Pub suggested,9:39:30,10.1016/j.patcog.2015.09.027,10,9,
+Pub suggested,9:39:30,10.1007/978-3-642-20291-9_6,10,10,
+Pub suggested,9:39:30,10.1023/a:1009769707641,10,11,
+Pub suggested,9:39:30,10.1109/tcyb.2020.3004437,10,12,
+Pub suggested,9:39:30,10.1016/j.neucom.2021.08.050,10,13,
+Pub suggested,9:39:30,10.1109/tnnls.2019.2911118,10,14,
+Pub suggested,9:39:30,10.1145/3312739,10,15,
+Pub suggested,9:39:30,10.1007/s00500-019-04586-z,10,16,
+Pub suggested,9:39:30,10.1109/access.2019.2935089,10,17,
+Pub suggested,9:39:30,10.1109/tkde.2018.2848902,10,18,
+Pub suggested,9:39:30,10.1007/s00500-018-3170-5,10,19,
+Pub suggested,9:39:30,10.1109/tkde.2018.2791525,10,20,
+Pub suggested,9:39:30,10.1109/bdcloud.2018.00161,10,21,
+Pub suggested,9:39:30,10.1016/j.eswa.2014.09.012,10,22,
+Pub suggested,9:39:30,10.1007/978-3-319-27212-2_22,10,23,
+Pub suggested,9:39:30,10.1145/1015330.1015404,10,24,
+Pub suggested,9:39:30,10.2307/2528080,10,25,
+Pub suggested,9:39:30,10.1214/aoms/1177729694,10,26,
+Pub suggested,9:39:30,10.1109/icde.2005.33,10,27,
+Pub suggested,9:39:30,10.1016/j.jbi.2021.103954,10,28,
+Pub suggested,9:39:30,10.1007/978-3-031-21047-1_1,10,29,
+Pub suggested,9:39:30,10.1016/j.chemolab.2021.104370,10,30,
+Pub suggested,9:39:30,10.1080/08982112.2021.1896732,10,31,
+Pub suggested,9:39:30,10.1109/iciscae52414.2021.9590713,10,32,
+Pub suggested,9:39:30,10.1007/978-3-030-83819-5_5,10,33,
+Pub suggested,9:39:30,10.3390/app11188416,10,34,
+Pub suggested,9:39:30,10.1007/s10742-020-00214-8,10,35,
+Pub suggested,9:39:30,10.1007/s41237-019-00103-6,10,36,
+Pub suggested,9:39:30,10.1007/s12652-019-01445-5,10,37,
+Pub suggested,9:39:30,10.1109/tkde.2018.2808532,10,38,
+Pub suggested,9:39:30,10.1007/978-3-319-68612-7_28,10,39,
+Pub suggested,9:39:30,10.1109/tnnls.2016.2526063,10,40,
+Pub suggested,9:39:30,10.1007/978-3-319-67786-6_1,10,41,
+Pub suggested,9:39:30,10.1007/978-3-319-30024-5_7,10,42,
+Pub suggested,9:39:30,10.1109/tnnls.2015.2451151,10,43,
+Pub suggested,9:39:30,10.1007/978-3-642-04277-5_18,10,44,
+Pub suggested,9:39:30,10.1109/tnn.2008.2005601,10,45,
+Pub suggested,9:39:30,10.1109/tcbb.2005.17,10,46,
+Pub suggested,9:39:30,10.1145/312129.312201,10,47,
+Pub suggested,9:39:30,10.1145/7902.7906,10,48,
+Pub suggested,9:39:30,10.1007/bf01896809,10,49,
+Pub suggested,9:39:30,10.1002/bs.3830120210,10,50,
+Update,9:39:30,,,,,10
+Network expanded,9:39:31,,,,,
+Pub activated,9:39:41,10.1080/08982112.2021.1896732,10,31,network
+Pub activated,9:39:45,10.1007/978-3-030-83819-5_5,10,33,network
+Pub activated,9:40:0,10.3233/ida-183930,10,7,network
+Pub qd for selected,9:40:22,10.3233/ida-183930,10,7,network
+Network mode changed,9:40:24,,,,,Timeline
+Pub activated,9:40:31,10.1109/tpami.2020.3010953,10,6,network
+Pub excluded,9:40:58,10.1109/tpami.2020.3010953,10,6,network
+Pub activated,9:41:0,10.1109/tcyb.2020.3004437,10,12,network
+Pub excluded,9:41:4,10.1109/tcyb.2020.3004437,10,12,network
+Pub activated,9:41:5,10.1016/j.jbi.2021.103954,10,28,network
+Pub activated,9:41:9,10.1109/tkde.2018.2848902,10,18,network
+Pub activated,9:41:13,10.1109/tkde.2018.2791525,10,20,network
+Pub activated,9:41:16,10.1109/tnnls.2016.2526063,10,40,network
+Pub qd for selected,9:41:41,10.1109/tnnls.2016.2526063,10,40,network
+Pub activated,9:41:45,10.1016/j.patcog.2015.09.027,10,9,network
+Pub activated,9:41:53,10.1109/ijcnn.2014.6889890,10,3,network
+Pub activated,9:41:56,10.1109/tkde.2018.2808532,10,38,network
+Pub activated,9:41:59,10.1109/tpami.2021.3056510,10,0,network
+Pub activated,9:42:27,10.1007/978-3-642-04277-5_18,10,44,network
+Pub activated,9:42:29,10.1109/icde.2005.33,10,27,network
+Pub activated,9:42:31,10.1109/tpami.2021.3056510,10,0,network
+Pub activated,9:42:37,10.1109/tkde.2018.2808532,10,38,network
+Pub qd for selected,9:43:4,10.1109/tkde.2018.2808532,10,38,network
+Pub added,9:43:8,10.3233/ida-183930,,,
+Pub added,9:43:8,10.1109/tnnls.2016.2526063,,,
+Pub added,9:43:8,10.1109/tkde.2018.2808532,,,
+Pub suggested,9:43:13,10.1109/tnnls.2015.2436432,13,1,
+Pub suggested,9:43:13,10.1109/dsit55514.2022.9943828,13,2,
+Pub suggested,9:43:13,10.1007/s10618-021-00778-0,13,3,
+Pub suggested,9:43:13,10.1109/ijcnn.2014.6889890,13,4,
+Pub suggested,9:43:13,10.1109/icste.2010.5608801,13,5,
+Pub suggested,9:43:13,10.1007/978-3-319-75429-1_10,13,6,
+Pub suggested,9:43:13,10.1023/a:1009769707641,13,7,
+Pub suggested,9:43:13,10.1007/s10489-019-01583-5,13,8,
+Pub suggested,9:43:13,10.1007/s00500-019-04586-z,13,9,
+Pub suggested,9:43:13,10.1109/access.2019.2935089,13,10,
+Pub suggested,9:43:13,10.1109/tkde.2018.2848902,13,11,
+Pub suggested,9:43:13,10.1145/3312739,13,12,
+Pub suggested,9:43:13,10.1109/tnnls.2017.2728138,13,13,
+Pub suggested,9:43:13,10.1016/j.patrec.2011.10.021,13,14,
+Pub suggested,9:43:13,10.1007/978-3-642-20291-9_6,13,15,
+Pub suggested,9:43:13,10.1613/jair.346,13,16,
+Pub suggested,9:43:13,10.2307/2528080,13,17,
+Pub suggested,9:43:13,10.1016/j.neucom.2021.08.050,13,18,
+Pub suggested,9:43:13,10.1109/iciscae52414.2021.9590713,13,19,
+Pub suggested,9:43:13,10.1109/tnnls.2019.2911118,13,20,
+Pub suggested,9:43:13,10.1109/tkde.2018.2791525,13,21,
+Pub suggested,9:43:13,10.1109/bdcloud.2018.00161,13,22,
+Pub suggested,9:43:13,10.1007/s00500-018-3170-5,13,23,
+Pub suggested,9:43:13,10.1016/j.eswa.2014.09.012,13,24,
+Pub suggested,9:43:13,10.1007/978-3-319-27212-2_22,13,25,
+Pub suggested,9:43:13,10.1145/1015330.1015404,13,26,
+Pub suggested,9:43:13,10.1145/331499.331504,13,27,
+Pub suggested,9:43:13,10.1214/aoms/1177729694,13,28,
+Pub suggested,9:43:13,10.1109/access.2022.3162690,13,29,
+Pub suggested,9:43:13,10.1016/j.jbi.2021.103954,13,30,
+Pub suggested,9:43:13,10.1007/978-3-030-83819-5_5,13,31,
+Pub suggested,9:43:13,10.3390/app11188416,13,32,
+Pub suggested,9:43:13,10.3233/ida-205453,13,33,
+Pub suggested,9:43:13,10.1016/j.chemolab.2021.104370,13,34,
+Pub suggested,9:43:13,10.1007/s41237-019-00103-6,13,35,
+Pub suggested,9:43:13,10.1007/978-3-030-16148-4_45,13,36,
+Pub suggested,9:43:13,10.1109/i2c2.2017.8321825,13,37,
+Pub suggested,9:43:13,10.1007/978-3-319-68612-7_28,13,38,
+Pub suggested,9:43:13,10.1007/978-3-319-30024-5_7,13,39,
+Pub suggested,9:43:13,10.1007/s11042-014-1914-5,13,40,
+Pub suggested,9:43:13,10.1016/j.patcog.2011.04.024,13,41,
+Pub suggested,9:43:13,10.1007/978-3-642-20847-8_39,13,42,
+Pub suggested,9:43:13,10.1007/978-3-540-24741-8_9,13,43,
+Pub suggested,9:43:13,10.1016/j.patcog.2003.11.003,13,44,
+Pub suggested,9:43:13,10.1109/34.993562,13,45,
+Pub suggested,9:43:13,10.1007/3-540-45372-5_20,13,46,
+Pub suggested,9:43:13,10.1145/312129.312201,13,47,
+Pub suggested,9:43:13,10.1007/bf00993481,13,48,
+Pub suggested,9:43:13,10.1145/7902.7906,13,49,
+Pub suggested,9:43:13,10.1007/bf01896809,13,50,
+Update,9:43:13,,,,,13
+Pub activated,9:43:19,10.1109/dsit55514.2022.9943828,13,2,network
+Pub qd for selected,9:43:34,10.1109/dsit55514.2022.9943828,13,2,network
+Network mode changed,9:43:38,,,,,Clusters
+Pub activated,9:44:9,10.1007/s10489-019-01583-5,13,8,network
+Pub qd for selected,9:44:13,10.1007/s10489-019-01583-5,13,8,network
+Network collapsed,9:44:17,,,,,
+Filter updated,9:44:21,,,,,___
+Pub filtered,9:44:21,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:21,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:21,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:21,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:21,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:21,10.1007/978-3-319-75429-1_10,13,6,
+Pub filtered,9:44:21,10.1023/a:1009769707641,13,7,
+Pub filtered,9:44:21,10.1007/s10489-019-01583-5,13,8,
+Pub filtered,9:44:21,10.1007/s00500-019-04586-z,13,9,
+Pub filtered,9:44:21,10.1109/access.2019.2935089,13,10,
+Pub filtered,9:44:21,10.1109/tkde.2018.2848902,13,11,
+Pub filtered,9:44:21,10.1145/3312739,13,12,
+Pub filtered,9:44:21,10.1109/tnnls.2017.2728138,13,13,
+Pub filtered,9:44:21,10.1016/j.patrec.2011.10.021,13,14,
+Pub filtered,9:44:21,10.1007/978-3-642-20291-9_6,13,15,
+Pub filtered,9:44:21,10.1613/jair.346,13,16,
+Pub filtered,9:44:21,10.2307/2528080,13,17,
+Pub filtered,9:44:21,10.1016/j.neucom.2021.08.050,13,18,
+Pub filtered,9:44:21,10.1109/iciscae52414.2021.9590713,13,19,
+Pub filtered,9:44:21,10.1109/tnnls.2019.2911118,13,20,
+Pub filtered,9:44:21,10.1109/tkde.2018.2791525,13,21,
+Pub filtered,9:44:21,10.1109/bdcloud.2018.00161,13,22,
+Pub filtered,9:44:21,10.1007/s00500-018-3170-5,13,23,
+Pub filtered,9:44:21,10.1016/j.eswa.2014.09.012,13,24,
+Pub filtered,9:44:21,10.1007/978-3-319-27212-2_22,13,25,
+Pub filtered,9:44:21,10.1145/1015330.1015404,13,26,
+Pub filtered,9:44:21,10.1145/331499.331504,13,27,
+Pub filtered,9:44:21,10.1214/aoms/1177729694,13,28,
+Pub filtered,9:44:21,10.1109/access.2022.3162690,13,29,
+Pub filtered,9:44:21,10.1016/j.jbi.2021.103954,13,30,
+Pub filtered,9:44:21,10.1007/978-3-030-83819-5_5,13,31,
+Pub filtered,9:44:21,10.3390/app11188416,13,32,
+Pub filtered,9:44:21,10.3233/ida-205453,13,33,
+Pub filtered,9:44:21,10.1016/j.chemolab.2021.104370,13,34,
+Pub filtered,9:44:21,10.1007/s41237-019-00103-6,13,35,
+Pub filtered,9:44:21,10.1007/978-3-030-16148-4_45,13,36,
+Pub filtered,9:44:21,10.1109/i2c2.2017.8321825,13,37,
+Pub filtered,9:44:21,10.1007/978-3-319-68612-7_28,13,38,
+Pub filtered,9:44:21,10.1007/978-3-319-30024-5_7,13,39,
+Pub filtered,9:44:21,10.1007/s11042-014-1914-5,13,40,
+Pub filtered,9:44:21,10.1016/j.patcog.2011.04.024,13,41,
+Pub filtered,9:44:21,10.1007/978-3-642-20847-8_39,13,42,
+Pub filtered,9:44:21,10.1007/978-3-540-24741-8_9,13,43,
+Pub filtered,9:44:21,10.1016/j.patcog.2003.11.003,13,44,
+Pub filtered,9:44:21,10.1109/34.993562,13,45,
+Pub filtered,9:44:21,10.1007/3-540-45372-5_20,13,46,
+Pub filtered,9:44:21,10.1145/312129.312201,13,47,
+Pub filtered,9:44:21,10.1007/bf00993481,13,48,
+Pub filtered,9:44:21,10.1145/7902.7906,13,49,
+Pub filtered,9:44:21,10.1007/bf01896809,13,50,
+Filter updated,9:44:23,,,,,o___
+Pub filtered,9:44:23,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:23,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:23,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:23,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:23,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:23,10.1007/978-3-319-75429-1_10,13,6,
+Pub filtered,9:44:23,10.1023/a:1009769707641,13,7,
+Pub filtered,9:44:23,10.1007/s10489-019-01583-5,13,8,
+Pub filtered,9:44:23,10.1007/s00500-019-04586-z,13,9,
+Pub filtered,9:44:23,10.1109/access.2019.2935089,13,10,
+Pub filtered,9:44:23,10.1109/tkde.2018.2848902,13,11,
+Pub filtered,9:44:23,10.1145/3312739,13,12,
+Pub filtered,9:44:23,10.1109/tnnls.2017.2728138,13,13,
+Pub filtered,9:44:23,10.1016/j.patrec.2011.10.021,13,14,
+Pub filtered,9:44:23,10.1007/978-3-642-20291-9_6,13,15,
+Pub filtered,9:44:23,10.1613/jair.346,13,16,
+Pub filtered,9:44:23,10.2307/2528080,13,17,
+Pub filtered,9:44:23,10.1016/j.neucom.2021.08.050,13,18,
+Pub filtered,9:44:23,10.1109/iciscae52414.2021.9590713,13,19,
+Pub filtered,9:44:23,10.1109/tnnls.2019.2911118,13,20,
+Pub filtered,9:44:23,10.1109/tkde.2018.2791525,13,21,
+Pub filtered,9:44:23,10.1109/bdcloud.2018.00161,13,22,
+Pub filtered,9:44:23,10.1007/s00500-018-3170-5,13,23,
+Pub filtered,9:44:23,10.1016/j.eswa.2014.09.012,13,24,
+Pub filtered,9:44:23,10.1007/978-3-319-27212-2_22,13,25,
+Pub filtered,9:44:23,10.1145/1015330.1015404,13,26,
+Pub filtered,9:44:23,10.1145/331499.331504,13,27,
+Pub filtered,9:44:23,10.1214/aoms/1177729694,13,28,
+Pub filtered,9:44:23,10.1109/access.2022.3162690,13,29,
+Pub filtered,9:44:23,10.1016/j.jbi.2021.103954,13,30,
+Pub filtered,9:44:23,10.1007/978-3-030-83819-5_5,13,31,
+Pub filtered,9:44:23,10.3390/app11188416,13,32,
+Pub filtered,9:44:23,10.3233/ida-205453,13,33,
+Pub filtered,9:44:23,10.1016/j.chemolab.2021.104370,13,34,
+Pub filtered,9:44:23,10.1007/s41237-019-00103-6,13,35,
+Pub filtered,9:44:23,10.1007/978-3-030-16148-4_45,13,36,
+Pub filtered,9:44:23,10.1109/i2c2.2017.8321825,13,37,
+Pub filtered,9:44:23,10.1007/978-3-319-68612-7_28,13,38,
+Pub filtered,9:44:23,10.1007/978-3-319-30024-5_7,13,39,
+Pub filtered,9:44:23,10.1007/s11042-014-1914-5,13,40,
+Pub filtered,9:44:23,10.1016/j.patcog.2011.04.024,13,41,
+Pub filtered,9:44:23,10.1007/978-3-642-20847-8_39,13,42,
+Pub filtered,9:44:23,10.1007/978-3-540-24741-8_9,13,43,
+Pub filtered,9:44:23,10.1016/j.patcog.2003.11.003,13,44,
+Pub filtered,9:44:23,10.1109/34.993562,13,45,
+Pub filtered,9:44:23,10.1007/3-540-45372-5_20,13,46,
+Pub filtered,9:44:23,10.1145/312129.312201,13,47,
+Pub filtered,9:44:23,10.1007/bf00993481,13,48,
+Pub filtered,9:44:23,10.1145/7902.7906,13,49,
+Pub filtered,9:44:23,10.1007/bf01896809,13,50,
+Filter updated,9:44:23,,,,,or___
+Pub filtered,9:44:23,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:23,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:23,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:23,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:23,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:23,10.1007/978-3-319-75429-1_10,13,6,
+Pub filtered,9:44:23,10.1007/s10489-019-01583-5,13,7,
+Pub filtered,9:44:23,10.1007/s00500-019-04586-z,13,8,
+Pub filtered,9:44:23,10.1109/access.2019.2935089,13,9,
+Pub filtered,9:44:23,10.1109/tkde.2018.2848902,13,10,
+Pub filtered,9:44:23,10.1145/3312739,13,11,
+Pub filtered,9:44:23,10.1109/tnnls.2017.2728138,13,12,
+Pub filtered,9:44:23,10.1016/j.patrec.2011.10.021,13,13,
+Pub filtered,9:44:23,10.1016/j.neucom.2021.08.050,13,14,
+Pub filtered,9:44:23,10.1109/iciscae52414.2021.9590713,13,15,
+Pub filtered,9:44:23,10.1109/tnnls.2019.2911118,13,16,
+Pub filtered,9:44:23,10.1109/tkde.2018.2791525,13,17,
+Pub filtered,9:44:23,10.1109/bdcloud.2018.00161,13,18,
+Pub filtered,9:44:23,10.1007/s00500-018-3170-5,13,19,
+Pub filtered,9:44:23,10.1016/j.eswa.2014.09.012,13,20,
+Pub filtered,9:44:23,10.1007/978-3-319-27212-2_22,13,21,
+Pub filtered,9:44:23,10.1145/1015330.1015404,13,22,
+Pub filtered,9:44:23,10.1214/aoms/1177729694,13,23,
+Pub filtered,9:44:23,10.1109/access.2022.3162690,13,24,
+Pub filtered,9:44:23,10.1016/j.jbi.2021.103954,13,25,
+Pub filtered,9:44:23,10.1007/978-3-030-83819-5_5,13,26,
+Pub filtered,9:44:23,10.3390/app11188416,13,27,
+Pub filtered,9:44:23,10.3233/ida-205453,13,28,
+Pub filtered,9:44:23,10.1016/j.chemolab.2021.104370,13,29,
+Pub filtered,9:44:23,10.1007/s41237-019-00103-6,13,30,
+Pub filtered,9:44:23,10.1109/i2c2.2017.8321825,13,31,
+Pub filtered,9:44:23,10.1007/978-3-319-68612-7_28,13,32,
+Pub filtered,9:44:23,10.1007/978-3-319-30024-5_7,13,33,
+Pub filtered,9:44:23,10.1007/s11042-014-1914-5,13,34,
+Pub filtered,9:44:23,10.1016/j.patcog.2011.04.024,13,35,
+Pub filtered,9:44:23,10.1007/978-3-642-20847-8_39,13,36,
+Pub filtered,9:44:23,10.1007/978-3-540-24741-8_9,13,37,
+Pub filtered,9:44:23,10.1016/j.patcog.2003.11.003,13,38,
+Pub filtered,9:44:23,10.1109/34.993562,13,39,
+Pub filtered,9:44:23,10.1007/3-540-45372-5_20,13,40,
+Pub filtered,9:44:23,10.1145/312129.312201,13,41,
+Pub filtered,9:44:23,10.1007/bf00993481,13,42,
+Pub filtered,9:44:23,10.1145/7902.7906,13,43,
+Filter updated,9:44:23,,,,,ord___
+Pub filtered,9:44:23,10.1109/dsit55514.2022.9943828,13,1,
+Pub filtered,9:44:23,10.1007/s10489-019-01583-5,13,2,
+Pub filtered,9:44:23,10.3233/ida-205453,13,3,
+Pub excluded,9:44:31,10.3233/ida-205453,13,33,suggested
+Filter updated,9:44:33,,,,,d___
+Pub filtered,9:44:33,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:33,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:33,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:33,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:33,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:33,10.1007/978-3-319-75429-1_10,13,6,
+Pub filtered,9:44:33,10.1023/a:1009769707641,13,7,
+Pub filtered,9:44:33,10.1007/s10489-019-01583-5,13,8,
+Pub filtered,9:44:33,10.1007/s00500-019-04586-z,13,9,
+Pub filtered,9:44:33,10.1109/access.2019.2935089,13,10,
+Pub filtered,9:44:33,10.1109/tkde.2018.2848902,13,11,
+Pub filtered,9:44:33,10.1145/3312739,13,12,
+Pub filtered,9:44:33,10.1109/tnnls.2017.2728138,13,13,
+Pub filtered,9:44:33,10.1016/j.patrec.2011.10.021,13,14,
+Pub filtered,9:44:33,10.1007/978-3-642-20291-9_6,13,15,
+Pub filtered,9:44:33,10.1613/jair.346,13,16,
+Pub filtered,9:44:33,10.2307/2528080,13,17,
+Pub filtered,9:44:33,10.1016/j.neucom.2021.08.050,13,18,
+Pub filtered,9:44:33,10.1109/iciscae52414.2021.9590713,13,19,
+Pub filtered,9:44:33,10.1109/tnnls.2019.2911118,13,20,
+Pub filtered,9:44:33,10.1109/tkde.2018.2791525,13,21,
+Pub filtered,9:44:33,10.1109/bdcloud.2018.00161,13,22,
+Pub filtered,9:44:33,10.1007/s00500-018-3170-5,13,23,
+Pub filtered,9:44:33,10.1016/j.eswa.2014.09.012,13,24,
+Pub filtered,9:44:33,10.1007/978-3-319-27212-2_22,13,25,
+Pub filtered,9:44:33,10.1145/1015330.1015404,13,26,
+Pub filtered,9:44:33,10.1145/331499.331504,13,27,
+Pub filtered,9:44:33,10.1214/aoms/1177729694,13,28,
+Pub filtered,9:44:33,10.1109/access.2022.3162690,13,29,
+Pub filtered,9:44:33,10.1016/j.jbi.2021.103954,13,30,
+Pub filtered,9:44:33,10.3390/app11188416,13,31,
+Pub filtered,9:44:33,10.3233/ida-205453,13,32,
+Pub filtered,9:44:33,10.1016/j.chemolab.2021.104370,13,33,
+Pub filtered,9:44:33,10.1007/s41237-019-00103-6,13,34,
+Pub filtered,9:44:33,10.1007/978-3-030-16148-4_45,13,35,
+Pub filtered,9:44:33,10.1109/i2c2.2017.8321825,13,36,
+Pub filtered,9:44:33,10.1007/978-3-319-68612-7_28,13,37,
+Pub filtered,9:44:33,10.1007/978-3-319-30024-5_7,13,38,
+Pub filtered,9:44:33,10.1007/s11042-014-1914-5,13,39,
+Pub filtered,9:44:33,10.1016/j.patcog.2011.04.024,13,40,
+Pub filtered,9:44:33,10.1007/978-3-642-20847-8_39,13,41,
+Pub filtered,9:44:33,10.1007/978-3-540-24741-8_9,13,42,
+Pub filtered,9:44:33,10.1016/j.patcog.2003.11.003,13,43,
+Pub filtered,9:44:33,10.1109/34.993562,13,44,
+Pub filtered,9:44:33,10.1007/3-540-45372-5_20,13,45,
+Pub filtered,9:44:33,10.1145/312129.312201,13,46,
+Pub filtered,9:44:33,10.1007/bf00993481,13,47,
+Pub filtered,9:44:33,10.1145/7902.7906,13,48,
+Pub filtered,9:44:33,10.1007/bf01896809,13,49,
+Filter updated,9:44:34,,,,,di___
+Pub filtered,9:44:34,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:34,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:34,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:34,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:34,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:34,10.1023/a:1009769707641,13,6,
+Pub filtered,9:44:34,10.1007/s10489-019-01583-5,13,7,
+Pub filtered,9:44:34,10.1007/s00500-019-04586-z,13,8,
+Pub filtered,9:44:34,10.1145/3312739,13,9,
+Pub filtered,9:44:34,10.1016/j.patrec.2011.10.021,13,10,
+Pub filtered,9:44:34,10.1007/978-3-642-20291-9_6,13,11,
+Pub filtered,9:44:34,10.1613/jair.346,13,12,
+Pub filtered,9:44:34,10.1109/tnnls.2019.2911118,13,13,
+Pub filtered,9:44:34,10.1109/bdcloud.2018.00161,13,14,
+Pub filtered,9:44:34,10.1007/s00500-018-3170-5,13,15,
+Pub filtered,9:44:34,10.1007/978-3-319-27212-2_22,13,16,
+Pub filtered,9:44:34,10.1109/access.2022.3162690,13,17,
+Pub filtered,9:44:34,10.1016/j.jbi.2021.103954,13,18,
+Pub filtered,9:44:34,10.3390/app11188416,13,19,
+Pub filtered,9:44:34,10.3233/ida-205453,13,20,
+Pub filtered,9:44:34,10.1007/978-3-030-16148-4_45,13,21,
+Pub filtered,9:44:34,10.1109/i2c2.2017.8321825,13,22,
+Pub filtered,9:44:34,10.1007/978-3-319-30024-5_7,13,23,
+Pub filtered,9:44:34,10.1007/s11042-014-1914-5,13,24,
+Pub filtered,9:44:34,10.1016/j.patcog.2011.04.024,13,25,
+Pub filtered,9:44:34,10.1007/978-3-642-20847-8_39,13,26,
+Pub filtered,9:44:34,10.1016/j.patcog.2003.11.003,13,27,
+Pub filtered,9:44:34,10.1007/3-540-45372-5_20,13,28,
+Pub filtered,9:44:34,10.1145/312129.312201,13,29,
+Pub filtered,9:44:34,10.1007/bf01896809,13,30,
+Filter updated,9:44:34,,,,,dis___
+Pub filtered,9:44:34,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:34,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:34,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:34,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:34,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:34,10.1023/a:1009769707641,13,6,
+Pub filtered,9:44:34,10.1007/s10489-019-01583-5,13,7,
+Pub filtered,9:44:34,10.1016/j.patrec.2011.10.021,13,8,
+Pub filtered,9:44:34,10.1007/978-3-642-20291-9_6,13,9,
+Pub filtered,9:44:34,10.1613/jair.346,13,10,
+Pub filtered,9:44:34,10.1109/bdcloud.2018.00161,13,11,
+Pub filtered,9:44:34,10.3390/app11188416,13,12,
+Pub filtered,9:44:34,10.1007/978-3-030-16148-4_45,13,13,
+Pub filtered,9:44:34,10.1007/978-3-319-30024-5_7,13,14,
+Pub filtered,9:44:34,10.1007/978-3-642-20847-8_39,13,15,
+Pub filtered,9:44:34,10.1016/j.patcog.2003.11.003,13,16,
+Pub filtered,9:44:34,10.1007/3-540-45372-5_20,13,17,
+Pub filtered,9:44:34,10.1145/312129.312201,13,18,
+Pub filtered,9:44:34,10.1007/bf01896809,13,19,
+Filter updated,9:44:34,,,,,dist___
+Pub filtered,9:44:34,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:34,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:34,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:34,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:34,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:34,10.1016/j.patrec.2011.10.021,13,6,
+Pub filtered,9:44:34,10.1007/978-3-642-20291-9_6,13,7,
+Pub filtered,9:44:34,10.1613/jair.346,13,8,
+Pub filtered,9:44:34,10.1109/bdcloud.2018.00161,13,9,
+Filter updated,9:44:34,,,,,dista___
+Pub filtered,9:44:34,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:34,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:34,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:34,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:34,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:34,10.1016/j.patrec.2011.10.021,13,6,
+Pub filtered,9:44:34,10.1007/978-3-642-20291-9_6,13,7,
+Pub filtered,9:44:34,10.1613/jair.346,13,8,
+Filter updated,9:44:34,,,,,distan___
+Pub filtered,9:44:34,10.1109/tnnls.2015.2436432,13,1,
+Pub filtered,9:44:34,10.1109/dsit55514.2022.9943828,13,2,
+Pub filtered,9:44:34,10.1007/s10618-021-00778-0,13,3,
+Pub filtered,9:44:34,10.1109/ijcnn.2014.6889890,13,4,
+Pub filtered,9:44:34,10.1109/icste.2010.5608801,13,5,
+Pub filtered,9:44:34,10.1016/j.patrec.2011.10.021,13,6,
+Pub filtered,9:44:34,10.1007/978-3-642-20291-9_6,13,7,
+Pub filtered,9:44:34,10.1613/jair.346,13,8,
+Pub activated,9:44:40,10.1109/tnnls.2015.2436432,13,1,suggested
+Pub qd for selected,9:44:51,10.1109/tnnls.2015.2436432,13,1,suggested
+Pub activated,9:44:58,10.1109/icste.2010.5608801,13,5,suggested
+Filter removed,9:45:5,,,,,distan___
+Pub suggested,9:45:5,10.1007/s10618-021-00778-0,13,3,
+Pub suggested,9:45:5,10.1109/ijcnn.2014.6889890,13,4,
+Pub suggested,9:45:5,10.1109/icste.2010.5608801,13,5,
+Pub suggested,9:45:5,10.1007/978-3-319-75429-1_10,13,6,
+Pub suggested,9:45:5,10.1023/a:1009769707641,13,7,
+Pub suggested,9:45:5,10.1007/s00500-019-04586-z,13,9,
+Pub suggested,9:45:5,10.1109/access.2019.2935089,13,10,
+Pub suggested,9:45:5,10.1109/tkde.2018.2848902,13,11,
+Pub suggested,9:45:5,10.1145/3312739,13,12,
+Pub suggested,9:45:5,10.1109/tnnls.2017.2728138,13,13,
+Pub suggested,9:45:5,10.1016/j.patrec.2011.10.021,13,14,
+Pub suggested,9:45:5,10.1007/978-3-642-20291-9_6,13,15,
+Pub suggested,9:45:5,10.1613/jair.346,13,16,
+Pub suggested,9:45:5,10.2307/2528080,13,17,
+Pub suggested,9:45:5,10.1016/j.neucom.2021.08.050,13,18,
+Pub suggested,9:45:5,10.1109/iciscae52414.2021.9590713,13,19,
+Pub suggested,9:45:5,10.1109/tnnls.2019.2911118,13,20,
+Pub suggested,9:45:5,10.1109/tkde.2018.2791525,13,21,
+Pub suggested,9:45:5,10.1109/bdcloud.2018.00161,13,22,
+Pub suggested,9:45:5,10.1007/s00500-018-3170-5,13,23,
+Pub suggested,9:45:5,10.1016/j.eswa.2014.09.012,13,24,
+Pub suggested,9:45:5,10.1007/978-3-319-27212-2_22,13,25,
+Pub suggested,9:45:5,10.1145/1015330.1015404,13,26,
+Pub suggested,9:45:5,10.1145/331499.331504,13,27,
+Pub suggested,9:45:5,10.1214/aoms/1177729694,13,28,
+Pub suggested,9:45:5,10.1109/access.2022.3162690,13,29,
+Pub suggested,9:45:5,10.1016/j.jbi.2021.103954,13,30,
+Pub suggested,9:45:5,10.1007/978-3-030-83819-5_5,13,31,
+Pub suggested,9:45:5,10.3390/app11188416,13,32,
+Pub suggested,9:45:5,10.1016/j.chemolab.2021.104370,13,34,
+Pub suggested,9:45:5,10.1007/s41237-019-00103-6,13,35,
+Pub suggested,9:45:5,10.1007/978-3-030-16148-4_45,13,36,
+Pub suggested,9:45:5,10.1109/i2c2.2017.8321825,13,37,
+Pub suggested,9:45:5,10.1007/978-3-319-68612-7_28,13,38,
+Pub suggested,9:45:5,10.1007/978-3-319-30024-5_7,13,39,
+Pub suggested,9:45:5,10.1007/s11042-014-1914-5,13,40,
+Pub suggested,9:45:5,10.1016/j.patcog.2011.04.024,13,41,
+Pub suggested,9:45:5,10.1007/978-3-642-20847-8_39,13,42,
+Pub suggested,9:45:5,10.1007/978-3-540-24741-8_9,13,43,
+Pub suggested,9:45:5,10.1016/j.patcog.2003.11.003,13,44,
+Pub suggested,9:45:5,10.1109/34.993562,13,45,
+Pub suggested,9:45:5,10.1007/3-540-45372-5_20,13,46,
+Pub suggested,9:45:5,10.1145/312129.312201,13,47,
+Pub suggested,9:45:5,10.1007/bf00993481,13,48,
+Pub suggested,9:45:5,10.1145/7902.7906,13,49,
+Pub suggested,9:45:5,10.1007/bf01896809,13,50,
+Pub added,9:45:8,10.1109/dsit55514.2022.9943828,,,
+Pub added,9:45:8,10.1007/s10489-019-01583-5,,,
+Pub added,9:45:8,10.1109/tnnls.2015.2436432,,,
+Pub suggested,9:45:13,10.1007/s10618-021-00778-0,16,1,
+Pub suggested,9:45:13,10.1609/aaai.v34i04.6168,16,2,
+Pub suggested,9:45:13,10.1023/a:1009769707641,16,3,
+Pub suggested,9:45:13,10.1007/978-3-319-75429-1_10,16,4,
+Pub suggested,9:45:13,10.1109/ijcnn.2014.6889890,16,5,
+Pub suggested,9:45:13,10.1109/icste.2010.5608801,16,6,
+Pub suggested,9:45:13,10.2307/2528080,16,7,
+Pub suggested,9:45:13,10.1109/tkde.2018.2848902,16,8,
+Pub suggested,9:45:13,10.1109/access.2019.2935089,16,9,
+Pub suggested,9:45:13,10.1007/s00500-019-04586-z,16,10,
+Pub suggested,9:45:13,10.1109/tnnls.2017.2728138,16,11,
+Pub suggested,9:45:13,10.1109/iciscae52414.2021.9590713,16,12,
+Pub suggested,9:45:13,10.1016/j.neucom.2021.08.050,16,13,
+Pub suggested,9:45:13,10.1145/3312739,16,14,
+Pub suggested,9:45:13,10.1109/tkde.2018.2791525,16,15,
+Pub suggested,9:45:13,10.1007/s00500-018-3170-5,16,16,
+Pub suggested,9:45:13,10.1016/j.patcog.2015.09.027,16,17,
+Pub suggested,9:45:13,10.1109/tpami.2007.53,16,18,
+Pub suggested,9:45:13,10.1145/1015330.1015404,16,19,
+Pub suggested,9:45:13,10.1214/aoms/1177729694,16,20,
+Pub suggested,9:45:13,10.1016/j.jbi.2021.103954,16,21,
+Pub suggested,9:45:13,10.1002/sam.11546,16,22,
+Pub suggested,9:45:13,10.3390/app11188416,16,23,
+Pub suggested,9:45:13,10.7717/peerj-cs.430,16,24,
+Pub suggested,9:45:13,10.1016/j.chemolab.2021.104370,16,25,
+Pub suggested,9:45:13,10.1109/tnnls.2019.2911118,16,26,
+Pub suggested,9:45:13,10.1007/s10742-020-00214-8,16,27,
+Pub suggested,9:45:13,10.1109/bdcloud.2018.00161,16,28,
+Pub suggested,9:45:13,10.1007/978-3-319-68612-7_28,16,29,
+Pub suggested,9:45:13,10.1109/tnnls.2015.2451151,16,30,
+Pub suggested,9:45:13,10.1007/978-3-319-27212-2_22,16,31,
+Pub suggested,9:45:13,10.1016/j.eswa.2014.09.012,16,32,
+Pub suggested,9:45:13,10.1016/j.patcog.2013.01.027,16,33,
+Pub suggested,9:45:13,10.1016/j.knosys.2011.07.011,16,34,
+Pub suggested,9:45:13,10.1016/j.datak.2007.03.016,16,35,
+Pub suggested,9:45:13,10.1109/tcbb.2005.17,16,36,
+Pub suggested,9:45:13,10.1145/331499.331504,16,37,
+Pub suggested,9:45:13,10.1145/312129.312201,16,38,
+Pub suggested,9:45:13,10.1007/bf00993481,16,39,
+Pub suggested,9:45:13,10.1145/7902.7906,16,40,
+Pub suggested,9:45:13,10.1007/bf01896809,16,41,
+Pub suggested,9:45:13,10.2307/2284239,16,42,
+Pub suggested,9:45:13,10.1007/978-3-030-16148-4_45,16,43,
+Pub suggested,9:45:13,10.1007/978-3-319-91476-3_25,16,44,
+Pub suggested,9:45:13,10.1109/icbk.2017.38,16,45,
+Pub suggested,9:45:13,10.1109/tnnls.2014.2325872,16,46,
+Pub suggested,9:45:13,10.1016/j.knosys.2009.12.003,16,47,
+Pub suggested,9:45:13,10.1016/j.camwa.2006.03.033,16,48,
+Pub suggested,9:45:13,10.1109/34.993562,16,49,
+Pub suggested,9:45:13,10.1016/0167-8655(91)90408-e,16,50,
+Update,9:45:13,,,,,16
+Pub activated,9:45:16,10.1109/tpami.2021.3056510,16,0,selected
+Pub activated,9:45:18,10.1109/dsit55514.2022.9943828,16,0,selected
+Pub activated,9:45:27,10.1007/s10489-019-01583-5,16,0,selected
+Pub activated,9:45:32,10.1109/tkde.2018.2808532,16,0,selected
+Pub excluded,9:45:33,10.1109/tkde.2018.2808532,16,0,selected
+Pub excluded,9:45:39,10.1109/tnnls.2016.2526063,16,0,selected
+Pub suggested,9:45:41,10.1007/s10618-021-00778-0,14,1,
+Pub suggested,9:45:41,10.1007/978-3-319-75429-1_10,14,2,
+Pub suggested,9:45:41,10.1109/ijcnn.2014.6889890,14,3,
+Pub suggested,9:45:41,10.1109/icste.2010.5608801,14,4,
+Pub suggested,9:45:41,10.1023/a:1009769707641,14,5,
+Pub suggested,9:45:41,10.2307/2528080,14,6,
+Pub suggested,9:45:41,10.1109/tnnls.2017.2728138,14,7,
+Pub suggested,9:45:41,10.1016/j.neucom.2021.08.050,14,8,
+Pub suggested,9:45:41,10.1007/s00500-019-04586-z,14,9,
+Pub suggested,9:45:41,10.1109/tkde.2018.2848902,14,10,
+Pub suggested,9:45:41,10.1109/access.2019.2935089,14,11,
+Pub suggested,9:45:41,10.1007/s00500-018-3170-5,14,12,
+Pub suggested,9:45:41,10.1109/tkde.2018.2791525,14,13,
+Pub suggested,9:45:41,10.1145/1015330.1015404,14,14,
+Pub suggested,9:45:41,10.1214/aoms/1177729694,14,15,
+Pub suggested,9:45:41,10.1016/j.jbi.2021.103954,14,16,
+Pub suggested,9:45:41,10.3390/app11188416,14,17,
+Pub suggested,9:45:41,10.1109/iciscae52414.2021.9590713,14,18,
+Pub suggested,9:45:41,10.1002/sam.11546,14,19,
+Pub suggested,9:45:41,10.7717/peerj-cs.430,14,20,
+Pub suggested,9:45:41,10.1016/j.chemolab.2021.104370,14,21,
+Pub suggested,9:45:41,10.1109/tnnls.2019.2911118,14,22,
+Pub suggested,9:45:41,10.1007/s10742-020-00214-8,14,23,
+Pub suggested,9:45:41,10.1145/3312739,14,24,
+Pub suggested,9:45:41,10.1109/bdcloud.2018.00161,14,25,
+Pub suggested,9:45:41,10.1007/978-3-319-68612-7_28,14,26,
+Pub suggested,9:45:41,10.1109/tnnls.2015.2451151,14,27,
+Pub suggested,9:45:41,10.1007/978-3-319-27212-2_22,14,28,
+Pub suggested,9:45:41,10.1016/j.eswa.2014.09.012,14,29,
+Pub suggested,9:45:41,10.1016/j.patcog.2013.01.027,14,30,
+Pub suggested,9:45:41,10.1109/tpami.2007.53,14,31,
+Pub suggested,9:45:41,10.1109/tcbb.2005.17,14,32,
+Pub suggested,9:45:41,10.1145/331499.331504,14,33,
+Pub suggested,9:45:41,10.1145/312129.312201,14,34,
+Pub suggested,9:45:41,10.1145/7902.7906,14,35,
+Pub suggested,9:45:41,10.1007/bf01896809,14,36,
+Pub suggested,9:45:41,10.2307/2284239,14,37,
+Pub suggested,9:45:41,10.1007/978-3-030-83819-5_5,14,38,
+Pub suggested,9:45:41,10.1109/bracis.2019.00113,14,39,
+Pub suggested,9:45:41,10.1007/978-3-319-30024-5_7,14,40,
+Pub suggested,9:45:41,10.1007/s11042-014-1914-5,14,41,
+Pub suggested,9:45:41,10.1016/j.knosys.2011.07.011,14,42,
+Pub suggested,9:45:41,10.1016/j.patcog.2011.04.024,14,43,
+Pub suggested,9:45:41,10.1109/tfuzz.2010.2050891,14,44,
+Pub suggested,9:45:41,10.1080/03081070701251182,14,45,
+Pub suggested,9:45:41,10.1016/j.datak.2007.05.005,14,46,
+Pub suggested,9:45:41,10.1016/j.patcog.2003.11.003,14,47,
+Pub suggested,9:45:41,10.1007/978-3-540-24741-8_9,14,48,
+Pub suggested,9:45:41,10.1016/0031-3203(91)90022-w,14,49,
+Pub suggested,9:45:41,10.1145/584887.584888,14,50,
+Update,9:45:42,,,,,14
+end,9:45:44,,,,,
