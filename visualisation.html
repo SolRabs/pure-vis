@@ -17,23 +17,53 @@
     margin-bottom: 20px;
   }
 
-  div {
+  div#vis {
+    position: absolute;
+    top: 300px;
     height: 300px;
     width: 1200px;
     overflow: scroll;
+  }
+  #fitting {
+    float: left;
+  }
+
+  #illfitting {
+    float: left;
+    padding-left: 20px;
+  }
+  #illfitting ul {
+    height: 130px;
+    overflow-y: scroll;
+  }
+  #fitting ul {
+    height: 130px;
+    overflow-y: scroll;
   }
 </style>
 
 <body>
   <script src="https://d3js.org/d3-array.v2.min.js"></script>
-  <script src="https://d3js.org/d3.v5.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <div>
+    <select id="selectButton"></select>
+    <button id="saveButton">Save Pattern</button>
+  </div>
+  <div id="fitting">
+    <h2>Fitting Patterns:</h2>
+    <ul></ul>
+  </div>
+  <div id="illfitting">
+    <h2>Illfitting Patterns:</h2>
+    <ul></ul>
+  </div>
   <div id="vis"></div>
 
   <script>
     "use strict";
     async function loadData() {
-      const session = await d3.csv("data/test.csv");
-      //const session = await d3.csv("data/session-long.csv");
+      //const session = await d3.csv("data/test.csv");
+      const session = await d3.csv("data/session-long.csv");
       //const session = await d3.csv("data/session-all-patterns.csv");
       //const session = await d3.csv("data/two-subfields.csv");
       return session;
@@ -175,6 +205,18 @@
           return true;
         }
       });
+
+      //Select Button
+      var patterns = ["seed", "refine", "check", "explore", "curate"];
+
+      // add the options to the button
+      d3.select("#selectButton")
+        .selectAll("myOptions")
+        .data(patterns)
+        .enter()
+        .append("option")
+        .text((d) => d)
+        .attr("value", (d) => d);
 
       d3.select("#vis")
         .style("width", window.innerWidth * 0.9 + "px")
@@ -549,13 +591,13 @@
             }
             return barHeight;
           })
-          .attr("fill", (event,index) => {
-            if (event.event == "Pub deactivated" ) {
-              while(eventsOfPub[index-2].event == "Pub deactivated"){
-                index = index-2
+          .attr("fill", (event, index) => {
+            if (event.event == "Pub deactivated") {
+              while (eventsOfPub[index - 2].event == "Pub deactivated") {
+                index = index - 2;
               }
-              console.log(eventsOfPub[index-2]);
-              return getBarColors(eventsOfPub[index-2])
+              console.log(eventsOfPub[index - 2]);
+              return getBarColors(eventsOfPub[index - 2]);
               //Startindex = Pub deactivated
               //Rückwärtssuche nach dem vorletzten Event (das letzte müsste activate sein)
               //Farbe vom vorletzten Event zurückgeben
@@ -564,7 +606,7 @@
             }
             return getBarColors(event);
           })
-          
+
           .on("mouseover", (event) => mouseover(event.event))
           .on("mouseout", (d, a) => mouseout(d, a));
       });
@@ -585,10 +627,8 @@
         //alle Events einer Pub
         let currentEvents = session
           .filter(
-            (event) =>
-              event.doi == doi &&
-              event.event.startsWith("Pub") //&&
-              //event.event != "Pub filtered"
+            (event) => event.doi == doi && event.event.startsWith("Pub") //&&
+            //event.event != "Pub filtered"
           )
           .sort((a, b) => parseInt(a.date) - parseInt(b.date));
         svg
@@ -614,18 +654,20 @@
           .attr("height", function (d, i) {
             // height = 0, if event is qd, added, excluded or activated
             // Pub deactivated => gleiche Maske wie für das vorhergehende Event (vgl. lastwasactive added actionDetails)
-            if ( 
+            if (
               [
                 "Pub qd for selected",
                 "Pub added",
                 "Pub excluded",
                 "Pub activated",
-              ].includes(d.event) || (d.event == "Pub deactivated" &&  [
-                "Pub qd for selected",
-                "Pub added",
-                "Pub excluded",
-                "Pub activated",
-              ].includes(d.actionDetails))
+              ].includes(d.event) ||
+              (d.event == "Pub deactivated" &&
+                [
+                  "Pub qd for selected",
+                  "Pub added",
+                  "Pub excluded",
+                  "Pub activated",
+                ].includes(d.actionDetails))
             ) {
               return 0;
             }
@@ -646,24 +688,6 @@
           .on("mouseover", (event) => mouseover(event.event))
           .on("mouseout", (d, a) => mouseout(d, a));
       });
-
-      let allEventTypes = [
-        "Pub qd for selected",
-        "Pub added",
-        "Pub excluded",
-        "Pub suggested",
-        "Pub activated",
-        "Pub filtered",
-        "Network mode changed",
-        "Network collapsed",
-        "Network expanded",
-        "Clicked doi",
-        "Clicked scholar",
-        "Filter updated",
-        "Filter removed",
-        "Keywords updated",
-        "Load more",
-      ];
 
       let legend1Drawn = false;
       let legend2Drawn = false;
@@ -738,7 +762,6 @@
               .append("text")
               .attr("x", 5)
               .attr("y", yPosition + 3)
-
               .text("Interface Actions")
               .style("fill", "black")
               .style("font-size", "8px");
@@ -823,7 +846,8 @@
             .attr("href", (d) => getIconpath(d.event))
             .on("mouseover", (event) => {
               console.log(event);
-mouseover(event.event)})
+              mouseover(event.event);
+            })
             .on("mouseout", (d, a) => mouseout(d, a));
         });
 
@@ -889,6 +913,212 @@ mouseover(event.event)})
         event.actionDetails = eventsOfPub[indexOfLastRelevantEvent].event;
         return eventsOfPub[indexOfLastRelevantEvent].event == "Pub activated";
       }
+
+      let allEventTypes = [
+        "Pub qd for selected",
+        "Pub added",
+        "Pub excluded",
+        "Pub suggested",
+        "Pub activated",
+        "Pub filtered",
+        "Network mode changed",
+        "Network collapsed",
+        "Network expanded",
+        "Clicked doi",
+        "Clicked scholar",
+        "Filter updated",
+        "Filter removed",
+        "Keywords updated",
+        "Load more",
+      ];
+
+      function isCheckOrExplore(event, checkOrExplore) {
+        //Nur mit Origin suggested
+        let origin = [
+          "Pub activated",
+          "Clicked doi",
+          "Clicked scholar",
+          "Pub qd for selected",
+          "Pub added",
+          "Pub excluded",
+        ];
+
+        //ok
+        let pass = ["Network collapsed", "Filter removed", "Load more"];
+
+        //Netzwerkevents
+        let networkEvents = [
+          "Network mode changed",
+          "Network collapsed",
+          "Network expanded",
+        ];
+
+        //excludeEvents werden nicht mit einbezogen!
+        let excludeEvents = [
+          "Filter updated",
+          "Keywords updated",
+          "Network mode changed",
+          "Network collapsed",
+          "Network expanded",
+        ];
+        //irrelevant:
+        let irrelevant = ["Pub suggested", "Pub filtered"];
+
+        //Check
+        if (checkOrExplore == "check") {
+          return (
+            (origin.includes(event.event) &&
+              event.activationSourceComponent == "suggested") ||
+            pass.includes(event.event)
+          );
+        } else if (checkOrExplore == "explore") {
+          return (
+            (origin.includes(event.event) &&
+              event.activationSourceComponent == "network") ||
+            pass.includes(event.event) ||
+            networkEvents.includes(event.event)
+          );
+        }
+      }
+
+      //Brushing
+
+      const gb = svg.append("g").call(
+        d3
+          .brushX()
+          .extent([
+            [legendPadding, actionLineHeight - 70],
+            [width - 25, actionLineHeight],
+          ])
+          .on("brush", brushed)
+      );
+
+      //Globale Variablen für Selection und Pattern
+      var currentPattern = "seed";
+      var currentSelection = [];
+
+      //Update Selection in globaler Variable (Dauer, Liste der Events)
+      //Update Anzeige Anzahl und Art passender/unpassender Ereignisse
+      function brushed(brushevent) {
+        let start = brushevent.selection[0];
+        let end = brushevent.selection[1];
+        console.log("Moved: Filtered events");
+        let selected = unfilteredActionEvents.filter(
+          (event) =>
+            start < xScale(new Date(event.date)) &&
+            end > xScale(new Date(event.date))
+        );
+        currentSelection = selected;
+        updateFittingPatterns();
+
+        console.log(currentSelection);
+        /* var pattern = {
+          name: "test pattern",
+          duration: xScale.invert(end - start),
+          eventCount: selected.length,
+          notFittingEventsCount: 19,
+        };
+
+        // Converting the object to a JSON string
+        var jsonString = JSON.stringify(pattern);
+
+        console.log(jsonString); */
+      }
+      //Vorgehen: Typ auswählen und filtern nach fitting und nicht fitting events
+      //Für jeden Pattern eine boolean Funktion, die abklärt, ob das Event zum Pattern passt oder nicht
+
+      //Eingabe des current Pattern => update current Pattern
+      //und Anzeige der fitting und nicht fitting Ereignisse => extra Methode
+      d3.select("#selectButton").on("change", function (d) {
+        // recover the option that has been chosen
+        currentPattern = d3.select(this).property("value");
+        console.log(currentPattern);
+        updateFittingPatterns();
+      });
+
+      function matchPattern(currentPattern, event) {
+        switch (currentPattern) {
+          case "seed":
+            return (
+              (event.event == "Pub qd for selected" &&
+                event.activationSourceComponent == "import") ||
+              event.event == "Pub added"
+            );
+          case "refine":
+            return ![
+              "Pub qd for selected",
+              "Pub added",
+              "Pub excluded",
+            ].includes(event.event);
+          case "check":
+            return isCheckOrExplore(event, "check");
+          case "explore":
+            return isCheckOrExplore(event, "explore");
+
+          case "curate":
+            return (
+              (event.event == "Pub activated" &&
+                event.activationSourceComponent == "selected") ||
+              event.event == "Pub excluded"
+            );
+
+          default:
+            return true;
+        }
+      }
+      function updateFittingPatterns() {
+        let fittingPatterns = currentSelection.filter((event) =>
+          matchPattern(currentPattern, event)
+        );
+        let illfittingPatterns = currentSelection.filter(
+          (event) => !matchPattern(currentPattern, event)
+        );
+
+        function updateLists(ul, currentEvents) {
+          let elementTypes = [];
+          currentEvents.forEach((event) => {
+            elementTypes.push(event.event);
+          });
+
+          let data = new Set(elementTypes);
+
+          //remove duplicates / get event types only
+          // Select all list items
+          const li = ul.selectAll("li").data(data);
+
+          // Update existing items
+          li.text(
+            (d) =>
+              d +
+              " (" +
+              currentEvents.filter((event) => event.event === d).length +
+              ")"
+          );
+
+          // Enter new items
+          li.enter()
+            .append("li")
+            .text(
+              (d) =>
+                d +
+                " (" +
+                currentEvents.filter((event) => event.event === d).length +
+                ")"
+            );
+
+          // Exit old items
+          li.exit().remove();
+        }
+        updateLists(d3.select("#fitting ul"), fittingPatterns);
+        updateLists(d3.select("#illfitting ul"), illfittingPatterns);
+      }
+
+      //Erstellen des JSON-Objekts und auf die Konsole loggen
+      //Pattern einzeichnen (mit Position und entsprechender Farbe bei Balken
+      //oberhalb von Actionlines (Muster für Vergleiche))
+      d3.select("#saveButton").on("click", function (d) {
+        console.log("Save");
+      });
     }
 
     main();
