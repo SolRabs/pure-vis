@@ -47,7 +47,14 @@
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <div>
     <select id="selectButton"></select>
+    <label for="customPattern"></label>
+    <input id="customPattern" placeholder="Pattern name" />
+    <input id="customPatternDesc" placeholder="Pattern description" />
     <button id="saveButton">Save Pattern</button>
+  </div>
+  <br />
+  <div>
+    <input id="patternSetName" placeholder="Pattern set name" />
     <button id="exportButton">Export all Patterns</button>
   </div>
   <div id="fitting">
@@ -64,9 +71,9 @@
     "use strict";
     async function loadData() {
       //const session = await d3.csv("data/test.csv");
-      const session = await d3.csv("data/session-long.csv");
+      //const session = await d3.csv("data/session-long.csv");
       //const session = await d3.csv("data/session-all-patterns.csv");
-      //const session = await d3.csv("data/two-subfields.csv");
+      const session = await d3.csv("data/testsession.csv");
       return session;
     }
 
@@ -120,7 +127,6 @@
       }
 
       function mouseover(mouseData) {
-        console.log(mouseData);
         svg.append("g").attr("id", "tooltip");
         let tooltipX = event.pageX;
         let tooltipY = event.pageY;
@@ -210,7 +216,7 @@
       });
 
       //Select Button
-      var patterns = ["seed", "refine", "check", "explore", "curate"];
+      var patterns = ["custom", "seed", "refine", "check", "explore", "curate"];
 
       // add the options to the button
       d3.select("#selectButton")
@@ -407,7 +413,6 @@
                 filterCount = filterCount + 1;
               }
             }
-            console.log(keywordScale(filterCount));
             currentY = keywordScale(filterCount) + topPadding; //TODO: warum braucht man hier topPadding?
             context.lineTo(xScale(event.date), currentY);
             currentX = xScale(event.date);
@@ -522,7 +527,7 @@
           case "curate":
             return "#f8446c";
           default:
-            return "red";
+            return "#28d464";
         }
       }
 
@@ -635,7 +640,6 @@
               while (eventsOfPub[index - 2].event == "Pub deactivated") {
                 index = index - 2;
               }
-              console.log(eventsOfPub[index - 2]);
               return getBarColors(eventsOfPub[index - 2]);
               //Startindex = Pub deactivated
               //Rückwärtssuche nach dem vorletzten Event (das letzte müsste activate sein)
@@ -1033,7 +1037,7 @@
       );
 
       //Globale Variablen für Selection und Pattern
-      var currentPattern = "seed";
+      var currentPattern = patterns[0];
       var currentSelection = [];
 
       //Update Selection in globaler Variable (Dauer, Liste der Events)
@@ -1041,7 +1045,6 @@
       function brushed(brushevent) {
         let start = brushevent.selection[0];
         let end = brushevent.selection[1];
-        console.log("Moved: Filtered events");
         let selected = unfilteredActionEvents.filter(
           (event) =>
             start < xScale(new Date(event.date)) &&
@@ -1058,7 +1061,6 @@
       d3.select("#selectButton").on("change", function (d) {
         // recover the option that has been chosen
         currentPattern = d3.select(this).property("value");
-        console.log(currentPattern);
         updateFittingPatterns();
       });
 
@@ -1143,15 +1145,26 @@
       var detectedPatterns = [];
       var patternsAsJson = [];
       d3.select("#saveButton").on("click", function (d) {
+        if (currentSelection.length == 0) {
+          console.log("No events in selection for pattern.");
+          return;
+        }
         let start = currentSelection[0].date;
         let end = currentSelection[currentSelection.length - 1].date;
+        let patternName = currentPattern;
+        let patternDesc = "";
+        if (currentPattern == "custom") {
+          patternName = document.getElementById("customPattern").value;
+          patternDesc = document.getElementById("customPatternDesc").value;
+        }
         var pattern = {
-          patternname: currentPattern,
-          patternstart: start,
-          patternend: end,
+          patternName: patternName,
+          patternDesc: patternDesc,
+          patternStart: start,
+          patternEnd: end,
           duration: end - start,
           eventCount: currentSelection.length,
-          //events: currentSelection,
+          patternId: detectedPatterns.length,
           illFittingEventsCount: currentSelection.filter(
             (event) => !matchPattern(currentPattern, event)
           ).length,
@@ -1161,45 +1174,83 @@
         var jsonString = JSON.stringify(pattern);
 
         patternsAsJson.push(jsonString);
-        console.log("Saved", jsonString);
 
         //Pattern einzeichnen (mit Position und entsprechender Farbe bei Balken
         //oberhalb von Actionlines (Muster für Vergleiche))
         detectedPatterns.push(pattern);
+        console.log("Saved " + patternName + " pattern.");
         //Hier detected Patterns Zeichen update triggern
         drawPatterns();
+        //document.querySelectorAll("div input").value = "Jep";
+
+        document.querySelectorAll("div input").forEach(function (input) {
+          input.value = "";
+          // Trigger the placeholder to be displayed
+          input.blur();
+          input.focus();
+        });
       });
 
       function drawPatterns() {
-        console.log(detectedPatterns);
-        svg.selectAll("#patternbars").remove();
+        var removeSelection = d3
+          .select("body > div#vis > svg")
+          .selectAll("rect#patternbars");
+
+        removeSelection.remove();
 
         svg
-          .selectAll("#patternbars")
+          .selectAll("#whatever")
           .data(detectedPatterns)
           .enter()
           .append("rect")
           .attr("id", "patternbars")
           .attr("x", function (d) {
-            return xScale(d.patternstart) - totalCircleRadius;
+            return xScale(d.patternStart) - totalCircleRadius;
           })
           .attr("y", function (d) {
-            return patternLineLocation;
+            if (
+              Boolean(
+                detectedPatterns.filter(
+                  (pattern) =>
+                    pattern.patternId < d.patternId &&
+                    ((pattern.patternStart >= d.patternStart &&
+                      pattern.patternStart <= d.patternEnd) ||
+                      (pattern.patternEnd >= d.patternStart &&
+                        pattern.patternEnd <= d.patternEnd) ||
+                      (pattern.patternEnd >= d.patternEnd &&
+                        pattern.patternStart <= d.patternStart))
+                ).length
+              )
+            ) {
+              return patternLineLocation - 10;
+            } else {
+              return patternLineLocation;
+            }
           })
           .attr("width", (d) => {
             //2 * totalCircleRadius, weil der Timestamp im Kreis im Mittelpunkt is => + 2* Radius für rechts und links
             return (
-              xScale(d.patternend) -
-              xScale(d.patternstart) +
+              xScale(d.patternEnd) -
+              xScale(d.patternStart) +
               2 * totalCircleRadius
             );
           })
-          .attr("height", patternLineHeight * 0.75)
-          .attr("fill", (d) => getPatternColors(d.patternname));
+          .attr("height", function (d) {
+            return patternLineHeight * 0.75;
+          })
+          .attr("fill", (d) => getPatternColors(d.patternName));
       }
 
       d3.select("#exportButton").on("click", function (d) {
-        console.log(patternsAsJson);
+        patternSetName = document.getElementById("patternSetName").value;
+        if (patternSetName == "" || patternSetName == "Pattern set name") {
+          console.log("Pattern Set Name missing");
+        } else {
+          console.log({
+            patternSetName: patternSetName,
+            patterns: patternsAsJson,
+          });
+        }
       });
     }
 
