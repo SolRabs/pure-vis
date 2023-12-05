@@ -45,6 +45,7 @@
 <body>
   <script src="https://d3js.org/d3-array.v2.min.js"></script>
   <script src="https://d3js.org/d3.v6.min.js"></script>
+
   <div>
     <select id="selectButton"></select>
     <label for="customPattern"></label>
@@ -68,18 +69,29 @@
   <div id="vis"></div>
 
   <script>
-    "use strict";
+    ("use strict");
     async function loadData() {
+      //const filename = "test.csv"
+      const filename = "testsession.csv"
+      //const filename = "session-long.csv"
+      //const filename = "session-all-patterns.csv"
+
       //const session = await d3.csv("data/test.csv");
       //const session = await d3.csv("data/session-long.csv");
       //const session = await d3.csv("data/session-all-patterns.csv");
-      const session = await d3.csv("data/testsession.csv");
+      const session = await d3.csv("data/"+filename);
       return session;
+    }
+
+    //Test function to read in JSON for later 
+    async function readJSON() {
+      let data = await d3.json("data/test3.json");
+      console.log(typeof(JSON.parse(data.patterns)));
     }
 
     async function main() {
       let session = await loadData();
-
+      readJSON()
       //Zeit umrechnen in Sekunden seit Start
       session.map(
         (event) =>
@@ -1246,12 +1258,37 @@
         if (patternSetName == "" || patternSetName == "Pattern set name") {
           console.log("Pattern Set Name missing");
         } else {
+          
           console.log({
             patternSetName: patternSetName,
             patterns: patternsAsJson,
           });
+
+          saveAsFile(
+            patternSetName + ".json",
+            "data/patternSets",
+            JSON.stringify({
+            patternSetName: patternSetName,
+            patterns: JSON.stringify(patternsAsJson),
+          }, null, "\t")
+          );
+          
+          
         }
       });
+    }
+    function saveAsFile(filename, mime, data) {
+      const blob = new Blob([data], { type: mime });
+      if (window.navigator.msSaveOrOpenBlob) {
+        window.navigator.msSaveBlob(blob, filename);
+      } else {
+        const elem = window.document.createElement("a");
+        elem.href = window.URL.createObjectURL(blob);
+        elem.download = filename;
+        document.body.appendChild(elem);
+        elem.click();
+        document.body.removeChild(elem);
+      }
     }
 
     main();
