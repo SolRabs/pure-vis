@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
-<title>Graph Visualization</title>
+<title>Session overview</title>
 <style>
   body {
     margin: 50px;
@@ -71,27 +71,24 @@
   <script>
     ("use strict");
     async function loadData() {
-      //const filename = "test.csv"
-      const filename = "testsession.csv"
-      //const filename = "session-long.csv"
+      //const filename = "test.csv";
+      //const filename = "testsession.csv";
+      const filename = "session-long.csv";
       //const filename = "session-all-patterns.csv"
 
-      //const session = await d3.csv("data/test.csv");
-      //const session = await d3.csv("data/session-long.csv");
-      //const session = await d3.csv("data/session-all-patterns.csv");
-      const session = await d3.csv("data/"+filename);
+      const session = await d3.csv("data/" + filename);
       return session;
     }
 
-    //Test function to read in JSON for later 
+    //Test function to read in JSON for later
     async function readJSON() {
       let data = await d3.json("data/test3.json");
-      console.log(typeof(JSON.parse(data.patterns)));
+      console.log(typeof JSON.parse(data.patterns));
     }
 
     async function main() {
       let session = await loadData();
-      readJSON()
+
       //Zeit umrechnen in Sekunden seit Start
       session.map(
         (event) =>
@@ -102,6 +99,8 @@
       );
       let start = session[0].date;
       session.map((event) => (event.date = event.date - start));
+
+      removeDoubleFilterEvents(session);
 
       let actionevents = [
         "Pub qd for selected",
@@ -117,8 +116,13 @@
         "Filter removed",
         "Keywords updated",
         "Load more",
+        "Refined authors",
+        "Clicked author scholar",
+        "Opened authors",
+        "Closed authors",
+        "Opened search",
+        "Closed search",
       ];
-      removeDoubleFilterEvents(session);
       let unfilteredActionEvents = session.filter((event) =>
         actionevents.includes(event.event)
       );
@@ -371,6 +375,7 @@
         .tickFormat(d3.format("d"));
 
       svg
+        .selectAll(".axes")
         .append("g")
         .attr(
           "transform",
@@ -505,6 +510,7 @@
           case "Clicked scholar":
             return "#e8e4e4";
           case "Keywords updated":
+          case "Refined authors":
             return "#ffe48c";
           case "Pub excluded":
             return "#f8446c";
@@ -521,6 +527,12 @@
           case "Load more":
           case "Update":
             return "#383434";
+          case "Clicked author scholar":
+          case "Opened search":
+          case "Closed search":
+          case "Opened authors":
+          case "Closed authors":
+            return "#08d4b4";
           default:
             return "red";
         }
@@ -770,6 +782,12 @@
             "Network mode changed",
             "Network collapsed",
             "Network expanded",
+            "Opened authors",
+            "Closed authors",
+            "Opened search",
+            "Closed search",
+            "Refined authors",
+            "Clicked author scholar",
           ];
 
           function getRowHeight(event) {
@@ -807,7 +825,6 @@
               .append("text")
               .attr("x", 5)
               .attr("y", yPosition + 3)
-
               .text("Pub Interactions")
               .style("fill", "black")
               .style("font-size", "8px");
@@ -907,6 +924,7 @@
         });
 
       function getIconpath(event) {
+        console.log(event);
         let iconpath = "";
         switch (event) {
           case "Pub filtered":
@@ -949,8 +967,23 @@
           case "Pub excluded":
             iconpath = "icons/exclude.svg";
             break;
-          default:
-            iconpath = "icons/filter_off.svg";
+          case "Opened authors":
+            iconpath = "icons/open-authors.svg";
+            break;
+          case "Closed authors":
+            iconpath = "icons/close-authors.svg";
+            break;
+          case "Opened search":
+            iconpath = "icons/open-search.svg";
+            break;
+          case "Closed search":
+            iconpath = "icons/close-search.svg";
+            break;
+          case "Refined authors":
+            iconpath = "icons/refine-author.svg";
+            break;
+          case "Clicked author scholar":
+            iconpath = "icons/author-scholar.svg";
             break;
         }
         return iconpath;
@@ -985,6 +1018,12 @@
         "Filter removed",
         "Keywords updated",
         "Load more",
+        "Refined authors",
+        "Clicked author scholar",
+        "Opened authors",
+        "Closed authors",
+        "Opened search",
+        "Closed search",
       ];
 
       function isCheckOrExplore(event, checkOrExplore) {
@@ -1168,6 +1207,10 @@
         if (currentPattern == "custom") {
           patternName = document.getElementById("customPattern").value;
           patternDesc = document.getElementById("customPatternDesc").value;
+          if (patternName.trim().length == 0) {
+            console.log("Name for pattern missing.");
+            return;
+          }
         }
         var pattern = {
           patternName: patternName,
@@ -1185,8 +1228,8 @@
         // Converting the object to a JSON string
         var jsonString = JSON.stringify(pattern);
 
-        patternsAsJson.push(jsonString);
-
+        //patternsAsJson.push(jsonString);
+        patternsAsJson.push(pattern)
         //Pattern einzeichnen (mit Position und entsprechender Farbe bei Balken
         //oberhalb von Actionlines (Muster für Vergleiche))
         detectedPatterns.push(pattern);
@@ -1250,15 +1293,28 @@
           .attr("height", function (d) {
             return patternLineHeight * 0.75;
           })
-          .attr("fill", (d) => getPatternColors(d.patternName));
+          .attr("fill", (d) => getPatternColors(d.patternName))
+          .on("dblclick", function (domElem, pattern) {
+            removePattern(domElem, pattern);
+          });
       }
 
+      function removePattern(domElem, pattern) {
+        patternsAsJson = patternsAsJson.filter(
+          (elem) => JSON.parse(elem).patternId != pattern.patternId
+        );
+        detectedPatterns = detectedPatterns.filter(
+          (elem) => elem.patternId != pattern.patternId
+        );
+        d3.select(domElem.target).remove();
+      }
+
+      /*
       d3.select("#exportButton").on("click", function (d) {
         patternSetName = document.getElementById("patternSetName").value;
         if (patternSetName == "" || patternSetName == "Pattern set name") {
           console.log("Pattern Set Name missing");
         } else {
-          
           console.log({
             patternSetName: patternSetName,
             patterns: patternsAsJson,
@@ -1267,15 +1323,49 @@
           saveAsFile(
             patternSetName + ".json",
             "data/patternSets",
-            JSON.stringify({
-            patternSetName: patternSetName,
-            patterns: JSON.stringify(patternsAsJson),
-          }, null, "\t")
+            JSON.stringify(
+              {
+                patternSetName: patternSetName,
+                patterns: JSON.stringify(patternsAsJson),
+              },
+              null,
+              "\t"
+            )
           );
-          
-          
+        }
+        
+      });
+      */
+      d3.select("#exportButton").on("click", function (d) {
+        patternSetName = document.getElementById("patternSetName").value;
+        if (patternSetName == "" || patternSetName == "Pattern set name") {
+          console.log("Pattern Set Name missing");
+        } else {
+          console.log({
+            patternSetName: patternSetName,
+            patterns: patternsAsJson,
+          });
+
+          patternsAsJson.forEach(pattern => {
+            pattern.patternSetName = patternSetName
+          })
+
+
+          saveAsFile(
+            patternSetName + ".json",
+            "data/patternSets",
+            JSON.stringify(patternsAsJson,
+              null,
+              "\t"
+            )
+            
+          );
         }
       });
+
+
+
+
     }
     function saveAsFile(filename, mime, data) {
       const blob = new Blob([data], { type: mime });
