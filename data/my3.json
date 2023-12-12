@@ -1,0 +1,24 @@
+[
+	{
+		"patternName": "curate",
+		"patternDesc": "",
+		"patternStart": 581,
+		"patternEnd": 793,
+		"duration": 212,
+		"eventCount": 13,
+		"patternId": 0,
+		"illFittingEventsCount": 12,
+		"patternSetName": "my3"
+	},
+	{
+		"patternName": "curate",
+		"patternDesc": "",
+		"patternStart": 922,
+		"patternEnd": 1078,
+		"duration": 156,
+		"eventCount": 16,
+		"patternId": 1,
+		"illFittingEventsCount": 15,
+		"patternSetName": "my3"
+	}
+]

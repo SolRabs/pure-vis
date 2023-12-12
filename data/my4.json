@@ -1,0 +1,46 @@
+[
+	{
+		"patternName": "seed",
+		"patternDesc": "",
+		"patternStart": 651,
+		"patternEnd": 948,
+		"duration": 297,
+		"eventCount": 25,
+		"patternId": 0,
+		"illFittingEventsCount": 25,
+		"patternSetName": "my4"
+	},
+	{
+		"patternName": "seed",
+		"patternDesc": "",
+		"patternStart": 651,
+		"patternEnd": 948,
+		"duration": 297,
+		"eventCount": 25,
+		"patternId": 1,
+		"illFittingEventsCount": 25,
+		"patternSetName": "my4"
+	},
+	{
+		"patternName": "seed",
+		"patternDesc": "",
+		"patternStart": 1013,
+		"patternEnd": 1340,
+		"duration": 327,
+		"eventCount": 34,
+		"patternId": 2,
+		"illFittingEventsCount": 34,
+		"patternSetName": "my4"
+	},
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 1142,
+		"patternEnd": 1432,
+		"duration": 290,
+		"eventCount": 31,
+		"patternId": 3,
+		"illFittingEventsCount": 9,
+		"patternSetName": "my4"
+	}
+]

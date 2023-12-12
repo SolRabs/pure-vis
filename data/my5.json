@@ -1,0 +1,35 @@
+[
+	{
+		"patternName": "Custom1",
+		"patternDesc": "Looooooooooooooooooooooooooooooooooooooooooooooooooooooong Description",
+		"patternStart": 468,
+		"patternEnd": 779,
+		"duration": 311,
+		"eventCount": 24,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "my5"
+	},
+	{
+		"patternName": "Custom2",
+		"patternDesc": "Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeveeeeeeeeeeeeeeeeeeeeeeen Looooooooooooooooooooooooooooooooooooooooooooooooooonger Description",
+		"patternStart": 468,
+		"patternEnd": 779,
+		"duration": 311,
+		"eventCount": 24,
+		"patternId": 1,
+		"illFittingEventsCount": 0,
+		"patternSetName": "my5"
+	},
+	{
+		"patternName": "custom3",
+		"patternDesc": "Short Desc",
+		"patternStart": 873,
+		"patternEnd": 1156,
+		"duration": 283,
+		"eventCount": 24,
+		"patternId": 2,
+		"illFittingEventsCount": 0,
+		"patternSetName": "my5"
+	}
+]

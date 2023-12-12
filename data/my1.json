@@ -1,0 +1,24 @@
+[
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 651,
+		"patternEnd": 948,
+		"duration": 297,
+		"eventCount": 25,
+		"patternId": 0,
+		"illFittingEventsCount": 5,
+		"patternSetName": "my1"
+	},
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 1142,
+		"patternEnd": 1492,
+		"duration": 350,
+		"eventCount": 36,
+		"patternId": 1,
+		"illFittingEventsCount": 11,
+		"patternSetName": "my1"
+	}
+]

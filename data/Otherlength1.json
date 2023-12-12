@@ -1,0 +1,35 @@
+[
+	{
+		"patternName": "Test1",
+		"patternDesc": "Hiodöklllllllllllllllllllllllllllllllllllddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+		"patternStart": 277,
+		"patternEnd": 519,
+		"duration": 242,
+		"eventCount": 16,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Otherlength1"
+	},
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 646,
+		"patternEnd": 894,
+		"duration": 248,
+		"eventCount": 16,
+		"patternId": 1,
+		"illFittingEventsCount": 3,
+		"patternSetName": "Otherlength1"
+	},
+	{
+		"patternName": "check",
+		"patternDesc": "",
+		"patternStart": 1126,
+		"patternEnd": 1347,
+		"duration": 221,
+		"eventCount": 22,
+		"patternId": 2,
+		"illFittingEventsCount": 19,
+		"patternSetName": "Otherlength1"
+	}
+]

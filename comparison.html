@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #chart-container {
+      width: 800px;
+      height: 400px;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <div id="chart-container">
+      <div
+        class="testtip"
+        style="
+          opacity: 0;
+          background-color: white;
+          border: solid 2px;
+          border-radius: 5px;
+          padding: 5px;
+          position: absolute;
+          left: 413.5px;
+          top: 156px;
+          height: auto;
+          width: 150px;
+          overflow: auto;
+          word-wrap: break-word;
+        "
+      ></div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <script>
+      ("use strict");
+
+      async function readJSON() {
+        filenames = ["my1", "my2", "my3", "my4", "my5", "Otherlength1"];
+
+        const jsonFiles = filenames.map((name) => "data/" + name + ".json");
+
+        const promises = jsonFiles.map((file) => d3.json(file));
+
+        try {
+          let results = await Promise.all(promises);
+          console.log("Loaded JSON pattern set files:", results);
+          results = results.flat();
+          return results;
+        } catch (error) {
+          console.error("Error loading JSON files:", error);
+        }
+      }
+      async function main() {
+        const allPatterns = await readJSON();
+        const patternSetNames = Array.from(
+          new Set(allPatterns.map((patterns) => patterns.patternSetName))
+        );
+
+        const width = 800;
+        const barHeight = 20;
+        const spaceBetweenBars = 40;
+        const legendMargin = 30
+        
+        const svg = d3
+          .select("#chart-container")
+          .append("svg")
+          .attr("width", width)
+          .attr("height", 800);
+
+        var xScale = d3
+          .scaleLinear()
+          .domain([
+            0,
+            d3.max(
+              new Set(
+                allPatterns.map((patterns) => parseInt(patterns.patternEnd))
+              )
+            ),
+          ])
+          .range([25, width - 25])
+          .nice();
+
+        const timelines = svg
+          .selectAll(".timelines")
+          .data(patternSetNames)
+          .enter()
+          .append("g")
+          .attr("id", "timelines")
+          .attr(
+            "transform",
+            (d, i) => "translate(0," + (i + 1) * spaceBetweenBars + ")"
+          )
+          .call(d3.axisBottom(xScale).tickValues([]));
+
+        svg
+          .selectAll("whatevs")
+          .data(patternSetNames)
+          .enter()
+          .append("text")
+          .attr(
+            "transform",
+            (d, i) => "translate(5," + (i + 1) * spaceBetweenBars + ")"
+          )
+          .text((d) => d)
+          .style("fill", "black")
+          .style("font-size", "8px");
+
+        const mouseover = function (event, d) {
+          console.log(d.patternDesc);
+
+          d3.select(".testtip")
+            .style("opacity", 1)
+            .style("height", "auto")
+            .style("width", "150px")
+            .html("<b>" + d.patternName + "</b>" + "<br> " + d.patternDesc);
+
+          d3.select(this).style("stroke", "black").style("opacity", 1);
+        };
+
+        const mousemove = function (event, d) {
+          d3.select(".testtip")
+            .style("left", d3.pointer(event)[0] + 70 + "px")
+            .style("top", d3.pointer(event)[1] + "px");
+        };
+        const mouseleave = function (event, d) {
+          d3.select(".testtip")
+            .style("opacity", 0)
+            .style("height", 0)
+            .style("width", 0);
+          d3.select(this).style("stroke", "none");
+        };
+
+        const bars = svg
+          .selectAll(".rectangle-group")
+          .data(allPatterns)
+          .enter()
+          .append("g")
+          .attr("class", "rectangle-group")
+          .append("rect")
+          .attr("y", (d) => {
+            let shift = 0;
+            if (
+              Boolean(
+                allPatterns.filter(
+                  (pattern) =>
+                    pattern.patternSetName == d.patternSetName &&
+                    pattern.patternId < d.patternId &&
+                    ((pattern.patternStart >= d.patternStart &&
+                      pattern.patternStart <= d.patternEnd) ||
+                      (pattern.patternEnd >= d.patternStart &&
+                        pattern.patternEnd <= d.patternEnd) ||
+                      (pattern.patternEnd >= d.patternEnd &&
+                        pattern.patternStart <= d.patternStart))
+                ).length
+              )
+            ) {
+              shift = 1;
+            }
+
+            return (
+              (patternSetNames.findIndex((name) => name == d.patternSetName) +
+                1) *
+                spaceBetweenBars -
+              barHeight -
+              (shift * barHeight) / 2
+            );
+          })
+          .attr("x", (d) => xScale(d.patternStart))
+          .attr("width", (d) => xScale(d.patternEnd) - xScale(d.patternStart))
+          .attr("height", barHeight)
+          .attr("fill", (d) => getPatternColors(d.patternName))
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
+
+        function getPatternColors(pattern) {
+          switch (pattern) {
+            case "seed":
+              return "#08d4b4";
+            case "refine":
+              return "#ffe48c";
+            case "check":
+              return "#408cd4";
+            case "explore":
+              return "#807c7c";
+            case "curate":
+              return "#f8446c";
+            default:
+              return "#28d464";
+          }
+        }
+      }
+      main();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+[
+	{
+		"patternName": "explore",
+		"patternDesc": "",
+		"patternStart": 581,
+		"patternEnd": 803,
+		"duration": 222,
+		"eventCount": 14,
+		"patternId": 0,
+		"illFittingEventsCount": 9,
+		"patternSetName": "my2"
+	},
+	{
+		"patternName": "explore",
+		"patternDesc": "",
+		"patternStart": 937,
+		"patternEnd": 1156,
+		"duration": 219,
+		"eventCount": 21,
+		"patternId": 1,
+		"illFittingEventsCount": 21,
+		"patternSetName": "my2"
+	},
+	{
+		"patternName": "explore",
+		"patternDesc": "",
+		"patternStart": 1247,
+		"patternEnd": 1432,
+		"duration": 185,
+		"eventCount": 19,
+		"patternId": 2,
+		"illFittingEventsCount": 16,
+		"patternSetName": "my2"
+	}
+]
