@@ -67,10 +67,28 @@
     <ul></ul>
   </div>
   <div id="vis"></div>
+  <div
+    class="testtip"
+    style="
+      opacity: 0;
+      background-color: white;
+      border: solid 2px;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      left: 413.5px;
+      top: 156px;
+      height: auto;
+      width: 150px;
+      overflow: auto;
+      word-wrap: break-word;
+    "
+  ></div>
 
   <script>
     ("use strict");
     async function loadData() {
+      //const filename = "sessionLog.csv";
       //const filename = "test.csv";
       //const filename = "testsession.csv";
       const filename = "session-long.csv";
@@ -78,12 +96,6 @@
 
       const session = await d3.csv("data/" + filename);
       return session;
-    }
-
-    //Test function to read in JSON for later
-    async function readJSON() {
-      let data = await d3.json("data/test3.json");
-      console.log(typeof JSON.parse(data.patterns));
     }
 
     async function main() {
@@ -138,29 +150,26 @@
       let legendPadding = 130;
       let totalCircleRadius = 10;
 
-      function mouseout(mouseData) {
-        svg.select("#tooltip").remove();
-      }
+      const mouseover = function (event, d) {
+        d3.select(".testtip")
+          .style("opacity", 1)
+          .style("height", "auto")
+          .style("width", "150px")
+          .html(d.event + "<br> ");
+      };
 
-      function mouseover(mouseData) {
-        svg.append("g").attr("id", "tooltip");
-        let tooltipX = event.pageX;
-        let tooltipY = event.pageY;
-        d3.select("#tooltip")
-          .append("rect")
-          .attr("x", tooltipX)
-          .attr("y", tooltipY)
-          .attr("width", 200)
-          .attr("height", 30)
-          .attr("fill", "white")
-          .attr("stroke", "black");
-        d3.select("#tooltip")
-          .append("text")
-          .attr("x", tooltipX + 10)
-          .attr("y", tooltipY + 20)
-          .attr("stroke", "black")
-          .text(mouseData);
-      }
+      const mousemove = function (event, d) {
+        d3.select(".testtip")
+          .style("left", d3.pointer(event)[0] + 70 + "px")
+          .style("top", d3.pointer(event)[1]  + 150 + "px");
+      };
+
+      const mouseleave = function (event, d) {
+        d3.select(".testtip")
+          .style("opacity", 0)
+          .style("height", 0)
+          .style("width", 0);
+      };
 
       //Überflüssige Filterevents (Teilworte) entfernen.
       function removeDoubleFilterEvents(session, startindex = 0) {
@@ -617,8 +626,9 @@
           })
           .attr("height", barHeight)
           .attr("fill", (event) => getStrokeColors(event))
-          .on("mouseover", (event) => mouseover(event.event))
-          .on("mouseout", (d, a) => mouseout(d, a));
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
 
         svg
           .selectAll("mybar")
@@ -673,9 +683,9 @@
             }
             return getBarColors(event);
           })
-
-          .on("mouseover", (event) => mouseover(event.event))
-          .on("mouseout", (d, a) => mouseout(d, a));
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
       });
 
       let excludeForMask = [
@@ -752,8 +762,9 @@
           })
           .attr("fill", "white")
           .attr("opacity", 1)
-          .on("mouseover", (event) => mouseover(event.event))
-          .on("mouseout", (d, a) => mouseout(d, a));
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
       });
 
       let legend1Drawn = false;
@@ -858,8 +869,9 @@
             .attr("fill", (event) => getIconColors(event.event))
             .attr("cx", (event) => xScale(new Date(event.date)))
             .attr("cy", (event) => yPosition)
-            .on("mouseover", (event) => mouseover(event.event))
-            .on("mouseout", (d, a) => mouseout(d, a));
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave);
 
           d3.select(this)
             .append("image")
@@ -869,8 +881,9 @@
             .attr("width", imagesize)
             .attr("height", imagesize)
             .attr("href", (d) => getIconpath(d.event))
-            .on("mouseover", (event) => mouseover(event.event))
-            .on("mouseout", (d, a) => mouseout(d, a));
+            .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
         });
 
       //Punktevents für Pubs
@@ -896,11 +909,9 @@
                   uniqueDois.findIndex((elem) => elem == event.doi)
                 ) - 6
             )
-            .on("mouseover", (event) => {
-              console.log(event);
-              mouseover(event.event);
-            })
-            .on("mouseout", (d, a) => mouseout(d, a));
+            .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
 
           d3.select(this)
             .append("image")
@@ -916,11 +927,9 @@
             .attr("width", 9)
             .attr("height", 9)
             .attr("href", (d) => getIconpath(d.event))
-            .on("mouseover", (event) => {
-              console.log(event);
-              mouseover(event.event);
-            })
-            .on("mouseout", (d, a) => mouseout(d, a));
+            .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave);
         });
 
       function getIconpath(event) {
@@ -1206,12 +1215,12 @@
         let patternDesc = "";
         if (currentPattern == "custom") {
           patternName = document.getElementById("customPattern").value;
-          patternDesc = document.getElementById("customPatternDesc").value;
           if (patternName.trim().length == 0) {
             console.log("Name for pattern missing.");
             return;
           }
         }
+        patternDesc = document.getElementById("customPatternDesc").value;
         var pattern = {
           patternName: patternName,
           patternDesc: patternDesc,
@@ -1228,8 +1237,7 @@
         // Converting the object to a JSON string
         var jsonString = JSON.stringify(pattern);
 
-        //patternsAsJson.push(jsonString);
-        patternsAsJson.push(pattern)
+        patternsAsJson.push(pattern);
         //Pattern einzeichnen (mit Position und entsprechender Farbe bei Balken
         //oberhalb von Actionlines (Muster für Vergleiche))
         detectedPatterns.push(pattern);
@@ -1294,22 +1302,22 @@
             return patternLineHeight * 0.75;
           })
           .attr("fill", (d) => getPatternColors(d.patternName))
+          .attr("stroke","grey")
           .on("dblclick", function (domElem, pattern) {
+            console.log("h");
             removePattern(domElem, pattern);
           });
       }
 
       function removePattern(domElem, pattern) {
         patternsAsJson = patternsAsJson.filter(
-          (elem) => JSON.parse(elem).patternId != pattern.patternId
+          (elem) => elem.patternId != pattern.patternId
         );
         detectedPatterns = detectedPatterns.filter(
           (elem) => elem.patternId != pattern.patternId
         );
         d3.select(domElem.target).remove();
       }
-
-      /*
       d3.select("#exportButton").on("click", function (d) {
         patternSetName = document.getElementById("patternSetName").value;
         if (patternSetName == "" || patternSetName == "Pattern set name") {
@@ -1320,52 +1328,17 @@
             patterns: patternsAsJson,
           });
 
-          saveAsFile(
-            patternSetName + ".json",
-            "data/patternSets",
-            JSON.stringify(
-              {
-                patternSetName: patternSetName,
-                patterns: JSON.stringify(patternsAsJson),
-              },
-              null,
-              "\t"
-            )
-          );
-        }
-        
-      });
-      */
-      d3.select("#exportButton").on("click", function (d) {
-        patternSetName = document.getElementById("patternSetName").value;
-        if (patternSetName == "" || patternSetName == "Pattern set name") {
-          console.log("Pattern Set Name missing");
-        } else {
-          console.log({
-            patternSetName: patternSetName,
-            patterns: patternsAsJson,
+          patternsAsJson.forEach((pattern) => {
+            pattern.patternSetName = patternSetName;
           });
 
-          patternsAsJson.forEach(pattern => {
-            pattern.patternSetName = patternSetName
-          })
-
-
           saveAsFile(
             patternSetName + ".json",
             "data/patternSets",
-            JSON.stringify(patternsAsJson,
-              null,
-              "\t"
-            )
-            
+            JSON.stringify(patternsAsJson, null, "\t")
           );
         }
       });
-
-
-
-
     }
     function saveAsFile(filename, mime, data) {
       const blob = new Blob([data], { type: mime });

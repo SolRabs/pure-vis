@@ -8,7 +8,6 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
     }
 
     #chart-container {
@@ -43,7 +42,10 @@
       ("use strict");
 
       async function readJSON() {
-        filenames = ["my1", "my2", "my3", "my4", "my5", "Otherlength1"];
+        filenames = [
+          "personalAnnotation",
+          "exampleAnnotation",
+        ];
 
         const jsonFiles = filenames.map((name) => "data/" + name + ".json");
 
@@ -67,8 +69,8 @@
         const width = 800;
         const barHeight = 20;
         const spaceBetweenBars = 40;
-        const legendMargin = 30
-        
+        const legendmargin = 120;
+
         const svg = d3
           .select("#chart-container")
           .append("svg")
@@ -85,7 +87,7 @@
               )
             ),
           ])
-          .range([25, width - 25])
+          .range([legendmargin, width - 25])
           .nice();
 
         const timelines = svg
@@ -96,7 +98,12 @@
           .attr("id", "timelines")
           .attr(
             "transform",
-            (d, i) => "translate(0," + (i + 1) * spaceBetweenBars + ")"
+            (d, i) =>
+              "translate(" +
+              0 +
+              "," +
+              (i + 1) * spaceBetweenBars +
+              ")"
           )
           .call(d3.axisBottom(xScale).tickValues([]));
 
@@ -107,15 +114,13 @@
           .append("text")
           .attr(
             "transform",
-            (d, i) => "translate(5," + (i + 1) * spaceBetweenBars + ")"
+            (d, i) => "translate(0," + (i + 1) * spaceBetweenBars + ")"
           )
           .text((d) => d)
           .style("fill", "black")
-          .style("font-size", "8px");
+          .style("font-size", "10px");
 
         const mouseover = function (event, d) {
-          console.log(d.patternDesc);
-
           d3.select(".testtip")
             .style("opacity", 1)
             .style("height", "auto")

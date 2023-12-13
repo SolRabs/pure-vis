@@ -1,0 +1,79 @@
+[
+	{
+		"patternName": "Suche nach Surveys",
+		"patternDesc": "Boosten der Wörter Literature & Visual. Filtern nach surveypapern und Durchgehen der Vorschläge (bzw. Verwerfen der Vorschläge, da nichts Brauchbares dabei).",
+		"patternStart": 46,
+		"patternEnd": 414,
+		"duration": 368,
+		"eventCount": 18,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "personalAnnotation"
+	},
+	{
+		"patternName": "check",
+		"patternDesc": "Entfernen der Filter und Durchgehen der Vorschläge mit den Boostwörtern, die mir als Erstes eingefallen sind.",
+		"patternStart": 456,
+		"patternEnd": 651,
+		"duration": 195,
+		"eventCount": 20,
+		"patternId": 1,
+		"illFittingEventsCount": 0,
+		"patternSetName": "personalAnnotation"
+	},
+	{
+		"patternName": "explore",
+		"patternDesc": "",
+		"patternStart": 730,
+		"patternEnd": 779,
+		"duration": 49,
+		"eventCount": 4,
+		"patternId": 2,
+		"illFittingEventsCount": 1,
+		"patternSetName": "personalAnnotation"
+	},
+	{
+		"patternName": "Keywords => Check => Update",
+		"patternDesc": "Ausprobieren versch. Boostwords und jeweils checken der Ergebnisse",
+		"patternStart": 793,
+		"patternEnd": 1619,
+		"duration": 826,
+		"eventCount": 69,
+		"patternId": 3,
+		"illFittingEventsCount": 0,
+		"patternSetName": "personalAnnotation"
+	},
+	{
+		"patternName": "Boostwords durch Filter ersetzen",
+		"patternDesc": "Boostwords mit vielen Treffern durch Filter ersetzen",
+		"patternStart": 1647,
+		"patternEnd": 1785,
+		"duration": 138,
+		"eventCount": 12,
+		"patternId": 4,
+		"illFittingEventsCount": 0,
+		"patternSetName": "personalAnnotation"
+	},
+	{
+		"patternName": "Autoren ",
+		"patternDesc": "Scholar der Top-Autoren anschauen",
+		"patternStart": 1804,
+		"patternEnd": 1981,
+		"duration": 177,
+		"eventCount": 5,
+		"patternId": 5,
+		"illFittingEventsCount": 0,
+		"patternSetName": "personalAnnotation"
+	},
+	{
+		"patternName": "curate",
+		"patternDesc": "",
+		"patternStart": 2036,
+		"patternEnd": 2114,
+		"duration": 78,
+		"eventCount": 8,
+		"patternId": 6,
+		"illFittingEventsCount": 7,
+		"patternSetName": "personalAnnotation"
+	}
+]

@@ -1,0 +1,101 @@
+[
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 46,
+		"patternEnd": 56,
+		"duration": 10,
+		"eventCount": 3,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "check",
+		"patternDesc": "",
+		"patternStart": 87,
+		"patternEnd": 651,
+		"duration": 564,
+		"eventCount": 34,
+		"patternId": 1,
+		"illFittingEventsCount": 0,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "explore",
+		"patternDesc": "",
+		"patternStart": 695,
+		"patternEnd": 762,
+		"duration": 67,
+		"eventCount": 4,
+		"patternId": 2,
+		"illFittingEventsCount": 1,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 793,
+		"patternEnd": 821,
+		"duration": 28,
+		"eventCount": 6,
+		"patternId": 3,
+		"illFittingEventsCount": 0,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "check",
+		"patternDesc": "",
+		"patternStart": 844,
+		"patternEnd": 1247,
+		"duration": 403,
+		"eventCount": 34,
+		"patternId": 4,
+		"illFittingEventsCount": 0,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 1264,
+		"patternEnd": 1400,
+		"duration": 136,
+		"eventCount": 14,
+		"patternId": 5,
+		"illFittingEventsCount": 2,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "check",
+		"patternDesc": "",
+		"patternStart": 1426,
+		"patternEnd": 1556,
+		"duration": 130,
+		"eventCount": 13,
+		"patternId": 6,
+		"illFittingEventsCount": 2,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "refine",
+		"patternDesc": "",
+		"patternStart": 1619,
+		"patternEnd": 1981,
+		"duration": 362,
+		"eventCount": 20,
+		"patternId": 7,
+		"illFittingEventsCount": 0,
+		"patternSetName": "exampleAnnotation"
+	},
+	{
+		"patternName": "curate",
+		"patternDesc": "",
+		"patternStart": 2013,
+		"patternEnd": 2114,
+		"duration": 101,
+		"eventCount": 11,
+		"patternId": 8,
+		"illFittingEventsCount": 0,
+		"patternSetName": "exampleAnnotation"
+	}
+]
