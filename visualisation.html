@@ -22,7 +22,6 @@
     top: 300px;
     height: 300px;
     width: 1200px;
-    overflow: scroll;
   }
   #fitting {
     float: left;
@@ -151,17 +150,60 @@
       let totalCircleRadius = 10;
 
       const mouseover = function (event, d) {
+        tooltiptext = d.event;
+        if (d.activationSourceComponent) {
+          tooltiptext = tooltiptext + " in " + d.activationSourceComponent + "";
+        }
+        if (d.actionDetails) {
+          tooltiptext = tooltiptext + " (" + d.actionDetails + ")";
+        }
+
         d3.select(".testtip")
           .style("opacity", 1)
           .style("height", "auto")
-          .style("width", "150px")
-          .html(d.event + "<br> ");
+          .style("width", "auto")
+          .style("max-width", "200px")
+          .html(tooltiptext.replaceAll("_",",") + "<br>");
+
+        d3.select(this).style("stroke", "black").style("opacity", 1);
+
+        if(d.doi){
+
+          d3.selectAll("." + "Pub" + d.doi.replace(/[^0-9]/g, ""))
+          .style("stroke", "purple")
+          .style("stroke-width", 3)
+          .style("opacity", 1);
+
+          if ((uniqueDois.indexOf(d.doi)) > -1){
+            console.log(uniqueDois.indexOf(d.doi));
+            svg
+          .append("line")
+          .attr("id","hoveredPub")
+          .attr("x1", xScale(session[0].date)) 
+          .attr("y1", getPubLineHeight(uniqueDois.indexOf(d.doi)) + 1) 
+          .attr("x2", xScale(session[session.length - 1].date)) 
+          .attr("y2", getPubLineHeight(uniqueDois.indexOf(d.doi))+1)
+          .attr("stroke", "purple")
+          .attr("stroke-width",2)
+          }
+       
+
+console.log(uniqueDois);
+        console.log(uniqueDois.indexOf(d.doi));
+        }
+
+       
       };
 
       const mousemove = function (event, d) {
+        let addHeight =
+          document.getElementById("vis").getBoundingClientRect().top +
+          window.scrollY -
+          document.getElementById("vis").scrollTop +
+          30;
         d3.select(".testtip")
           .style("left", d3.pointer(event)[0] + 70 + "px")
-          .style("top", d3.pointer(event)[1]  + 150 + "px");
+          .style("top", d3.pointer(event)[1] + addHeight + "px");
       };
 
       const mouseleave = function (event, d) {
@@ -169,6 +211,13 @@
           .style("opacity", 0)
           .style("height", 0)
           .style("width", 0);
+        d3.select(this).style("stroke", "none");
+
+        d3.selectAll(".Pub" + d.doi.replace(/[^0-9]/g, "")).style(
+          "stroke",
+          "none"
+        );
+        d3.select("#hoveredPub").remove()
       };
 
       //Überflüssige Filterevents (Teilworte) entfernen.
@@ -211,7 +260,7 @@
       function getStatusLineHeight() {
         return statusHeight + topPadding;
       }
-      function getPubLineHeight(index) {
+      function getPubLineHeight (index) {
         return actionLineHeight + pubLineHeight + index * pubLineHeight + 5; //+5 für die Achse
       }
 
@@ -290,6 +339,18 @@
         .text("Patterns")
         .style("fill", "black")
         .style("font-size", "8px");
+
+      //Brush area
+
+      const gb = svg.append("g").call(
+        d3
+          .brushX()
+          .extent([
+            [legendPadding, actionLineHeight - 70],
+            [width - 25, actionLineHeight],
+          ])
+          .on("brush", brushed)
+      );
 
       // action line x-axis
 
@@ -459,7 +520,6 @@
       svg
         .selectAll("pubaxes")
         .data([1])
-        //.data(Array.from({ length: numberOfPubs }, (value, index) => index))
         .enter()
         .append("g")
         .attr("id", "pubAxes")
@@ -854,11 +914,15 @@
           //Icon-Ränder (= größerer Kreis außerum => fill = stroke)
           d3.select(this)
             .append("circle")
+            .attr("class", (event) => {
+              if (event.doi.replace(/[^0-9]/g, "")) {
+                return "Pub" + event.doi.replace(/[^0-9]/g, "");
+              } else {
+                return "";
+              }
+            })
             .attr("r", strokeradius)
             .attr("fill", (event) => getStrokeColors(event))
-            .attr("stroke", "white")
-            .attr("stroke-width", strokewidth)
-            .attr("stroke-opacity", 0.8)
             .attr("cx", (event) => xScale(new Date(event.date)))
             .attr("cy", (event) => yPosition);
 
@@ -881,9 +945,7 @@
             .attr("width", imagesize)
             .attr("height", imagesize)
             .attr("href", (d) => getIconpath(d.event))
-            .on("mouseover", mouseover)
-          .on("mousemove", mousemove)
-          .on("mouseleave", mouseleave);
+            .style("pointer-events", "none");
         });
 
       //Punktevents für Pubs
@@ -910,8 +972,8 @@
                 ) - 6
             )
             .on("mouseover", mouseover)
-          .on("mousemove", mousemove)
-          .on("mouseleave", mouseleave);
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave);
 
           d3.select(this)
             .append("image")
@@ -927,13 +989,10 @@
             .attr("width", 9)
             .attr("height", 9)
             .attr("href", (d) => getIconpath(d.event))
-            .on("mouseover", mouseover)
-          .on("mousemove", mousemove)
-          .on("mouseleave", mouseleave);
+            .style("pointer-events", "none");
         });
 
       function getIconpath(event) {
-        console.log(event);
         let iconpath = "";
         switch (event) {
           case "Pub filtered":
@@ -1083,18 +1142,6 @@
           );
         }
       }
-
-      //Brushing
-
-      const gb = svg.append("g").call(
-        d3
-          .brushX()
-          .extent([
-            [legendPadding, actionLineHeight - 70],
-            [width - 25, actionLineHeight],
-          ])
-          .on("brush", brushed)
-      );
 
       //Globale Variablen für Selection und Pattern
       var currentPattern = patterns[0];
@@ -1302,7 +1349,7 @@
             return patternLineHeight * 0.75;
           })
           .attr("fill", (d) => getPatternColors(d.patternName))
-          .attr("stroke","grey")
+          .attr("stroke", "grey")
           .on("dblclick", function (domElem, pattern) {
             console.log("h");
             removePattern(domElem, pattern);
