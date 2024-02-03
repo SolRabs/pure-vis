@@ -40,6 +40,29 @@
     overflow-y: scroll;
   }
 </style>
+<head>
+  <script>
+    var queryStr = window.location.search;
+    var params = {};
+
+    if(!queryStr){
+      //const filename = "sessionLog.csv";
+      const filename = "test";
+      //const filename = "testsession.csv";
+      //const filename = "session-long.csv";
+      //const filename = "session-all-patterns.csv"
+      window.location.search = "?session="+filename;
+      params["session"]=filename
+    }
+
+    var paramPairs = queryStr.substr(1).split("&");
+    for (var i = 0; i < paramPairs.length; i++) {
+      var parts = paramPairs[i].split("=");
+      params[parts[0]] = parts[1];
+    }
+    console.log(params);
+  </script>
+</head>
 
 <body>
   <script src="https://d3js.org/d3-array.v2.min.js"></script>
@@ -86,14 +109,18 @@
 
   <script>
     ("use strict");
+
     async function loadData() {
+      console.log("Angekommen",params);
+
+      const filename = params.session
       //const filename = "sessionLog.csv";
       //const filename = "test.csv";
       //const filename = "testsession.csv";
-      const filename = "session-long.csv";
+      //const filename = "session-long.csv";
       //const filename = "session-all-patterns.csv"
 
-      const session = await d3.csv("data/" + filename);
+      const session = await d3.csv("data/" + filename +".csv");
       return session;
     }
 
@@ -150,12 +177,35 @@
       let totalCircleRadius = 10;
 
       const mouseover = function (event, d) {
-        tooltiptext = d.event;
+        if(d.title){
+        tooltiptext = "<b>" + d.title + "</b>:" + d.event;
+        } else {
+          tooltiptext = "<b>" + d.doi + "</b>:" + d.event;
+        }
         if (d.activationSourceComponent) {
           tooltiptext = tooltiptext + " in " + d.activationSourceComponent + "";
         }
         if (d.actionDetails) {
-          tooltiptext = tooltiptext + " (" + d.actionDetails + ")";
+          //Filter enthalten _ zwischen den Filterworten => bessere Lesbarkeit
+          if (
+            d.event.startsWith("Filter updated") ||
+            d.event.startsWith("Keywords")
+          ) {
+            actionDetails = d.actionDetails.replaceAll("_", ",");
+            console.log(actionDetails);
+            while (actionDetails.charAt(0) === ",") {
+              actionDetails = actionDetails.substring(1);
+            }
+            while (actionDetails.charAt(actionDetails.length - 1) === ",") {
+              actionDetails = actionDetails.substring(
+                0,
+                actionDetails.length - 1
+              );
+            }
+            tooltiptext = tooltiptext + " (" + actionDetails + ")";
+          } else if (!d.event.startsWith("Filter removed")) {
+            tooltiptext = tooltiptext + " (" + d.actionDetails + ")";
+          }
         }
 
         d3.select(".testtip")
@@ -163,36 +213,32 @@
           .style("height", "auto")
           .style("width", "auto")
           .style("max-width", "200px")
-          .html(tooltiptext.replaceAll("_",",") + "<br>");
+          .html(tooltiptext + "<br>");
 
         d3.select(this).style("stroke", "black").style("opacity", 1);
 
-        if(d.doi){
-
+        if (d.doi) {
           d3.selectAll("." + "Pub" + d.doi.replace(/[^0-9]/g, ""))
-          .style("stroke", "purple")
-          .style("stroke-width", 3)
-          .style("opacity", 1);
+            .style("stroke", "purple")
+            .style("stroke-width", 3)
+            .style("opacity", 1);
 
-          if ((uniqueDois.indexOf(d.doi)) > -1){
+          if (uniqueDois.indexOf(d.doi) > -1) {
             console.log(uniqueDois.indexOf(d.doi));
             svg
-          .append("line")
-          .attr("id","hoveredPub")
-          .attr("x1", xScale(session[0].date)) 
-          .attr("y1", getPubLineHeight(uniqueDois.indexOf(d.doi)) + 1) 
-          .attr("x2", xScale(session[session.length - 1].date)) 
-          .attr("y2", getPubLineHeight(uniqueDois.indexOf(d.doi))+1)
-          .attr("stroke", "purple")
-          .attr("stroke-width",2)
+              .append("line")
+              .attr("id", "hoveredPub")
+              .attr("x1", xScale(session[0].date))
+              .attr("y1", getPubLineHeight(uniqueDois.indexOf(d.doi)) + 1)
+              .attr("x2", xScale(session[session.length - 1].date))
+              .attr("y2", getPubLineHeight(uniqueDois.indexOf(d.doi)) + 1)
+              .attr("stroke", "purple")
+              .attr("stroke-width", 2);
           }
-       
 
-console.log(uniqueDois);
-        console.log(uniqueDois.indexOf(d.doi));
+          console.log(uniqueDois);
+          console.log(uniqueDois.indexOf(d.doi));
         }
-
-       
       };
 
       const mousemove = function (event, d) {
@@ -217,7 +263,7 @@ console.log(uniqueDois);
           "stroke",
           "none"
         );
-        d3.select("#hoveredPub").remove()
+        d3.select("#hoveredPub").remove();
       };
 
       //Überflüssige Filterevents (Teilworte) entfernen.
@@ -260,7 +306,7 @@ console.log(uniqueDois);
       function getStatusLineHeight() {
         return statusHeight + topPadding;
       }
-      function getPubLineHeight (index) {
+      function getPubLineHeight(index) {
         return actionLineHeight + pubLineHeight + index * pubLineHeight + 5; //+5 für die Achse
       }
 
@@ -632,14 +678,18 @@ console.log(uniqueDois);
         .append("text")
         .attr("x", 5)
         .attr("y", (doi, index) => getPubLineHeight(index))
-        .text((doi) => doi)
+        .text((doi) => {
+          let pub = session.filter((event) => event.doi == doi)[0]
+          if (!pub.title){
+            return pub.doi
+          }
+          return pub.title
+        })
         .style("fill", "black")
         .style("font-size", "8px");
 
       //PubPointEvents = Events, die als Punkt auf der Pubtimeline erscheinen sollen
       let pubPointEvents = ["Pub filtered", "Clicked scholar", "Clicked doi"];
-
-      //Bars mit extra Viereck statt Rahmen
 
       //Zustandsevents für Pubs, die als Balken erscheinen
       uniqueDois.forEach((doi) => {
@@ -826,6 +876,20 @@ console.log(uniqueDois);
           .on("mousemove", mousemove)
           .on("mouseleave", mouseleave);
       });
+
+      //Update-Linien
+      svg
+        .selectAll("hi")
+        .data(session.filter((event) => event.event == "Update"))
+        .enter()
+        .append("line")
+        .attr("x1", (event) => xScale(event.date))
+        .attr("y1", getPubLineHeight(0))
+        .attr("x2", (event) => xScale(event.date))
+        .attr("y2", getPubLineHeight(uniqueDois.length - 1))
+        .attr("stroke", "grey")
+        .attr("stroke-width", 2)
+        .attr("opacity", 0.1);
 
       let legend1Drawn = false;
       let legend2Drawn = false;
