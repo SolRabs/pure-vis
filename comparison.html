@@ -11,8 +11,6 @@
     }
 
     #chart-container {
-      width: 800px;
-      height: 400px;
       margin: 0 auto;
     }
   </style>
@@ -42,10 +40,7 @@
       ("use strict");
 
       async function readJSON() {
-        filenames = [
-          "personalAnnotation",
-          "exampleAnnotation",
-        ];
+        filenames = ["personalAnnotation", "exampleAnnotation", "test"];
 
         const jsonFiles = filenames.map((name) => "data/" + name + ".json");
 
@@ -61,18 +56,26 @@
         }
       }
       async function main() {
+        //JSON mit Pattern Sets, jeweils ein Array mit allen Patterns, die das Pattern Set ergeben
         const allPatterns = await readJSON();
+        //Array von Strings, in denen die einzelnen patternNames sind
         const patternSetNames = Array.from(
           new Set(allPatterns.map((patterns) => patterns.patternSetName))
         );
 
-        const width = 800;
+        let width = window.innerWidth * 0.9;
+        let height = window.innerHeight * 0.9;
         const barHeight = 20;
         const spaceBetweenBars = 40;
         const legendmargin = 120;
+        const buttonMargin = 100;
 
-        const svg = d3
+        const chartContainer = d3
           .select("#chart-container")
+          .attr("width", width)
+          .attr("height", height);
+
+        const svg = chartContainer
           .append("svg")
           .attr("width", width)
           .attr("height", 800);
@@ -87,7 +90,7 @@
               )
             ),
           ])
-          .range([legendmargin, width - 25])
+          .range([legendmargin, width - buttonMargin])
           .nice();
 
         const timelines = svg
@@ -98,12 +101,7 @@
           .attr("id", "timelines")
           .attr(
             "transform",
-            (d, i) =>
-              "translate(" +
-              0 +
-              "," +
-              (i + 1) * spaceBetweenBars +
-              ")"
+            (d, i) => "translate(" + 0 + "," + (i + 1) * spaceBetweenBars + ")"
           )
           .call(d3.axisBottom(xScale).tickValues([]));
 
@@ -185,6 +183,50 @@
           .on("mouseover", mouseover)
           .on("mousemove", mousemove)
           .on("mouseleave", mouseleave);
+
+        const buttons = svg
+          .selectAll("buttons")
+          .data(patternSetNames)
+          .enter()
+          .append("g");
+
+        buttons
+          .append("rect")
+          .attr("width", buttonMargin - 15)
+          .attr("height", barHeight)
+          .attr("x", (d) => width - buttonMargin + 10)
+          .attr("y", (d, i) => (i + 1) * spaceBetweenBars - barHeight)
+          .attr("fill", "grey")
+          .attr("opacity", 0.7)
+          .on("click", (clickEvent, patternSetName) => {
+            let currentUrl = window.location.origin;
+            originalSession = allPatterns.filter(
+              (pattern) => pattern.patternSetName == patternSetName
+            )[0].sessionName;
+            window
+              .open(
+                currentUrl + "/visualisation.html?session=" + originalSession,
+                "_blank"
+              )
+              .focus();
+          })
+          .on("mouseover", function () {
+            // 'this' refers to the current DOM element (circle) during mouseover
+            d3.select(this).attr("stroke", "black").attr("opacity", 0.8);
+          }).on("mouseout", function () {
+            // 'this' refers to the current DOM element (circle) during mouseover
+            d3.select(this).attr("stroke", "none").attr("opacity", 0.7);
+          });
+
+        buttons
+          .append("text")
+          .attr("id", "buttontext")
+          .attr("x", (d) => width - buttonMargin * 0.8)
+          .attr("y", (d, i) => (i + 1) * spaceBetweenBars - barHeight * 0.3)
+          .attr("font-size", "10px")
+          .attr("fill", "black")
+          .text("View Session")
+          .style("pointer-events", "none");
 
         function getPatternColors(pattern) {
           switch (pattern) {

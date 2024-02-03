@@ -8,7 +8,8 @@
 		"eventCount": 3,
 		"patternId": 0,
 		"illFittingEventsCount": 0,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "check",
@@ -19,7 +20,8 @@
 		"eventCount": 34,
 		"patternId": 1,
 		"illFittingEventsCount": 0,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "explore",
@@ -30,7 +32,8 @@
 		"eventCount": 4,
 		"patternId": 2,
 		"illFittingEventsCount": 1,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "refine",
@@ -41,7 +44,8 @@
 		"eventCount": 6,
 		"patternId": 3,
 		"illFittingEventsCount": 0,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "check",
@@ -52,7 +56,8 @@
 		"eventCount": 34,
 		"patternId": 4,
 		"illFittingEventsCount": 0,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "refine",
@@ -63,7 +68,8 @@
 		"eventCount": 14,
 		"patternId": 5,
 		"illFittingEventsCount": 2,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "check",
@@ -74,7 +80,8 @@
 		"eventCount": 13,
 		"patternId": 6,
 		"illFittingEventsCount": 2,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "refine",
@@ -85,7 +92,8 @@
 		"eventCount": 20,
 		"patternId": 7,
 		"illFittingEventsCount": 0,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "curate",
@@ -96,6 +104,7 @@
 		"eventCount": 11,
 		"patternId": 8,
 		"illFittingEventsCount": 0,
-		"patternSetName": "exampleAnnotation"
+		"patternSetName": "exampleAnnotation",
+		"sessionName": "session-long"
 	}
 ]

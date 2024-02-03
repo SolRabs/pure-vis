@@ -8,7 +8,8 @@
 		"eventCount": 18,
 		"patternId": 0,
 		"illFittingEventsCount": 0,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "check",
@@ -19,7 +20,8 @@
 		"eventCount": 20,
 		"patternId": 1,
 		"illFittingEventsCount": 0,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "explore",
@@ -30,7 +32,8 @@
 		"eventCount": 4,
 		"patternId": 2,
 		"illFittingEventsCount": 1,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "Keywords => Check => Update",
@@ -41,7 +44,8 @@
 		"eventCount": 69,
 		"patternId": 3,
 		"illFittingEventsCount": 0,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "Boostwords durch Filter ersetzen",
@@ -52,7 +56,8 @@
 		"eventCount": 12,
 		"patternId": 4,
 		"illFittingEventsCount": 0,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "Autoren ",
@@ -63,7 +68,8 @@
 		"eventCount": 5,
 		"patternId": 5,
 		"illFittingEventsCount": 0,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	},
 	{
 		"patternName": "curate",
@@ -74,6 +80,7 @@
 		"eventCount": 8,
 		"patternId": 6,
 		"illFittingEventsCount": 7,
-		"patternSetName": "personalAnnotation"
+		"patternSetName": "personalAnnotation",
+		"sessionName": "session-long"
 	}
 ]

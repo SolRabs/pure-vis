@@ -1,0 +1,14 @@
+[
+	{
+		"patternName": "df",
+		"patternDesc": "",
+		"patternStart": 651,
+		"patternEnd": 1078,
+		"duration": 427,
+		"eventCount": 35,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "test",
+		"sessionName": "sessionLog"
+	}
+]

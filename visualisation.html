@@ -45,14 +45,14 @@
     var queryStr = window.location.search;
     var params = {};
 
-    if(!queryStr){
+    if (!queryStr) {
       //const filename = "sessionLog.csv";
       const filename = "test";
       //const filename = "testsession.csv";
       //const filename = "session-long.csv";
       //const filename = "session-all-patterns.csv"
-      window.location.search = "?session="+filename;
-      params["session"]=filename
+      window.location.search = "?session=" + filename;
+      params["session"] = filename;
     }
 
     var paramPairs = queryStr.substr(1).split("&");
@@ -60,7 +60,6 @@
       var parts = paramPairs[i].split("=");
       params[parts[0]] = parts[1];
     }
-    console.log(params);
   </script>
 </head>
 
@@ -111,16 +110,14 @@
     ("use strict");
 
     async function loadData() {
-      console.log("Angekommen",params);
-
-      const filename = params.session
+      const filename = params.session;
       //const filename = "sessionLog.csv";
       //const filename = "test.csv";
       //const filename = "testsession.csv";
       //const filename = "session-long.csv";
       //const filename = "session-all-patterns.csv"
 
-      const session = await d3.csv("data/" + filename +".csv");
+      const session = await d3.csv("data/" + filename + ".csv");
       return session;
     }
 
@@ -177,8 +174,8 @@
       let totalCircleRadius = 10;
 
       const mouseover = function (event, d) {
-        if(d.title){
-        tooltiptext = "<b>" + d.title + "</b>:" + d.event;
+        if (d.title) {
+          tooltiptext = "<b>" + d.title + "</b>:" + d.event;
         } else {
           tooltiptext = "<b>" + d.doi + "</b>:" + d.event;
         }
@@ -679,11 +676,11 @@
         .attr("x", 5)
         .attr("y", (doi, index) => getPubLineHeight(index))
         .text((doi) => {
-          let pub = session.filter((event) => event.doi == doi)[0]
-          if (!pub.title){
-            return pub.doi
+          let pub = session.filter((event) => event.doi == doi)[0];
+          if (!pub.title) {
+            return pub.doi;
           }
-          return pub.title
+          return pub.title;
         })
         .style("fill", "black")
         .style("font-size", "8px");
@@ -1441,6 +1438,16 @@
 
           patternsAsJson.forEach((pattern) => {
             pattern.patternSetName = patternSetName;
+
+            //sessionName aus der URL bekommen - again
+            var queryStr = window.location.search;
+            var params = {};
+            var paramPairs = queryStr.substr(1).split("&");
+            for (var i = 0; i < paramPairs.length; i++) {
+              var parts = paramPairs[i].split("=");
+              params[parts[0]] = parts[1];
+            }
+            pattern.sessionName = params.session;
           });
 
           saveAsFile(
