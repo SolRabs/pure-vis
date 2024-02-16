@@ -1,0 +1,26 @@
+[
+	{
+		"patternName": "myPattern",
+		"patternDesc": "dfd",
+		"patternStart": 95,
+		"patternEnd": 161,
+		"duration": 66,
+		"eventCount": 12,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "mytestpattern",
+		"sessionName": "testsession"
+	},
+	{
+		"patternName": "noch eins",
+		"patternDesc": "jkl",
+		"patternStart": 161,
+		"patternEnd": 248,
+		"duration": 87,
+		"eventCount": 10,
+		"patternId": 1,
+		"illFittingEventsCount": 0,
+		"patternSetName": "mytestpattern",
+		"sessionName": "testsession"
+	}
+]

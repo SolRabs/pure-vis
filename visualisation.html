@@ -40,28 +40,6 @@
     overflow-y: scroll;
   }
 </style>
-<head>
-  <script>
-    var queryStr = window.location.search;
-    var params = {};
-
-    if (!queryStr) {
-      //const filename = "sessionLog.csv";
-      const filename = "test";
-      //const filename = "testsession.csv";
-      //const filename = "session-long.csv";
-      //const filename = "session-all-patterns.csv"
-      window.location.search = "?session=" + filename;
-      params["session"] = filename;
-    }
-
-    var paramPairs = queryStr.substr(1).split("&");
-    for (var i = 0; i < paramPairs.length; i++) {
-      var parts = paramPairs[i].split("=");
-      params[parts[0]] = parts[1];
-    }
-  </script>
-</head>
 
 <body>
   <script src="https://d3js.org/d3-array.v2.min.js"></script>
@@ -110,14 +88,27 @@
     ("use strict");
 
     async function loadData() {
-      const filename = params.session;
-      //const filename = "sessionLog.csv";
-      //const filename = "test.csv";
-      //const filename = "testsession.csv";
-      //const filename = "session-long.csv";
-      //const filename = "session-all-patterns.csv"
+      var queryStr = window.location.search;
+      var params = {};
 
-      const session = await d3.csv("data/" + filename + ".csv");
+      if (!queryStr) {
+        //const filename = "sessionLog.csv";
+        //const filename = "test";
+        //const filename = "testsession.csv";
+        //const filename = "session-long.csv";
+        //const filename = "session-all-patterns.csv"
+        const filename = "s1_t1_solveig_probe_1";
+        window.location.search = "?session=" + filename;
+        params["session"] = filename;
+      }
+
+      var paramPairs = queryStr.substr(1).split("&");
+      for (var i = 0; i < paramPairs.length; i++) {
+        var parts = paramPairs[i].split("=");
+        params[parts[0]] = parts[1];
+      }
+
+      const session = await d3.csv("data/" + params["session"] + ".csv");
       return session;
     }
 
@@ -157,6 +148,9 @@
         "Closed authors",
         "Opened search",
         "Closed search",
+        "Network nodes shown updated",
+        "Network: shown authors updated",
+        "Network: shown suggested updated",
       ];
       let unfilteredActionEvents = session.filter((event) =>
         actionevents.includes(event.event)
@@ -166,6 +160,7 @@
       let height = window.innerHeight * 0.9;
       let statusHeight = 100;
       let pubLineHeight = 20;
+      let barHeight = 16;
       let topPadding = 10;
       let patternLineHeight = 20;
       let patternLineLocation = topPadding + statusHeight + patternLineHeight;
@@ -174,10 +169,29 @@
       let totalCircleRadius = 10;
 
       const mouseover = function (event, d) {
-        if (d.title) {
+        console.log(d);
+        if (d.title.length > 0) {
           tooltiptext = "<b>" + d.title + "</b>:" + d.event;
+        } else if (d.doi) {
+          let titlefound;
+          let publist = session.filter((event) => event.doi == d.doi);
+          let index = 0;
+          while (index < publist.length && !titlefound > 0) {
+            if (
+              publist[index].title.length > 0 &&
+              publist[index].title != "undefined"
+            ) {
+              console.log("Settitle");
+              titlefound = publist[index].title;
+            }
+            index++;
+          }
+          if (!titlefound.length > 0) {
+            titlefound = publist[0].doi;
+          }
+          tooltiptext = "<b>" + titlefound + "</b>:" + d.event;
         } else {
-          tooltiptext = "<b>" + d.doi + "</b>:" + d.event;
+          tooltiptext = d.event;
         }
         if (d.activationSourceComponent) {
           tooltiptext = tooltiptext + " in " + d.activationSourceComponent + "";
@@ -186,10 +200,10 @@
           //Filter enthalten _ zwischen den Filterworten => bessere Lesbarkeit
           if (
             d.event.startsWith("Filter updated") ||
-            d.event.startsWith("Keywords")
+            d.event.startsWith("Keywords") ||
+            d.event.startsWith("Network")
           ) {
             actionDetails = d.actionDetails.replaceAll("_", ",");
-            console.log(actionDetails);
             while (actionDetails.charAt(0) === ",") {
               actionDetails = actionDetails.substring(1);
             }
@@ -221,7 +235,6 @@
             .style("opacity", 1);
 
           if (uniqueDois.indexOf(d.doi) > -1) {
-            console.log(uniqueDois.indexOf(d.doi));
             svg
               .append("line")
               .attr("id", "hoveredPub")
@@ -232,9 +245,6 @@
               .attr("stroke", "purple")
               .attr("stroke-width", 2);
           }
-
-          console.log(uniqueDois);
-          console.log(uniqueDois.indexOf(d.doi));
         }
       };
 
@@ -630,6 +640,9 @@
           case "Filter updated":
           case "Filter removed":
             return "#f0f4fc";
+          case "Network nodes shown updated":
+          case "Network: shown authors updated":
+          case "Network: shown suggested updated":
           case "Network mode changed":
           case "Network collapsed":
           case "Network expanded":
@@ -676,11 +689,18 @@
         .attr("x", 5)
         .attr("y", (doi, index) => getPubLineHeight(index))
         .text((doi) => {
-          let pub = session.filter((event) => event.doi == doi)[0];
-          if (!pub.title) {
-            return pub.doi;
+          let publist = session.filter((event) => event.doi == doi);
+          let index = 0;
+          while (index < publist.length) {
+            if (
+              publist[index].title.length > 0 &&
+              publist[index].title != "undefined"
+            ) {
+              return publist[index].title.substr(0, 30);
+            }
+            index++;
           }
-          return pub.title;
+          return publist[0].doi.substr(0, 30);
         })
         .style("fill", "black")
         .style("font-size", "8px");
@@ -690,7 +710,6 @@
 
       //Zustandsevents für Pubs, die als Balken erscheinen
       uniqueDois.forEach((doi) => {
-        let barHeight = 16;
         let strokeWidth = 1;
         //alle Events einer Pub
         let eventsOfPub = session.filter(
@@ -737,7 +756,7 @@
           .on("mousemove", mousemove)
           .on("mouseleave", mouseleave);
 
-        svg
+        var bars = svg
           .selectAll("mybar")
           .data(eventsOfPub)
           .enter()
@@ -778,36 +797,37 @@
           })
           .attr("fill", (event, index) => {
             if (event.event == "Pub deactivated") {
-              while (eventsOfPub[index - 2].event == "Pub deactivated") {
-                index = index - 2;
+              while (
+                ["Pub deactivated", "Pub activated"].includes(
+                  eventsOfPub[index - 1].event
+                )
+              ) {
+                index = index - 1;
               }
-              return getBarColors(eventsOfPub[index - 2]);
-              //Startindex = Pub deactivated
-              //Rückwärtssuche nach dem vorletzten Event (das letzte müsste activate sein)
-              //Farbe vom vorletzten Event zurückgeben
-
-              //check if last was active
+              return getBarColors(eventsOfPub[index - 1]);
             }
             return getBarColors(event);
           })
           .on("mouseover", mouseover)
           .on("mousemove", mousemove)
           .on("mouseleave", mouseleave);
-      });
 
-      let excludeForMask = [
-        "end",
-        "Network mode changed",
-        "Network collapsed",
-        "Network expanded",
-        "Clicked doi",
-        "Clicked scholar",
-        "Load more",
-        "Pub activated",
-      ];
+        let excludeForMask = [
+          "end",
+          "Network mode changed",
+          "Network collapsed",
+          "Network expanded",
+          "Clicked doi",
+          "Clicked scholar",
+          "Load more",
+          "Pub activated",
+          "Network nodes shown updated",
+          "Network: shown authors updated",
+          "Network: shown suggested updated",
+        ];
 
-      //Maske
-      uniqueDois.forEach((doi) => {
+        //Maske
+
         //alle Events einer Pub
         let currentEvents = session
           .filter(
@@ -869,9 +889,9 @@
           })
           .attr("fill", "white")
           .attr("opacity", 1)
-          .on("mouseover", mouseover)
-          .on("mousemove", mousemove)
-          .on("mouseleave", mouseleave);
+          .style("pointer-events", "none");
+
+          svg.selectAll("my").append("rect").attr("id","test").attr("cx",0).attr("cy",140).attr("width",199).attr("height",200).attr("fill","blue").raise()
       });
 
       //Update-Linien
@@ -920,6 +940,9 @@
             "Closed search",
             "Refined authors",
             "Clicked author scholar",
+            "Network nodes shown updated",
+            "Network: shown authors updated",
+            "Network: shown suggested updated",
           ];
 
           function getRowHeight(event) {
@@ -1114,6 +1137,11 @@
           case "Clicked author scholar":
             iconpath = "icons/author-scholar.svg";
             break;
+          case "Network nodes shown updated":
+          case "Network: shown authors updated":
+          case "Network: shown suggested updated":
+            iconpath = "icons/nodes.svg";
+            break;
         }
         return iconpath;
       }
@@ -1153,6 +1181,9 @@
         "Closed authors",
         "Opened search",
         "Closed search",
+        "Network nodes shown updated",
+        "Network: shown authors updated",
+        "Network: shown suggested updated",
       ];
 
       function isCheckOrExplore(event, checkOrExplore) {
@@ -1174,6 +1205,9 @@
           "Network mode changed",
           "Network collapsed",
           "Network expanded",
+          "Network nodes shown updated",
+          "Network: shown authors updated",
+          "Network: shown suggested updated",
         ];
 
         //excludeEvents werden nicht mit einbezogen!
@@ -1183,6 +1217,9 @@
           "Network mode changed",
           "Network collapsed",
           "Network expanded",
+          "Network nodes shown updated",
+          "Network: shown authors updated",
+          "Network: shown suggested updated",
         ];
         //irrelevant:
         let irrelevant = ["Pub suggested", "Pub filtered"];
@@ -1412,7 +1449,6 @@
           .attr("fill", (d) => getPatternColors(d.patternName))
           .attr("stroke", "grey")
           .on("dblclick", function (domElem, pattern) {
-            console.log("h");
             removePattern(domElem, pattern);
           });
       }
