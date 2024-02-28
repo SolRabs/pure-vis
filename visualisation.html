@@ -126,18 +126,7 @@
       let start = session[0].date;
       session.map((event) => (event.date = event.date - start));
 
-      console.log(
-        session.reduce((count, item) => {
-          return count + (item.event === "Pub filtered" ? 1 : 0);
-        }, 0)
-      );
-
       alternativeRemoveDoubleFilterEvents(session);
-      console.log(
-        session.reduce((count, item) => {
-          return count + (item.event === "Pub filtered" ? 1 : 0);
-        }, 0)
-      );
 
       let actionevents = [
         "Pub qd for selected",
@@ -149,6 +138,7 @@
         "Network expanded",
         "Clicked doi",
         "Clicked scholar",
+        "Clicked abstract",
         "Filter updated",
         "Filter removed",
         "Keywords updated",
@@ -162,6 +152,7 @@
         "Network nodes shown updated",
         "Network: shown authors updated",
         "Network: shown suggested updated",
+        "Keyword dragged"
       ];
       let unfilteredActionEvents = session.filter((event) =>
         actionevents.includes(event.event)
@@ -178,6 +169,7 @@
       let actionLineHeight = topPadding + 90 + statusHeight + patternLineHeight;
       let legendPadding = 130;
       let totalCircleRadius = 10;
+      let xAxisEnd = width - 40;
 
       const mouseover = function (event, d) {
         console.log(d);
@@ -206,19 +198,26 @@
         if (d.activationSourceComponent) {
           tooltiptext = tooltiptext + " in " + d.activationSourceComponent + "";
         }
-        if (d.event == "Pub suggested") {
+        if (d.event == "Pub suggested" || d.event == "Pub filtered") {
           tooltiptext += ` (Position ${d.posInSuggestions})`;
         }
         if (d.actionDetails) {
-          const replaceCommas = ["Filter updated", "Keywords", "Network"];
-          const noActionDetails = ["Filter removed"];
+          const replaceCommas = [
+            "Filter updated",
+            "Keywords",
+            "Network",
+            "Filter removed",
+          ];
 
           if (replaceCommas.some((type) => d.event.startsWith(type))) {
             //Filter enthalten _ zwischen den Filterworten => bessere Lesbarkeit
-            
+
             let actionDetails = d.actionDetails.replaceAll("_", ",");
-            actionDetails = actionDetails.replace(/^,+/g, '').replace(/,+$/g, '');            tooltiptext += ` (${actionDetails})`;
-          } else if (noActionDetails.some((type) => d.event.startsWith(type))) {
+            actionDetails = actionDetails
+              .replace(/^,+/g, "")
+              .replace(/,+$/g, "");
+            tooltiptext += ` (${actionDetails})`;
+          } else {
             tooltiptext += ` (${d.actionDetails})`;
           }
         }
@@ -268,12 +267,22 @@
           .style("opacity", 0)
           .style("height", 0)
           .style("width", 0);
+
         d3.select(this).style("stroke", "none");
 
         d3.selectAll(".Pub" + d.doi.replace(/[^0-9]/g, "")).style(
           "stroke",
           "none"
         );
+        //Have a black outline for the pub point events
+        if (
+          d.event == "Pub filtered" &&
+          d3.select(this)._groups[0][0].tagName.toLowerCase() === "circle"
+        ) {
+          console.log("yep");
+          d3.select(this).style("stroke", "black");
+          d3.select(this).style("stroke-width", 1);
+        }
         d3.select("#hoveredPub").remove();
       };
 
@@ -301,19 +310,26 @@
             (event) => event == firstRealEvent
           );
           // Finde the second to last "Filter updated" event, (=> das letzt irrelevante Filter updated event)
-                    // Find the index of the next non-"Filter updated" event after the sequence
+          // Find the index of the next non-"Filter updated" event after the sequence
 
-          let indexOfLastIrrelevantFilterUpdated = -1
-          for (let i = indexRealEvent-2; i > filterIndex; i--) {
-            if (session[i].event == "Filter updated"){
-              indexOfLastIrrelevantFilterUpdated = i
+          let indexOfLastIrrelevantFilterUpdated = -1;
+          for (let i = indexRealEvent - 2; i > filterIndex; i--) {
+            if (session[i].event == "Filter updated") {
+              indexOfLastIrrelevantFilterUpdated = i;
               break;
             }
           }
-          for (let i = filterIndex; i <= indexOfLastIrrelevantFilterUpdated; i++) {
+          for (
+            let i = filterIndex;
+            i <= indexOfLastIrrelevantFilterUpdated;
+            i++
+          ) {
             console.log(session[i]);
           }
-          session.splice(filterIndex, indexOfLastIrrelevantFilterUpdated - filterIndex);
+          session.splice(
+            filterIndex,
+            indexOfLastIrrelevantFilterUpdated - filterIndex
+          );
           //Nach weiteren Filterevents suchen
           removeDoubleFilterEvents(session, (startindex = firstIndex + 2));
         } //Wenn es keine Filterevents mehr gibt, zurück
@@ -349,23 +365,21 @@
           }
 
           // Finde the second to last "Filter updated" event, (=> das letzt irrelevante Filter updated event)
-          
-          let indexOfLastIrrelevantFilterUpdated = -1
-          for (let i = endIndex-2; i > filterIndex; i--) {
-            if (session[i].event == "Filter updated"){
-              indexOfLastIrrelevantFilterUpdated = i
+
+          let indexOfLastIrrelevantFilterUpdated = -1;
+          for (let i = endIndex - 2; i > filterIndex; i--) {
+            if (session[i].event == "Filter updated") {
+              indexOfLastIrrelevantFilterUpdated = i;
               break;
             }
           }
-          for (let i = filterIndex; i <= indexOfLastIrrelevantFilterUpdated; i++) {
-            console.log(session[i]);
-          }
-          session.splice(filterIndex, indexOfLastIrrelevantFilterUpdated - filterIndex);
-
+          session.splice(
+            filterIndex,
+            indexOfLastIrrelevantFilterUpdated - filterIndex
+          );
           // Update startIndex to continue searching from after the removed sequence
           startIndex = endIndex;
         }
-
         return session;
       }
 
@@ -430,7 +444,7 @@
       var xScale = d3
         .scaleLinear()
         .domain([session[0].date, session[session.length - 1].date])
-        .range([legendPadding, width - 25])
+        .range([legendPadding, xAxisEnd])
         .nice();
 
       // pattern line x-axis
@@ -459,7 +473,7 @@
           .brushX()
           .extent([
             [legendPadding, actionLineHeight - 70],
-            [width - 25, actionLineHeight],
+            [xAxisEnd, actionLineHeight],
           ])
           .on("brush", brushed)
       );
@@ -535,13 +549,19 @@
         .domain([
           0,
           d3.max(
+            // either more than 4 keywords or 4 max number of filter
             [
               d3.max(
                 session.filter((event) => event.event == "Keywords updated"),
-                (event) => parseInt(event.actionDetails.split("_").length)
+                (event) =>
+                  parseInt(
+                    event.actionDetails
+                      .split("_")
+                      .filter((str) => str.trim() !== "").length
+                  )
               ),
               4,
-            ] // either more than 4 keywords or 4 max number of filter
+            ]
           ),
         ])
         .range([100, 0]);
@@ -557,17 +577,34 @@
         .tickFormat(d3.format("d"));
 
       svg
-        .selectAll(".axes")
         .append("g")
-        .attr(
-          "transform",
-          "translate(" +
-            xScale(session[session.length - 1].date) +
-            "," +
-            topPadding +
-            ")"
-        )
+        .attr("class", "keyword-axis")
+        .attr("transform", "translate(" + (xAxisEnd) + "," + topPadding + ")")
         .call(keywordAxis);
+
+      // Append selected-axis label
+      svg
+        .append("text")
+        .attr("class", "y-axis-label")
+        .attr("x", - yScale(0) + 40)
+        .attr("y", xScale(0)-30) // Adjust position as needed
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .attr("transform", "rotate(-90)")
+        .style("font-size", "8px")
+        .text("Number of selected"); 
+
+       // Append keyword-axis label
+       svg
+        .append("text")
+        .attr("class", "y-axis-label")
+        .attr("x",  yScale(0) - 40)
+        .attr("y", -(xAxisEnd+30)) // Adjust position as needed
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .attr("transform", "rotate(90)")
+        .style("font-size", "8px")
+        .text("Number of keywords/filter"); 
 
       function drawKeywords(context) {
         context.moveTo(legendPadding, getStatusLineHeight());
@@ -578,7 +615,11 @@
           .forEach((event) => {
             context.lineTo(xScale(event.date), currentY);
             currentY =
-              keywordScale(event.actionDetails.split("_").length) + topPadding;
+              keywordScale(
+                event.actionDetails
+                  .split("_")
+                  .filter((str) => str.trim() !== "").length
+              ) + topPadding;
             context.lineTo(xScale(event.date), currentY);
             currentX = xScale(event.date);
           });
@@ -600,8 +641,7 @@
         session
           .filter(
             (event) =>
-              event.event == "Filter updated" ||
-              event.event == "Filter removed "
+              event.event == "Filter updated" || event.event == "Filter removed"
           )
           .forEach((event) => {
             context.lineTo(xScale(event.date), currentY);
@@ -669,6 +709,7 @@
           case "Pub added":
             return "#08d4b4";
           case "Pub suggested":
+          case "Pub filtered":
             return "#408cd4";
           case "Pub activated":
             return "#2160c4";
@@ -689,6 +730,7 @@
           case "Pub activated":
           case "Clicked doi":
           case "Clicked scholar":
+          case "Clicked abstract":
             return "#e8e4e4";
           case "Keywords updated":
           case "Refined authors":
@@ -706,6 +748,7 @@
           case "Network collapsed":
           case "Network expanded":
           case "network":
+          case "Keyword dragged":
             return "#807c7c";
           case "bookkeeping":
           case "Load more":
@@ -765,14 +808,23 @@
         .style("font-size", "8px");
 
       //PubPointEvents = Events, die als Punkt auf der Pubtimeline erscheinen sollen
-      let pubPointEvents = ["Pub filtered", "Clicked scholar", "Clicked doi"];
+      let pubPointEvents = [
+        "Pub filtered",
+        "Clicked scholar",
+        "Clicked doi",
+        "Clicked abstract",
+      ];
 
       //Zustandsevents für Pubs, die als Balken erscheinen
       uniqueDois.forEach((doi) => {
         let strokeWidth = 1;
         //alle Events einer Pub
         let eventsOfPub = session.filter(
-          (event) => event.doi == doi && !pubPointEvents.includes(event.event)
+          (event) =>
+            event.doi == doi &&
+            !["Clicked scholar", "Clicked doi", "Clicked abstract"].includes(
+              event.event
+            )
         );
 
         eventsOfPub = eventsOfPub.filter(
@@ -788,7 +840,10 @@
         while (i < eventsOfPub.length - 1) {
           if (eventsOfPub[i].event == "Pub qd for selected") {
             let a = i + 1;
-            while (eventsOfPub[a].event == "Pub suggested") {
+            while (
+              eventsOfPub[a].event == "Pub suggested" ||
+              eventsOfPub[a].event == "Pub filtered"
+            ) {
               indexToRemove.push(a);
               a++;
             }
@@ -852,7 +907,10 @@
               barHeight;
             if (strokeEvents.includes(d.event)) {
               return yPos + strokeWidth;
-            } else if (d.event == "Pub suggested") {
+            } else if (
+              d.event == "Pub suggested" ||
+              d.event == "Pub filtered"
+            ) {
               if (d.posInSuggestions > 30) {
                 return yPos + 15;
               } else {
@@ -877,7 +935,10 @@
           .attr("height", function (d) {
             if (strokeEvents.includes(d.event)) {
               return barHeight - strokeWidth * 2;
-            } else if (d.event == "Pub suggested") {
+            } else if (
+              d.event == "Pub suggested" ||
+              d.event == "Pub filtered"
+            ) {
               let pos = d.posInSuggestions;
               //bottom 30 ganz weiß, dann in 5er Inkrementen jeweils 1 von 4 px wegnehmen
               if (pos > 30) {
@@ -970,6 +1031,7 @@
             "Pub excluded",
             "Clicked doi",
             "Clicked scholar",
+            "Clicked abstract",
           ];
           let eventsRowThree = [
             "Filter updated",
@@ -987,6 +1049,7 @@
             "Network nodes shown updated",
             "Network: shown authors updated",
             "Network: shown suggested updated",
+            "Keyword dragged"
           ];
 
           function getRowHeight(event) {
@@ -1138,7 +1201,11 @@
           case "Clicked scholar":
             iconpath = "icons/checkout.svg";
             break;
+          case "Clicked abstract":
+            iconpath = "icons/abstract.svg";
+            break;
           case "Keywords updated":
+          case "Keyword dragged":
             iconpath = "icons/boost.svg";
             break;
           case "Update":
