@@ -1,0 +1,74 @@
+[
+	{
+		"patternName": "keywords",
+		"patternDesc": "",
+		"patternStart": 719,
+		"patternEnd": 889,
+		"duration": 170,
+		"eventCount": 50,
+		"patternId": 4,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t1_s1_annot_Solveig",
+		"sessionName": "p1_t1_s1"
+	},
+	{
+		"patternName": "clusters",
+		"patternDesc": "",
+		"patternStart": 719,
+		"patternEnd": 979,
+		"duration": 260,
+		"eventCount": 57,
+		"patternId": 5,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t1_s1_annot_Solveig",
+		"sessionName": "p1_t1_s1"
+	},
+	{
+		"patternName": "curate",
+		"patternDesc": "",
+		"patternStart": 1019,
+		"patternEnd": 1079,
+		"duration": 60,
+		"eventCount": 9,
+		"patternId": 6,
+		"illFittingEventsCount": 2,
+		"patternSetName": "p1_t1_s1_annot_Solveig",
+		"sessionName": "p1_t1_s1"
+	},
+	{
+		"patternName": "filter",
+		"patternDesc": "",
+		"patternStart": 1108,
+		"patternEnd": 1118,
+		"duration": 10,
+		"eventCount": 2,
+		"patternId": 7,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t1_s1_annot_Solveig",
+		"sessionName": "p1_t1_s1"
+	},
+	{
+		"patternName": "keywords",
+		"patternDesc": "",
+		"patternStart": 153,
+		"patternEnd": 688,
+		"duration": 535,
+		"eventCount": 38,
+		"patternId": 4,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t1_s1_annot_Solveig",
+		"sessionName": "p1_t1_s1"
+	},
+	{
+		"patternName": "ranking",
+		"patternDesc": "",
+		"patternStart": 153,
+		"patternEnd": 688,
+		"duration": 535,
+		"eventCount": 38,
+		"patternId": 5,
+		"illFittingEventsCount": 13,
+		"patternSetName": "p1_t1_s1_annot_Solveig",
+		"sessionName": "p1_t1_s1"
+	}
+]

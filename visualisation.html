@@ -42,9 +42,7 @@
 </style>
 
 <body>
-  <script src="https://d3js.org/d3-array.v2.min.js"></script>
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-
+  <script src="node_modules/d3/dist/d3.min.js"></script>
   <div>
     <select id="selectButton"></select>
     <label for="customPattern"></label>
@@ -123,11 +121,12 @@
             parseInt(event.date.split(":")[1] * 60) +
             parseInt(event.date.split(":")[2]))
       );
+
       let start = session[0].date;
       session.map((event) => (event.date = event.date - start));
 
       alternativeRemoveDoubleFilterEvents(session);
-
+ 
       let actionevents = [
         "Pub qd for selected",
         "Pub imported",
@@ -416,8 +415,7 @@
       });
 
       //Select Button
-      var patterns = ["custom", "seed", "refine", "check", "explore", "curate"];
-
+      var patterns = ["custom","seed", "keywords","ranking","pub character","filter","refinement","clusters","timeline","authors", "curate"]
       // add the options to the button
       d3.select("#selectButton")
         .selectAll("myOptions")
@@ -769,11 +767,16 @@
         switch (pattern) {
           case "seed":
             return "#08d4b4";
-          case "refine":
+          case "keywords":
             return "#ffe48c";
-          case "check":
+          case "ranking":
+          case "pub character":
+          case "filter":
+          case "refinement":
             return "#408cd4";
-          case "explore":
+          case "clusters":
+          case "timeline":
+          case "authors":
             return "#807c7c";
           case "curate":
             return "#f8446c";
@@ -1390,7 +1393,9 @@
                 event.activationSourceComponent == "import") ||
               event.event == "Pub added"
             );
-          case "refine":
+          case "keyword":
+            return (event.event == "Keywords updated" || event.event == "Keyword dragged")
+          case "ranking":
             return ![
               "Pub qd for selected",
               "Pub added",

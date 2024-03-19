@@ -40,7 +40,7 @@
       ("use strict");
 
       async function readJSON() {
-        filenames = ["personalAnnotation", "exampleAnnotation", "test", "mytestpattern"];
+        filenames = ["p1_t1_s1_annot_Solveig", "p1_t2_s2_annot_Solveig", "p1_t2_s2_annot_Solveig"];
 
         const jsonFiles = filenames.map((name) => "data/" + name + ".json");
 
@@ -228,22 +228,28 @@
           .text("View Session")
           .style("pointer-events", "none");
 
-        function getPatternColors(pattern) {
-          switch (pattern) {
-            case "seed":
-              return "#08d4b4";
-            case "refine":
-              return "#ffe48c";
-            case "check":
-              return "#408cd4";
-            case "explore":
-              return "#807c7c";
-            case "curate":
-              return "#f8446c";
-            default:
-              return "#28d464";
-          }
+          function getPatternColors(pattern) {
+        switch (pattern) {
+          case "seed":
+            return "#08d4b4";
+          case "keywords":
+            return "#ffe48c";
+          case "ranking":
+          case "pub character":
+          case "filter":
+          case "refinement":
+            return "#408cd4";
+          case "clusters":
+          case "timeline":
+          case "authors":
+            return "#807c7c";
+          case "curate":
+            return "#f8446c";
+          default:
+            return "#28d464";
         }
+      }
+
       }
       main();
     </script>

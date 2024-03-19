@@ -1,0 +1,74 @@
+[
+	{
+		"patternName": "Remove Network",
+		"patternDesc": "network removed because it was perceived as distraction",
+		"patternStart": 18,
+		"patternEnd": 49,
+		"duration": 31,
+		"eventCount": 12,
+		"patternId": 0,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t2_s2_annot_Solveig",
+		"sessionName": "p1_t2_s2"
+	},
+	{
+		"patternName": "filter",
+		"patternDesc": "usage of filter in combination with keywords to finde new pulications regarding keyword",
+		"patternStart": 127,
+		"patternEnd": 301,
+		"duration": 174,
+		"eventCount": 15,
+		"patternId": 1,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t2_s2_annot_Solveig",
+		"sessionName": "p1_t2_s2"
+	},
+	{
+		"patternName": "ranking",
+		"patternDesc": "",
+		"patternStart": 127,
+		"patternEnd": 301,
+		"duration": 174,
+		"eventCount": 15,
+		"patternId": 2,
+		"illFittingEventsCount": 4,
+		"patternSetName": "p1_t2_s2_annot_Solveig",
+		"sessionName": "p1_t2_s2"
+	},
+	{
+		"patternName": "clusters",
+		"patternDesc": "",
+		"patternStart": 333,
+		"patternEnd": 344,
+		"duration": 11,
+		"eventCount": 6,
+		"patternId": 3,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t2_s2_annot_Solveig",
+		"sessionName": "p1_t2_s2"
+	},
+	{
+		"patternName": "timeline",
+		"patternDesc": "",
+		"patternStart": 357,
+		"patternEnd": 471,
+		"duration": 114,
+		"eventCount": 28,
+		"patternId": 4,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t2_s2_annot_Solveig",
+		"sessionName": "p1_t2_s2"
+	},
+	{
+		"patternName": "Issues while using timeline view to finde recent pubs",
+		"patternDesc": "Issues with network-view: removal of pubs from selected to get a resting network",
+		"patternStart": 333,
+		"patternEnd": 581,
+		"duration": 248,
+		"eventCount": 61,
+		"patternId": 5,
+		"illFittingEventsCount": 0,
+		"patternSetName": "p1_t2_s2_annot_Solveig",
+		"sessionName": "p1_t2_s2"
+	}
+]
