@@ -19,25 +19,9 @@
 
   div#vis {
     position: absolute;
-    top: 300px;
+    top: 150px;
     height: 300px;
     width: 1200px;
-  }
-  #fitting {
-    float: left;
-  }
-
-  #illfitting {
-    float: left;
-    padding-left: 20px;
-  }
-  #illfitting ul {
-    height: 130px;
-    overflow-y: scroll;
-  }
-  #fitting ul {
-    height: 130px;
-    overflow-y: scroll;
   }
 </style>
 
@@ -54,14 +38,6 @@
   <div>
     <input id="patternSetName" placeholder="Pattern set name" />
     <button id="exportButton">Export all Patterns</button>
-  </div>
-  <div id="fitting">
-    <h2>Fitting Patterns:</h2>
-    <ul></ul>
-  </div>
-  <div id="illfitting">
-    <h2>Illfitting Patterns:</h2>
-    <ul></ul>
   </div>
   <div id="vis"></div>
   <div
@@ -415,8 +391,9 @@
       });
 
       //Select Button
-      var patterns = ["custom","seed", "keywords","ranking","pub character","filter","refinement","clusters","timeline","authors", "curate"]
-      // add the options to the button
+     // var patterns = ["custom","seed", "keywords","ranking","pub character","filter","refinement","clusters","timeline","authors", "curate"]
+     var patterns = ["custom","blue","grey","yellow","red"] 
+     // add the options to the button
       d3.select("#selectButton")
         .selectAll("myOptions")
         .data(patterns)
@@ -768,17 +745,21 @@
           case "seed":
             return "#08d4b4";
           case "keywords":
+          case "yellow":
             return "#ffe48c";
           case "ranking":
           case "pub character":
           case "filter":
           case "refinement":
+          case "blue":
             return "#408cd4";
           case "clusters":
           case "timeline":
           case "authors":
+          case "grey":
             return "#807c7c";
           case "curate":
+          case "red":
             return "#f8446c";
           default:
             return "#28d464";
@@ -1372,99 +1353,14 @@
             end > xScale(new Date(event.date))
         );
         currentSelection = selected;
-        updateFittingPatterns();
       }
-      //Vorgehen: Typ auswählen und filtern nach fitting und nicht fitting events
-      //Für jeden Pattern eine boolean Funktion, die abklärt, ob das Event zum Pattern passt oder nicht
 
-      //Eingabe des current Pattern => update current Pattern
-      //und Anzeige der fitting und nicht fitting Ereignisse => extra Methode
       d3.select("#selectButton").on("change", function (d) {
         // recover the option that has been chosen
         currentPattern = d3.select(this).property("value");
-        updateFittingPatterns();
       });
 
-      function matchPattern(currentPattern, event) {
-        switch (currentPattern) {
-          case "seed":
-            return (
-              (event.event == "Pub qd for selected" &&
-                event.activationSourceComponent == "import") ||
-              event.event == "Pub added"
-            );
-          case "keyword":
-            return (event.event == "Keywords updated" || event.event == "Keyword dragged")
-          case "ranking":
-            return ![
-              "Pub qd for selected",
-              "Pub added",
-              "Pub excluded",
-            ].includes(event.event);
-          case "check":
-            return isCheckOrExplore(event, "check");
-          case "explore":
-            return isCheckOrExplore(event, "explore");
-
-          case "curate":
-            return (
-              (event.event == "Pub activated" &&
-                event.activationSourceComponent == "selected") ||
-              event.event == "Pub excluded"
-            );
-
-          default:
-            return true;
-        }
-      }
-      function updateFittingPatterns() {
-        let fittingPatterns = currentSelection.filter((event) =>
-          matchPattern(currentPattern, event)
-        );
-        let illfittingPatterns = currentSelection.filter(
-          (event) => !matchPattern(currentPattern, event)
-        );
-
-        function updateLists(ul, currentEvents) {
-          let elementTypes = [];
-          currentEvents.forEach((event) => {
-            elementTypes.push(event.event);
-          });
-
-          let data = new Set(elementTypes);
-
-          //remove duplicates / get event types only
-          // Select all list items
-          const li = ul.selectAll("li").data(data);
-
-          // Update existing items
-          li.text((d) => {
-            return (
-              d +
-              " (" +
-              currentEvents.filter((event) => event.event === d).length +
-              ")"
-            );
-          });
-
-          // Enter new items
-          li.enter()
-            .append("li")
-            .text(
-              (d) =>
-                d +
-                " (" +
-                currentEvents.filter((event) => event.event === d).length +
-                ")"
-            );
-
-          // Exit old items
-          li.exit().remove();
-        }
-        updateLists(d3.select("#fitting ul"), fittingPatterns);
-        updateLists(d3.select("#illfitting ul"), illfittingPatterns);
-      }
-
+      
       var detectedPatterns = [];
       var patternsAsJson = [];
       d3.select("#saveButton").on("click", function (d) {
@@ -1492,9 +1388,6 @@
           duration: end - start,
           eventCount: currentSelection.length,
           patternId: detectedPatterns.length,
-          illFittingEventsCount: currentSelection.filter(
-            (event) => !matchPattern(currentPattern, event)
-          ).length,
         };
 
         // Converting the object to a JSON string

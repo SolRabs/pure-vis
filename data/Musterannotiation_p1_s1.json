@@ -1,0 +1,86 @@
+[
+	{
+		"patternName": "ranking",
+		"patternDesc": "",
+		"patternStart": 38,
+		"patternEnd": 129,
+		"duration": 91,
+		"eventCount": 15,
+		"patternId": 0,
+		"illFittingEventsCount": 5,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	},
+	{
+		"patternName": "clusters",
+		"patternDesc": "",
+		"patternStart": 153,
+		"patternEnd": 153,
+		"duration": 0,
+		"eventCount": 1,
+		"patternId": 1,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	},
+	{
+		"patternName": "filter",
+		"patternDesc": "",
+		"patternStart": 273,
+		"patternEnd": 277,
+		"duration": 4,
+		"eventCount": 2,
+		"patternId": 4,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	},
+	{
+		"patternName": "keywords",
+		"patternDesc": "",
+		"patternStart": 285,
+		"patternEnd": 285,
+		"duration": 0,
+		"eventCount": 1,
+		"patternId": 5,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	},
+	{
+		"patternName": "timeline",
+		"patternDesc": "",
+		"patternStart": 230,
+		"patternEnd": 250,
+		"duration": 20,
+		"eventCount": 4,
+		"patternId": 8,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	},
+	{
+		"patternName": "filter",
+		"patternDesc": "",
+		"patternStart": 165,
+		"patternEnd": 165,
+		"duration": 0,
+		"eventCount": 1,
+		"patternId": 5,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	},
+	{
+		"patternName": "filter",
+		"patternDesc": "",
+		"patternStart": 195,
+		"patternEnd": 224,
+		"duration": 29,
+		"eventCount": 6,
+		"patternId": 6,
+		"illFittingEventsCount": 0,
+		"patternSetName": "Musterannotiation_p1_s1",
+		"sessionName": "p1_s1_t2"
+	}
+]
