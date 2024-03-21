@@ -1340,11 +1340,15 @@
 
       //Globale Variablen für Selection und Pattern
       var currentPattern = patterns[0];
-      var currentSelection = [];
+      var currentEventSelection = [];
+      var currentDateSelection = [];
+      var currentBrushEvent = [];
 
       //Update Selection in globaler Variable (Dauer, Liste der Events)
       //Update Anzeige Anzahl und Art passender/unpassender Ereignisse
       function brushed(brushevent) {
+        console.log(brushevent.selection);
+        //get events in selection
         let start = brushevent.selection[0];
         let end = brushevent.selection[1];
         let selected = unfilteredActionEvents.filter(
@@ -1352,7 +1356,10 @@
             start < xScale(new Date(event.date)) &&
             end > xScale(new Date(event.date))
         );
-        currentSelection = selected;
+        currentEventSelection = selected;
+        //just take the currentBrushEvent for saving pattern 
+        currentBrushEvent = brushevent
+        console.log(currentBrushEvent);
       }
 
       d3.select("#selectButton").on("change", function (d) {
@@ -1364,12 +1371,9 @@
       var detectedPatterns = [];
       var patternsAsJson = [];
       d3.select("#saveButton").on("click", function (d) {
-        if (currentSelection.length == 0) {
-          console.log("No events in selection for pattern.");
-          return;
-        }
-        let start = currentSelection[0].date;
-        let end = currentSelection[currentSelection.length - 1].date;
+        //save start and end of pattern in terms of timestamp to later compare absolute timings
+        let start = xScale.invert(currentBrushEvent.selection[0]);
+        let end = xScale.invert(currentBrushEvent.selection[1]);
         let patternName = currentPattern;
         let patternDesc = "";
         if (currentPattern == "custom") {
@@ -1386,10 +1390,10 @@
           patternStart: start,
           patternEnd: end,
           duration: end - start,
-          eventCount: currentSelection.length,
+          eventCount: currentEventSelection.length,
           patternId: detectedPatterns.length,
         };
-
+        console.log(pattern);
         // Converting the object to a JSON string
         var jsonString = JSON.stringify(pattern);
 
@@ -1400,7 +1404,6 @@
         console.log("Saved " + patternName + " pattern.");
         //Hier detected Patterns Zeichen update triggern
         drawPatterns();
-        //document.querySelectorAll("div input").value = "Jep";
 
         document.querySelectorAll("div input").forEach(function (input) {
           input.value = "";
@@ -1424,7 +1427,7 @@
           .append("rect")
           .attr("id", "patternbars")
           .attr("x", function (d) {
-            return xScale(d.patternStart) - totalCircleRadius;
+            return xScale(d.patternStart);
           })
           .attr("y", function (d) {
             if (
@@ -1447,11 +1450,9 @@
             }
           })
           .attr("width", (d) => {
-            //2 * totalCircleRadius, weil der Timestamp im Kreis im Mittelpunkt is => + 2* Radius für rechts und links
             return (
               xScale(d.patternEnd) -
-              xScale(d.patternStart) +
-              2 * totalCircleRadius
+              xScale(d.patternStart) 
             );
           })
           .attr("height", function (d) {
