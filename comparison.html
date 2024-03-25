@@ -41,7 +41,7 @@
 
       async function readJSON() {
         //filenames = ["p1_t1_s1_annot_Solveig", "p1_t2_s2_annot_Solveig", "p1_t2_s2_annot_Solveig"];
-        filenames = ["p1_s1_s1","p2_s1_s1","p3_s1_s1","p4_s1_s1"]
+        filenames = ["p1_s1_s1","p2_s1_s1","p2_s1_sVideo1","p3_s1_s1","p4_s1_s1","p4_s1_sVideo1"]
 
         const jsonFiles = filenames.map((name) => "data/" + name + ".json");
 
@@ -150,32 +150,11 @@
           .attr("class", "rectangle-group")
           .append("rect")
           .attr("y", (d) => {
-            let shift = 0;
-            let heightfactor = 1;
-            if (
-              Boolean(
-                allPatterns.filter(
-                  (pattern) =>
-                    pattern.patternSetName == d.patternSetName &&
-                    pattern.patternId < d.patternId &&
-                    ((pattern.patternStart >= d.patternStart &&
-                      pattern.patternStart <= d.patternEnd) ||
-                      (pattern.patternEnd >= d.patternStart &&
-                        pattern.patternEnd <= d.patternEnd) ||
-                      (pattern.patternEnd >= d.patternEnd &&
-                        pattern.patternStart <= d.patternStart))
-                ).length
-              )
-            ) {
-              shift = 2;
-            }
-
             return (
               (patternSetNames.findIndex((name) => name == d.patternSetName) +
                 1) *
                 spaceBetweenBars -
-              barHeight -
-              (shift * barHeight) / 2
+              barHeight 
             );
           })
           .attr("x", (d) => xScale(d.patternStart))
@@ -207,7 +186,7 @@
             )[0].sessionName;
             window
               .open(
-                currentUrl + "/visualisation.html?session=" + originalSession,
+                currentUrl + "/visualisation.html?session=" + originalSession+ "&patternSet="+patternSetName,
                 "_blank"
               )
               .focus();

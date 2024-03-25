@@ -64,7 +64,6 @@
     async function loadData() {
       var queryStr = window.location.search;
       var params = {};
-
       if (!queryStr) {
         //const filename = "sessionLog.csv";
         //const filename = "test";
@@ -83,11 +82,16 @@
       }
 
       const session = await d3.csv("data/" + params["session"] + ".csv");
-      return session;
+      const providedPatternSet = await d3.json("data/" + params["patternSet"]+".json")
+      return [session, providedPatternSet];
     }
 
     async function main() {
-      let session = await loadData();
+      let providedData = await loadData();
+      let session = providedData[0]
+      let providedPatternSet = providedData [1]
+      
+      //let session = await loadData();
 
       //Zeit umrechnen in Sekunden seit Start
       session.map(
@@ -1369,8 +1373,16 @@
       });
 
       
+      
       var detectedPatterns = [];
       var patternsAsJson = [];
+
+      if (providedPatternSet){
+        patternsAsJson = providedPatternSet
+        detectedPatterns = providedPatternSet
+        drawPatterns();
+      }
+      
       d3.select("#saveButton").on("click", function (d) {
         //save start and end of pattern in terms of timestamp to later compare absolute timings
         let start = xScale.invert(currentBrushEvent.selection[0]);
