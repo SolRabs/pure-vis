@@ -1430,26 +1430,7 @@
           .attr("x", function (d) {
             return xScale(d.patternStart);
           })
-          .attr("y", function (d) {
-            if (
-              Boolean(
-                detectedPatterns.filter(
-                  (pattern) =>
-                    pattern.patternId < d.patternId &&
-                    ((pattern.patternStart >= d.patternStart &&
-                      pattern.patternStart <= d.patternEnd) ||
-                      (pattern.patternEnd >= d.patternStart &&
-                        pattern.patternEnd <= d.patternEnd) ||
-                      (pattern.patternEnd >= d.patternEnd &&
-                        pattern.patternStart <= d.patternStart))
-                ).length
-              )
-            ) {
-              return patternLineLocation - 10;
-            } else {
-              return patternLineLocation;
-            }
-          })
+          .attr("y", patternLineLocation)
           .attr("width", (d) => {
             return (
               xScale(d.patternEnd) -

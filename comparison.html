@@ -40,7 +40,8 @@
       ("use strict");
 
       async function readJSON() {
-        filenames = ["p1_t1_s1_annot_Solveig", "p1_t2_s2_annot_Solveig", "p1_t2_s2_annot_Solveig"];
+        //filenames = ["p1_t1_s1_annot_Solveig", "p1_t2_s2_annot_Solveig", "p1_t2_s2_annot_Solveig"];
+        filenames = ["p1_s1_s1","p2_s1_s1","p3_s1_s1","p4_s1_s1"]
 
         const jsonFiles = filenames.map((name) => "data/" + name + ".json");
 
@@ -150,6 +151,7 @@
           .append("rect")
           .attr("y", (d) => {
             let shift = 0;
+            let heightfactor = 1;
             if (
               Boolean(
                 allPatterns.filter(
@@ -165,7 +167,7 @@
                 ).length
               )
             ) {
-              shift = 1;
+              shift = 2;
             }
 
             return (
@@ -233,21 +235,26 @@
           case "seed":
             return "#08d4b4";
           case "keywords":
+          case "yellow":
             return "#ffe48c";
           case "ranking":
           case "pub character":
           case "filter":
           case "refinement":
+          case "blue":
             return "#408cd4";
           case "clusters":
           case "timeline":
           case "authors":
+          case "grey":
             return "#807c7c";
           case "curate":
+          case "red":
             return "#f8446c";
           default:
             return "#28d464";
         }
+      
       }
 
       }

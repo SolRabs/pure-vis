@@ -1,0 +1,90 @@
+[
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 0,
+		"patternEnd": 237.73584905660377,
+		"duration": 237.73584905660377,
+		"eventCount": 10,
+		"patternId": 0,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 239.86609860012175,
+		"patternEnd": 267.9853925745587,
+		"duration": 28.11929397443697,
+		"eventCount": 2,
+		"patternId": 1,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 284.6013390139988,
+		"patternEnd": 301.2172854534388,
+		"duration": 16.615946439439995,
+		"eventCount": 1,
+		"patternId": 2,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 535.9707851491174,
+		"patternEnd": 609.6774193548387,
+		"duration": 73.70663420572123,
+		"eventCount": 1,
+		"patternId": 3,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "-\tFind common authors in selected (most often occurring) -\tCompare papers of one author => worth keeping all or too similar? -\tFor selecting pubs: focus on score, not keywords",
+		"patternStart": 612.9722330531041,
+		"patternEnd": 1351.7427747451309,
+		"duration": 738.7705416920268,
+		"eventCount": 51,
+		"patternId": 4,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 303.07769125290054,
+		"patternEnd": 534.4228176829732,
+		"duration": 231.3451264300727,
+		"eventCount": 24,
+		"patternId": 5,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 268.9936985566133,
+		"patternEnd": 282.2012457264246,
+		"duration": 13.207547169811278,
+		"eventCount": 1,
+		"patternId": 6,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	},
+	{
+		"patternName": "Usual strategy (repeat 2-3 times), performed once for study and then moved on to author analysis",
+		"patternDesc": "Go through list from top to bottom and either add/remove pubs, until recommendation score is quite low, then obtain more nuanced pub scores by updating keywords",
+		"patternStart": 240.0223047647691,
+		"patternEnd": 609.4076016148052,
+		"duration": 369.3852968500361,
+		"eventCount": 29,
+		"patternId": 7,
+		"patternSetName": "p2_s1_s1",
+		"sessionName": "p2_s1"
+	}
+]
