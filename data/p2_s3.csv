@@ -1,0 +1,286 @@
+event,date,doi,title,author,selectedPublicationsCount,posInSuggestions,activationSourceComponent,actionDetails
+Pub added,13:52:4,10.1109/tvcg.2010.79,,,,,
+Pub added,13:52:4,10.1145/571647.571649,,,,,
+Pub added,13:52:4,10.1145/102377.115768,,,,,
+Pub added,13:52:4,10.1109/tvcg.2007.70529,,,,,
+Pub added,13:52:4,10.1007/978-3-7091-6783-0_4,,,,,
+Pub added,13:52:4,10.1109/visual.1991.175815,,,,,
+Pub added,13:52:4,10.1109/infvis.1999.801860,,,,,
+Pub added,13:52:4,10.1145/3430036.3430041,,,,,
+Pub added,13:52:4,10.1109/tvcg.2006.200,,,,,
+Pub added,13:52:4,10.1109/pacificvis.2015.7156360,,,,,
+Pub added,13:52:4,10.1007/s41651-020-00053-8,,,,,
+Pub added,13:52:4,10.1109/sibgrapi.2018.00027,,,,,
+Pub added,13:52:4,10.1109/visual.1992.235217,,,,,
+Pub added,13:52:4,10.1007/978-3-030-41590-7_10,,,,,
+Pub added,13:52:4,10.1007/978-3-030-61864-3_33,,,,,
+Pub added,13:52:4,10.1016/j.jvlc.2015.10.009,,,,,
+Pub added,13:52:4,10.1109/iv.2012.23,,,,,
+Pub added,13:52:4,10.1177/1473871611424815,,,,,
+Pub added,13:52:4,10.1109/pacificvis.2009.4906844,,,,,
+Pub added,13:52:4,10.1145/2602161.2602183,,,,,
+Pub added,13:52:4,10.1109/tvcg.2018.2865265,,,,,
+Pub added,13:52:4,10.1007/s00371-017-1373-x,,,,,
+Pub added,13:52:4,10.1007/s00180-011-0272-2,,,,,
+Pub added,13:52:4,10.1145/1056018.1056041,,,,,
+Update,13:52:4,,,,,,,24
+Pub suggested,13:52:11,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,1,
+Pub suggested,13:52:11,10.1109/tvcg.2012.108,Enhanced Spatial Stability with Hilbert and Moore Treemaps,Tak and Cockburn,24,2,
+Pub suggested,13:52:11,10.1109/infvis.2001.963283,Ordered treemap layouts,Shneiderman and Wattenberg,24,3,
+Pub suggested,13:52:11,10.1109/tvcg.2014.2346276,Nmap: a Novel Neighborhood Preservation Space-filling Algorithm,Duarte et al.,24,4,
+Pub suggested,13:52:11,10.1109/infvis.2005.1532128,Voronoi Treemaps,Balzer and Deussen,24,5,
+Pub suggested,13:52:11,10.1111/cgf.13989,Quantitative Comparison of Time‐Dependent Treemaps,Vernier et al.,24,6,
+Pub suggested,13:52:11,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,7,
+Pub suggested,13:52:11,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,8,
+Pub suggested,13:52:11,10.1016/j.jvlc.2015.10.002,A mobile interface for navigating hierarchical information space,Chhetri et al.,24,9,
+Pub suggested,13:52:11,10.1109/tvcg.2008.165,Spatially Ordered Treemaps,Wood and Dykes,24,10,
+Pub suggested,13:52:11,10.1145/632716.632834,Visualizing the stock market,Wattenberg,24,11,
+Pub suggested,13:52:11,10.1109/infvis.2005.1532145,A note on space-filling visualizations and space-filling curves,Wattenberg,24,12,
+Pub suggested,13:52:11,10.1109/tvcg.2017.2743959,Bubble Treemaps for Uncertainty Visualization,Gortler et al.,24,13,
+Pub suggested,13:52:11,10.1109/tvcg.2017.2745140,Stable Treemaps via Local Moves,Sondag et al.,24,14,
+Pub suggested,13:52:11,10.1109/iv.2017.67,Mixed-Projection Treemaps: a Novel Approach Mixing 2D and 2.5D Treemaps,Limberger et al.,24,15,
+Pub suggested,13:52:11,10.1051/matecconf/20165601007,2-D Layout for Tree Visualization: a survey,Wang et al.,24,16,
+Pub suggested,13:52:11,10.1145/2801040.2801056,Enhanced Hexagon-Tiling Algorithm for Map-Like Information Visualisation,Yang and Biuk-Aghai,24,17,
+Pub suggested,13:52:11,10.1109/isvd.2010.16,Fast Dynamic Voronoi Treemaps,Sud et al.,24,18,
+Pub suggested,13:52:11,10.1145/1377676.1377683,Circular partitions with applications to visualization and embeddings,Onak and Sidiropoulos,24,19,
+Pub suggested,13:52:11,10.1057/palgrave.ivs.9500087,EncCon: an Approach to Constructing Interactive Visualization of Large Hierarchical Data,Nguyen and Huang,24,20,
+Pub suggested,13:52:11,10.1109/infvis.2000.885091,Focus+context display and navigation techniques for enhancing radial_ space-filling hierarchy visualizations,Stasko and Zhang,24,21,
+Pub suggested,13:52:11,10.1109/tvcg.2019.2934535,BarcodeTree: Scalable Comparison of Multiple Hierarchies,Li et al.,24,22,
+Pub suggested,13:52:11,10.1109/vissoft.2018.00018,Quantitative Comparison of Dynamic Treemaps for Software Evolution Visualization,Faccin Vernier et al.,24,23,
+Pub suggested,13:52:11,10.1186/s40537-015-0022-3,Cabinet Tree: an orthogonal enclosure approach to visualizing and exploring big data,Yang et al.,24,24,
+Pub suggested,13:52:11,10.1109/tvcg.2013.91,GosperMap: Using a Gosper Curve for Laying Out Hierarchical Data,Auber et al.,24,25,
+Pub suggested,13:52:11,10.1109/tvcg.2012.205,Capturing the Design Space of Sequential Space-Filling Layouts,Baudel and Broeksema,24,26,
+Pub suggested,13:52:11,10.1109/mcg.2011.103,Treevis.net: a Tree Visualization Reference,Schulz,24,27,
+Pub suggested,13:52:11,10.1109/tvcg.2010.110,Visualization of the Static Aspects of Software: a Survey,Caserta and Zendra,24,28,
+Pub suggested,13:52:11,10.1109/tvcg.2009.128,Configuring Hierarchical Layouts to Address Research Questions,Slingsby et al.,24,29,
+Pub suggested,13:52:11,10.1109/iv.2009.97,Treemaps and Choropleth Maps Applied to Regional Hierarchical Statistical Data,Jern et al.,24,30,
+Pub suggested,13:52:11,10.1109/pacificvis.2008.4475475,Interactive Visual Analysis of the NSF Funding Information,Liu et al.,24,31,
+Pub suggested,13:52:11,10.1109/tvcg.2007.70540,Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,Blanch and Lecolinet,24,32,
+Pub suggested,13:52:11,10.1145/1124772.1124851,Visualization of large hierarchical data by circle packing,Wang et al.,24,33,
+Pub suggested,13:52:11,10.1007/978-3-540-27795-8_6,Extending Tree-Maps to Three Dimensions: a Comparative Study,Bladh et al.,24,34,
+Pub suggested,13:52:11,10.1145/108844.108883,Cone Trees:  animated 3D visualizations of hierarchical information,Robertson et al.,24,35,
+Pub suggested,13:52:11,10.28925/2311-259x.2022.3.8,Treemap as a type of data visualization in the media,Lichenko,24,36,
+Pub suggested,13:52:11,10.1007/s12650-022-00874-3,Procedural texture patterns for encoding changes in color in 2.5D treemap visualizations,Limberger et al.,24,37,
+Pub suggested,13:52:11,10.1007/s10844-021-00677-2,A spiral-like method to place in the space (and interact with) too many values,Tzitzikas et al.,24,38,
+Pub suggested,13:52:11,10.1145/3430036.3430054,Survey on user studies on the effectiveness of treemaps,Fiedler et al.,24,39,
+Pub suggested,13:52:11,10.1109/pacificvis48177.2020.7614,Uncertainty Treemaps,Sondag et al.,24,40,
+Pub suggested,13:52:11,10.1145/3206505.3206591,Equal-height treemaps for multivariate data,Wittenburg and Lee,24,41,
+Pub suggested,13:52:11,10.1145/3231622.3231638,Interactive_ Height-Based Filtering in 2.5D Treemaps,Limberger et al.,24,42,
+Pub suggested,13:52:11,10.1007/978-3-319-57336-6_14,Effectiveness and Efficiency of Using Different Types of Rectangular Treemap as Diagrams in Cartography,Zhou et al.,24,43,
+Pub suggested,13:52:11,10.1109/iv.2016.61,Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps,Limberger et al.,24,44,
+Pub suggested,13:52:11,10.1016/j.jvlc.2015.09.004,Preset-based generation and exploration of visualization designs,Schulz and Hadlak,24,45,
+Pub suggested,13:52:11,10.1109/smartcity.2015.181,SpaceViz: Visualization Tool for the Computer Storage Big-Data,Thomas et al.,24,46,
+Pub suggested,13:52:11,10.1109/bigdata.2013.6691713,Visualization of streaming data: Observing change and context in information visualization techniques,Krstajic and Keim,24,47,
+Pub suggested,13:52:11,10.1007/978-3-642-25591-5_28,Treemaps with Bounded Aspect Ratio,de Berg et al.,24,48,
+Pub suggested,13:52:11,10.1109/vissof.2005.1684299,Visual Realism for the Visualization of Software Metrics,Holten et al.,24,49,
+Pub suggested,13:52:11,10.1109/38.595272,TennisViewer: a browser for competition trees,Liqun Jin and Banks,24,50,
+Keywords updated,13:53:28,,,,,,,treemap
+Pub suggested,13:53:28,10.1109/tvcg.2012.108,Enhanced Spatial Stability with Hilbert and Moore Treemaps,Tak and Cockburn,24,1,
+Pub suggested,13:53:28,10.1109/infvis.2001.963283,Ordered treemap layouts,Shneiderman and Wattenberg,24,2,
+Pub suggested,13:53:28,10.1109/infvis.2005.1532128,Voronoi Treemaps,Balzer and Deussen,24,3,
+Pub suggested,13:53:28,10.1111/cgf.13989,Quantitative Comparison of Time‐Dependent Treemaps,Vernier et al.,24,4,
+Pub suggested,13:53:28,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,5,
+Pub suggested,13:53:28,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,
+Pub suggested,13:53:28,10.1109/tvcg.2008.165,Spatially Ordered Treemaps,Wood and Dykes,24,7,
+Pub suggested,13:53:28,10.1109/tvcg.2017.2743959,Bubble Treemaps for Uncertainty Visualization,Gortler et al.,24,8,
+Pub suggested,13:53:28,10.1109/tvcg.2017.2745140,Stable Treemaps via Local Moves,Sondag et al.,24,9,
+Pub suggested,13:53:28,10.1109/iv.2017.67,Mixed-Projection Treemaps: a Novel Approach Mixing 2D and 2.5D Treemaps,Limberger et al.,24,10,
+Pub suggested,13:53:28,10.1109/isvd.2010.16,Fast Dynamic Voronoi Treemaps,Sud et al.,24,11,
+Pub suggested,13:53:28,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,
+Pub suggested,13:53:28,10.1109/vissoft.2018.00018,Quantitative Comparison of Dynamic Treemaps for Software Evolution Visualization,Faccin Vernier et al.,24,13,
+Pub suggested,13:53:28,10.1109/iv.2009.97,Treemaps and Choropleth Maps Applied to Regional Hierarchical Statistical Data,Jern et al.,24,14,
+Pub suggested,13:53:28,10.1109/tvcg.2007.70540,Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,Blanch and Lecolinet,24,15,
+Pub suggested,13:53:28,10.28925/2311-259x.2022.3.8,Treemap as a type of data visualization in the media,Lichenko,24,16,
+Pub suggested,13:53:28,10.1007/s12650-022-00874-3,Procedural texture patterns for encoding changes in color in 2.5D treemap visualizations,Limberger et al.,24,17,
+Pub suggested,13:53:28,10.1145/3430036.3430054,Survey on user studies on the effectiveness of treemaps,Fiedler et al.,24,18,
+Pub suggested,13:53:28,10.1109/pacificvis48177.2020.7614,Uncertainty Treemaps,Sondag et al.,24,19,
+Pub suggested,13:53:28,10.1145/3206505.3206591,Equal-height treemaps for multivariate data,Wittenburg and Lee,24,20,
+Pub suggested,13:53:28,10.1145/3231622.3231638,Interactive_ Height-Based Filtering in 2.5D Treemaps,Limberger et al.,24,21,
+Pub suggested,13:53:28,10.1007/978-3-319-57336-6_14,Effectiveness and Efficiency of Using Different Types of Rectangular Treemap as Diagrams in Cartography,Zhou et al.,24,22,
+Pub suggested,13:53:28,10.1109/iv.2016.61,Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps,Limberger et al.,24,23,
+Pub suggested,13:53:28,10.1109/tvcg.2014.2346276,Nmap: a Novel Neighborhood Preservation Space-filling Algorithm,Duarte et al.,24,24,
+Pub suggested,13:53:28,10.1007/978-3-642-25591-5_28,Treemaps with Bounded Aspect Ratio,de Berg et al.,24,25,
+Pub suggested,13:53:28,10.1016/j.jvlc.2015.10.002,A mobile interface for navigating hierarchical information space,Chhetri et al.,24,26,
+Pub suggested,13:53:28,10.1145/632716.632834,Visualizing the stock market,Wattenberg,24,27,
+Pub suggested,13:53:28,10.1109/infvis.2005.1532145,A note on space-filling visualizations and space-filling curves,Wattenberg,24,28,
+Pub suggested,13:53:28,10.1051/matecconf/20165601007,2-D Layout for Tree Visualization: a survey,Wang et al.,24,29,
+Pub suggested,13:53:28,10.1145/2801040.2801056,Enhanced Hexagon-Tiling Algorithm for Map-Like Information Visualisation,Yang and Biuk-Aghai,24,30,
+Pub suggested,13:53:28,10.1145/1377676.1377683,Circular partitions with applications to visualization and embeddings,Onak and Sidiropoulos,24,31,
+Pub suggested,13:53:28,10.1057/palgrave.ivs.9500087,EncCon: an Approach to Constructing Interactive Visualization of Large Hierarchical Data,Nguyen and Huang,24,32,
+Pub suggested,13:53:28,10.1109/infvis.2000.885091,Focus+context display and navigation techniques for enhancing radial_ space-filling hierarchy visualizations,Stasko and Zhang,24,33,
+Pub suggested,13:53:28,10.1109/tvcg.2019.2934535,BarcodeTree: Scalable Comparison of Multiple Hierarchies,Li et al.,24,34,
+Pub suggested,13:53:28,10.1186/s40537-015-0022-3,Cabinet Tree: an orthogonal enclosure approach to visualizing and exploring big data,Yang et al.,24,35,
+Pub suggested,13:53:28,10.1109/tvcg.2013.91,GosperMap: Using a Gosper Curve for Laying Out Hierarchical Data,Auber et al.,24,36,
+Pub suggested,13:53:28,10.1109/tvcg.2012.205,Capturing the Design Space of Sequential Space-Filling Layouts,Baudel and Broeksema,24,37,
+Pub suggested,13:53:28,10.1109/mcg.2011.103,Treevis.net: a Tree Visualization Reference,Schulz,24,38,
+Pub suggested,13:53:28,10.1109/tvcg.2010.110,Visualization of the Static Aspects of Software: a Survey,Caserta and Zendra,24,39,
+Pub suggested,13:53:28,10.1109/tvcg.2009.128,Configuring Hierarchical Layouts to Address Research Questions,Slingsby et al.,24,40,
+Pub suggested,13:53:28,10.1109/pacificvis.2008.4475475,Interactive Visual Analysis of the NSF Funding Information,Liu et al.,24,41,
+Pub suggested,13:53:28,10.1145/1124772.1124851,Visualization of large hierarchical data by circle packing,Wang et al.,24,42,
+Pub suggested,13:53:28,10.1007/978-3-540-27795-8_6,Extending Tree-Maps to Three Dimensions: a Comparative Study,Bladh et al.,24,43,
+Pub suggested,13:53:28,10.1145/108844.108883,Cone Trees:  animated 3D visualizations of hierarchical information,Robertson et al.,24,44,
+Pub suggested,13:53:28,10.1007/s10844-021-00677-2,A spiral-like method to place in the space (and interact with) too many values,Tzitzikas et al.,24,45,
+Pub suggested,13:53:28,10.1016/j.jvlc.2015.09.004,Preset-based generation and exploration of visualization designs,Schulz and Hadlak,24,46,
+Pub suggested,13:53:28,10.1109/smartcity.2015.181,SpaceViz: Visualization Tool for the Computer Storage Big-Data,Thomas et al.,24,47,
+Pub suggested,13:53:28,10.1109/bigdata.2013.6691713,Visualization of streaming data: Observing change and context in information visualization techniques,Krstajic and Keim,24,48,
+Pub suggested,13:53:28,10.1109/vissof.2005.1684299,Visual Realism for the Visualization of Software Metrics,Holten et al.,24,49,
+Pub suggested,13:53:28,10.1109/38.595272,TennisViewer: a browser for competition trees,Liqun Jin and Banks,24,50,
+Pub qd for selected,13:54:1,10.1109/tvcg.2012.108,Enhanced Spatial Stability with Hilbert and Moore Treemaps,Tak and Cockburn,24,1,suggested
+Pub activated,13:54:1,10.1109/tvcg.2012.108,Enhanced Spatial Stability with Hilbert and Moore Treemaps,Tak and Cockburn,24,1,suggested
+Pub activated,13:54:1,10.1109/tvcg.2012.108,Enhanced Spatial Stability with Hilbert and Moore Treemaps,Tak and Cockburn,24,1,suggested
+Pub qd for selected,13:54:3,10.1109/infvis.2001.963283,Ordered treemap layouts,Shneiderman and Wattenberg,24,2,suggested
+Pub deactivated,13:54:3,10.1109/tvcg.2012.108,Enhanced Spatial Stability with Hilbert and Moore Treemaps,Tak and Cockburn,24,1,
+Pub activated,13:54:3,10.1109/infvis.2001.963283,Ordered treemap layouts,Shneiderman and Wattenberg,24,2,suggested
+Pub activated,13:54:3,10.1109/infvis.2001.963283,Ordered treemap layouts,Shneiderman and Wattenberg,24,2,suggested
+Pub qd for selected,13:54:5,10.1109/infvis.2005.1532128,Voronoi Treemaps,Balzer and Deussen,24,3,suggested
+Pub deactivated,13:54:5,10.1109/infvis.2001.963283,Ordered treemap layouts,Shneiderman and Wattenberg,24,2,
+Pub activated,13:54:5,10.1109/infvis.2005.1532128,Voronoi Treemaps,Balzer and Deussen,24,3,suggested
+Pub activated,13:54:5,10.1109/infvis.2005.1532128,Voronoi Treemaps,Balzer and Deussen,24,3,suggested
+Pub qd for selected,13:54:9,10.1111/cgf.13989,Quantitative Comparison of Time‐Dependent Treemaps,Vernier et al.,24,4,suggested
+Pub deactivated,13:54:9,10.1109/infvis.2005.1532128,Voronoi Treemaps,Balzer and Deussen,24,3,
+Pub activated,13:54:9,10.1111/cgf.13989,Quantitative Comparison of Time‐Dependent Treemaps,Vernier et al.,24,4,suggested
+Pub activated,13:54:9,10.1111/cgf.13989,Quantitative Comparison of Time‐Dependent Treemaps,Vernier et al.,24,4,suggested
+Pub qd for selected,13:54:12,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,5,suggested
+Pub deactivated,13:54:12,10.1111/cgf.13989,Quantitative Comparison of Time‐Dependent Treemaps,Vernier et al.,24,4,
+Pub activated,13:54:12,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,5,suggested
+Pub activated,13:54:12,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,5,suggested
+Pub qd for selected,13:54:15,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,suggested
+Pub deactivated,13:54:15,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,5,
+Pub activated,13:54:15,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,suggested
+Pub activated,13:54:15,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,suggested
+Pub qd for selected,13:54:18,10.1109/tvcg.2017.2743959,Bubble Treemaps for Uncertainty Visualization,Gortler et al.,24,8,suggested
+Pub deactivated,13:54:18,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,
+Pub activated,13:54:18,10.1109/tvcg.2017.2743959,Bubble Treemaps for Uncertainty Visualization,Gortler et al.,24,8,suggested
+Pub activated,13:54:18,10.1109/tvcg.2017.2743959,Bubble Treemaps for Uncertainty Visualization,Gortler et al.,24,8,suggested
+Pub qd for selected,13:54:20,10.1109/tvcg.2008.165,Spatially Ordered Treemaps,Wood and Dykes,24,7,suggested
+Pub deactivated,13:54:20,10.1109/tvcg.2017.2743959,Bubble Treemaps for Uncertainty Visualization,Gortler et al.,24,8,
+Pub activated,13:54:20,10.1109/tvcg.2008.165,Spatially Ordered Treemaps,Wood and Dykes,24,7,suggested
+Pub activated,13:54:20,10.1109/tvcg.2008.165,Spatially Ordered Treemaps,Wood and Dykes,24,7,suggested
+Pub qd for selected,13:54:28,10.1109/tvcg.2017.2745140,Stable Treemaps via Local Moves,Sondag et al.,24,9,suggested
+Pub deactivated,13:54:28,10.1109/tvcg.2008.165,Spatially Ordered Treemaps,Wood and Dykes,24,7,
+Pub activated,13:54:28,10.1109/tvcg.2017.2745140,Stable Treemaps via Local Moves,Sondag et al.,24,9,suggested
+Pub activated,13:54:28,10.1109/tvcg.2017.2745140,Stable Treemaps via Local Moves,Sondag et al.,24,9,suggested
+Pub deactivated,13:54:44,10.1109/tvcg.2017.2745140,Stable Treemaps via Local Moves,Sondag et al.,24,9,
+Pub qd for selected,13:54:47,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,suggested
+Pub activated,13:54:47,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,suggested
+Pub activated,13:54:47,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,suggested
+Pub qd for selected,13:54:57,10.1109/isvd.2010.16,Fast Dynamic Voronoi Treemaps,Sud et al.,24,11,suggested
+Pub deactivated,13:54:57,10.1109/tvcg.2022.3209450,SizePairs: Achieving Stable and Balanced Temporal Treemaps using Hierarchical Size-based Pairing,Han et al.,24,6,
+Pub activated,13:54:57,10.1109/isvd.2010.16,Fast Dynamic Voronoi Treemaps,Sud et al.,24,11,suggested
+Pub activated,13:54:57,10.1109/isvd.2010.16,Fast Dynamic Voronoi Treemaps,Sud et al.,24,11,suggested
+Pub qd for selected,13:55:0,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,suggested
+Pub deactivated,13:55:0,10.1109/isvd.2010.16,Fast Dynamic Voronoi Treemaps,Sud et al.,24,11,
+Pub activated,13:55:0,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,suggested
+Pub activated,13:55:0,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,suggested
+Pub deactivated,13:55:3,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,
+Pub activated,13:56:21,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,suggested
+Clicked abstract,13:56:23,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,suggested
+Pub excluded,13:56:34,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,suggested
+Pub qd for selected,13:56:54,10.1109/tvcg.2007.70540,Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,Blanch and Lecolinet,24,15,suggested
+Pub deactivated,13:56:54,10.1007/s12650-022-00868-1,Visual variables and configuration of software maps,Limberger et al.,24,12,
+Pub activated,13:56:54,10.1109/tvcg.2007.70540,Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,Blanch and Lecolinet,24,15,suggested
+Pub activated,13:56:54,10.1109/tvcg.2007.70540,Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,Blanch and Lecolinet,24,15,suggested
+Pub qd for selected,13:56:57,10.28925/2311-259x.2022.3.8,Treemap as a type of data visualization in the media,Lichenko,24,16,suggested
+Pub deactivated,13:56:57,10.1109/tvcg.2007.70540,Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques,Blanch and Lecolinet,24,15,
+Pub activated,13:56:57,10.28925/2311-259x.2022.3.8,Treemap as a type of data visualization in the media,Lichenko,24,16,suggested
+Pub activated,13:56:57,10.28925/2311-259x.2022.3.8,Treemap as a type of data visualization in the media,Lichenko,24,16,suggested
+Pub excluded,13:56:59,10.1109/iv.2009.97,Treemaps and Choropleth Maps Applied to Regional Hierarchical Statistical Data,Jern et al.,24,14,suggested
+Pub excluded,13:57:0,10.1109/vissoft.2018.00018,Quantitative Comparison of Dynamic Treemaps for Software Evolution Visualization,Faccin Vernier et al.,24,13,suggested
+Pub qd for selected,13:57:5,10.1007/s12650-022-00874-3,Procedural texture patterns for encoding changes in color in 2.5D treemap visualizations,Limberger et al.,24,17,suggested
+Pub deactivated,13:57:5,10.28925/2311-259x.2022.3.8,Treemap as a type of data visualization in the media,Lichenko,24,16,
+Pub activated,13:57:5,10.1007/s12650-022-00874-3,Procedural texture patterns for encoding changes in color in 2.5D treemap visualizations,Limberger et al.,24,17,suggested
+Pub activated,13:57:5,10.1007/s12650-022-00874-3,Procedural texture patterns for encoding changes in color in 2.5D treemap visualizations,Limberger et al.,24,17,suggested
+Pub qd for selected,13:57:11,10.1145/3430036.3430054,Survey on user studies on the effectiveness of treemaps,Fiedler et al.,24,18,suggested
+Pub deactivated,13:57:11,10.1007/s12650-022-00874-3,Procedural texture patterns for encoding changes in color in 2.5D treemap visualizations,Limberger et al.,24,17,
+Pub activated,13:57:11,10.1145/3430036.3430054,Survey on user studies on the effectiveness of treemaps,Fiedler et al.,24,18,suggested
+Pub activated,13:57:11,10.1145/3430036.3430054,Survey on user studies on the effectiveness of treemaps,Fiedler et al.,24,18,suggested
+Pub qd for selected,13:57:14,10.1109/pacificvis48177.2020.7614,Uncertainty Treemaps,Sondag et al.,24,19,suggested
+Pub deactivated,13:57:14,10.1145/3430036.3430054,Survey on user studies on the effectiveness of treemaps,Fiedler et al.,24,18,
+Pub activated,13:57:14,10.1109/pacificvis48177.2020.7614,Uncertainty Treemaps,Sondag et al.,24,19,suggested
+Pub activated,13:57:14,10.1109/pacificvis48177.2020.7614,Uncertainty Treemaps,Sondag et al.,24,19,suggested
+Pub excluded,13:57:22,10.1145/3231622.3231638,Interactive_ Height-Based Filtering in 2.5D Treemaps,Limberger et al.,24,21,suggested
+Pub excluded,13:57:23,10.1145/3206505.3206591,Equal-height treemaps for multivariate data,Wittenburg and Lee,24,20,suggested
+Pub excluded,13:57:25,10.1007/978-3-319-57336-6_14,Effectiveness and Efficiency of Using Different Types of Rectangular Treemap as Diagrams in Cartography,Zhou et al.,24,22,suggested
+Pub excluded,13:57:28,10.1109/iv.2016.61,Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps,Limberger et al.,24,23,suggested
+Pub excluded,13:57:32,10.1109/tvcg.2014.2346276,Nmap: a Novel Neighborhood Preservation Space-filling Algorithm,Duarte et al.,24,24,suggested
+Pub excluded,13:57:34,10.1016/j.jvlc.2015.10.002,A mobile interface for navigating hierarchical information space,Chhetri et al.,24,26,suggested
+Pub excluded,13:57:38,10.1007/978-3-642-25591-5_28,Treemaps with Bounded Aspect Ratio,de Berg et al.,24,25,suggested
+Pub excluded,13:58:9,10.1145/632716.632834,Visualizing the stock market,Wattenberg,24,27,suggested
+Pub excluded,13:58:13,10.1109/iv.2017.67,Mixed-Projection Treemaps: a Novel Approach Mixing 2D and 2.5D Treemaps,Limberger et al.,24,10,suggested
+Pub excluded,13:58:19,10.1145/3105971.3105976,Map-like visualisations vs. treemaps:  an experimental comparison,Biuk-Aghai et al.,24,5,suggested
+Pub deactivated,13:58:21,10.1109/pacificvis48177.2020.7614,Uncertainty Treemaps,Sondag et al.,24,19,
+Pub added,13:58:21,10.1109/tvcg.2012.108,,,,,
+Pub added,13:58:21,10.1109/infvis.2001.963283,,,,,
+Pub added,13:58:21,10.1109/infvis.2005.1532128,,,,,
+Pub added,13:58:21,10.1111/cgf.13989,,,,,
+Pub added,13:58:21,10.1109/tvcg.2017.2743959,,,,,
+Pub added,13:58:21,10.1109/tvcg.2008.165,,,,,
+Pub added,13:58:21,10.1109/tvcg.2017.2745140,,,,,
+Pub added,13:58:21,10.1109/tvcg.2022.3209450,,,,,
+Pub added,13:58:21,10.1109/isvd.2010.16,,,,,
+Pub added,13:58:21,10.1109/tvcg.2007.70540,,,,,
+Pub added,13:58:21,10.28925/2311-259x.2022.3.8,,,,,
+Pub added,13:58:21,10.1007/s12650-022-00874-3,,,,,
+Pub added,13:58:21,10.1145/3430036.3430054,,,,,
+Pub added,13:58:21,10.1109/pacificvis48177.2020.7614,,,,,
+Pub suggested,13:58:25,10.1109/tvcg.2010.186,Perceptual Guidelines for Creating Rectangular Treemaps,Kong et al.,38,1,
+Pub suggested,13:58:25,10.1177/14738716231167181,Voronoi treemap in Manhattan distance and Chebyshev distance,Wang et al.,38,2,
+Pub suggested,13:58:25,10.1016/j.vrih.2021.09.006,Balanced-partitioning treemapping method for digital hierarchical dataset,Feng et al.,38,3,
+Pub suggested,13:58:25,10.1016/j.comgeo.2013.12.008,Treemaps with bounded aspect ratio,de Berg et al.,38,4,
+Pub suggested,13:58:25,10.1109/tvcg.2013.91,GosperMap: Using a Gosper Curve for Laying Out Hierarchical Data,Auber et al.,38,5,
+Pub suggested,13:58:25,10.1007/978-3-662-56689-3_3,Hierarchical-Layout Treemap for Context-Based Visualization,Wang et al.,38,6,
+Pub suggested,13:58:25,10.1109/iv.2012.12,Edge Equalized Treemaps,Kobayashi et al.,38,7,
+Pub suggested,13:58:25,10.1109/iv.2009.22,TreemapBar: Visualizing Additional Dimensions of Data in Bar Chart,Huang et al.,38,8,
+Pub suggested,13:58:25,10.1109/iv.2004.1320166,Extending the utility of treemaps with flexible hierarchy,Chintalapani et al.,38,9,
+Pub suggested,13:58:25,10.3390/info11020123,Depicting More Information in Enriched Squarified Treemaps with Layered Glyphs,Soares et al.,38,10,
+Pub suggested,13:58:25,10.4113/jom.2010.1071,Treemap Cartography for showing Spatial and Temporal Traffic Patterns,Slingsby et al.,38,11,
+Pub suggested,13:58:25,10.1109/infvis.2005.1532145,A note on space-filling visualizations and space-filling curves,Wattenberg,38,12,
+Pub suggested,13:58:25,10.1007/s00371-023-02864-4,PowerHierarchy: visualization approach of hierarchical data via power diagram,Yao et al.,38,13,
+Pub suggested,13:58:25,10.1051/matecconf/20165601007,2-D Layout for Tree Visualization: a survey,Wang et al.,38,14,
+Pub suggested,13:58:25,10.1109/tvcg.2019.2934535,BarcodeTree: Scalable Comparison of Multiple Hierarchies,Li et al.,38,15,
+Pub suggested,13:58:25,10.1109/tvcg.2019.2934209,Selection Bias Tracking and Detailed Subset Comparison for High-Dimensional Data,Borland et al.,38,16,
+Pub suggested,13:58:25,10.1145/2801040.2801056,Enhanced Hexagon-Tiling Algorithm for Map-Like Information Visualisation,Yang and Biuk-Aghai,38,17,
+Pub suggested,13:58:25,10.1186/s40537-015-0022-3,Cabinet Tree: an orthogonal enclosure approach to visualizing and exploring big data,Yang et al.,38,18,
+Pub suggested,13:58:25,10.1145/1377676.1377683,Circular partitions with applications to visualization and embeddings,Onak and Sidiropoulos,38,19,
+Pub suggested,13:58:25,10.1145/1124772.1124851,Visualization of large hierarchical data by circle packing,Wang et al.,38,20,
+Pub suggested,13:58:25,10.1109/iv.2005.122,The Effect of Animated Transitions on User Navigation in 3D Tree-Maps,Bladh et al.,38,21,
+Pub suggested,13:58:25,10.1007/s10844-021-00677-2,A spiral-like method to place in the space (and interact with) too many values,Tzitzikas et al.,38,22,
+Pub suggested,13:58:25,10.1109/tvcg.2020.2973564,SplitStreams: a Visual Metaphor for Evolving Hierarchies,Bolte et al.,38,23,
+Pub suggested,13:58:25,10.1109/tvcg.2017.2744318,CyteGuide: Visual Guidance for Hierarchical Single-Cell Analysis,Hollt et al.,38,24,
+Pub suggested,13:58:25,10.1109/tvcg.2012.205,Capturing the Design Space of Sequential Space-Filling Layouts,Baudel and Broeksema,38,25,
+Pub suggested,13:58:25,10.1109/tvcg.2010.110,Visualization of the Static Aspects of Software: a Survey,Caserta and Zendra,38,26,
+Pub suggested,13:58:25,10.1109/mcg.2011.103,Treevis.net: a Tree Visualization Reference,Schulz,38,27,
+Pub suggested,13:58:25,10.1109/tvcg.2009.128,Configuring Hierarchical Layouts to Address Research Questions,Slingsby et al.,38,28,
+Pub suggested,13:58:25,10.1016/j.dam.2006.08.005,An approximation algorithm for dissecting a rectangle into rectangles with specified areas,Nagamochi and Abe,38,29,
+Pub suggested,13:58:25,10.1057/palgrave.ivs.9500087,EncCon: an Approach to Constructing Interactive Visualization of Large Hierarchical Data,Nguyen and Huang,38,30,
+Pub suggested,13:58:25,10.1007/978-3-540-27795-8_6,Extending Tree-Maps to Three Dimensions: a Comparative Study,Bladh et al.,38,31,
+Pub suggested,13:58:25,10.1109/infvis.2000.885091,Focus+context display and navigation techniques for enhancing radial_ space-filling hierarchy visualizations,Stasko and Zhang,38,32,
+Pub suggested,13:58:25,10.1111/cgf.13446,Quality Metrics for Information Visualization,Behrisch et al.,38,33,
+Pub suggested,13:58:25,10.1177/2378023118772982,Visualizing Hierarchical Social Networks,Gemici and Vashevko,38,34,
+Pub suggested,13:58:25,10.1109/tvcg.2015.2489660,Dealing with Multiple Requirements in Geometric Arrangements,Gomez-Nieto et al.,38,35,
+Pub suggested,13:58:25,10.1109/indin.2015.7281844,Simulation repository visualisation and exploration,Fish et al.,38,36,
+Pub suggested,13:58:25,10.1111/j.1467-8659.2011.01898.x,Visual Analysis of Large Graphs: State‐of‐the‐Art and Future Research Challenges,von Landesberger et al.,38,37,
+Pub suggested,13:58:25,10.1057/ivs.2009.4,Quantifying the Space-Efficiency of 2D Graphical Representations of Trees,Mcguffin and Robert,38,38,
+Pub suggested,13:58:25,10.1109/pacificvis.2008.4475475,Interactive Visual Analysis of the NSF Funding Information,Liu et al.,38,39,
+Pub suggested,13:58:25,10.1109/vissof.2005.1684299,Visual Realism for the Visualization of Software Metrics,Holten et al.,38,40,
+Pub suggested,13:58:25,10.1057/palgrave.ivs.9500036,Beamtrees: Compact Visualization of Large Hierarchies,van Ham and van Wijk,38,41,
+Pub suggested,13:58:25,10.1109/38.595272,TennisViewer: a browser for competition trees,Liqun Jin and Banks,38,42,
+Pub suggested,13:58:25,10.1145/108844.108883,Cone Trees:  animated 3D visualizations of hierarchical information,Robertson et al.,38,43,
+Pub suggested,13:58:25,10.1109/iv.2003.1218020,Treecube: visualization tool for browsing 3D multimedia data,Tanaka et al.,38,44,
+Pub suggested,13:58:25,10.1109/tvcg.2021.3064037,A State-of-the-Art Survey of Tasks for Tree Design and Evaluation with a Curated Task Dataset,Pandey et al.,38,45,
+Pub suggested,13:58:25,10.1145/3356422.3356444,Advanced Visual Metaphors and Techniques for Software Maps,Limberger et al.,38,46,
+Pub suggested,13:58:25,10.1007/s12650-015-0329-3,Navigation in large hierarchical graph through chain-context views,Liang et al.,38,47,
+Pub suggested,13:58:25,10.1145/2493102.2493112,Visualizing large trees with divide &amp; conquer partition,Liang et al.,38,48,
+Pub suggested,13:58:25,10.1057/ivs.2009.29,A Survey of Multiple Tree Visualisation,Graham and Kennedy,38,49,
+Pub suggested,13:58:25,10.1057/palgrave.ivs.9500113,Human Perception of Structure in Shaded Space-Filling Visualizations,Irani et al.,38,50,
+Update,13:58:26,,,,,,,38
+Network expanded,13:58:28,,,,,,,
+Network: shown authors updated,13:58:32,,,,,,,0.4
+Network: shown authors updated,13:58:32,,,,,,,0.3
+Network: shown authors updated,13:58:34,,,,,,,0.2
+Network: shown authors updated,13:58:35,,,,,,,0.1
+Network collapsed,13:59:4,,,,,,,
+Opened authors,13:59:5,,,,,,,
+Clicked author scholar,14:0:0,,,,,,,
+Closed authors,14:3:37,,,,,,,
+end,14:3:45,,,,,,,

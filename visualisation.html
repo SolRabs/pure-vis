@@ -249,15 +249,6 @@
           "stroke",
           "none"
         );
-        //Have a black outline for the pub point events
-        if (
-          d.event == "Pub filtered" &&
-          d3.select(this)._groups[0][0].tagName.toLowerCase() === "circle"
-        ) {
-          console.log("yep");
-          d3.select(this).style("stroke", "black");
-          d3.select(this).style("stroke-width", 1);
-        }
         d3.select("#hoveredPub").remove();
       };
 
@@ -433,13 +424,14 @@
         )
         .call(d3.axisBottom(xScale).tickValues([]));
 
+      //legende: patternline
       svg
         .append("text")
         .attr("x", 5)
         .attr("y", patternLineLocation + patternLineHeight * 0.75 + 3)
         .text("Patterns")
         .style("fill", "black")
-        .style("font-size", "8px");
+        .style("font-size", "10px");
 
       //Brush area
 
@@ -562,11 +554,11 @@
         .append("text")
         .attr("class", "y-axis-label")
         .attr("x", - yScale(0) + 40)
-        .attr("y", xScale(0)-30) // Adjust position as needed
+        .attr("y", xScale(0)-35) 
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
-        .style("font-size", "8px")
+        .style("font-size", "10px")
         .text("Number of selected"); 
 
        // Append keyword-axis label
@@ -574,11 +566,11 @@
         .append("text")
         .attr("class", "y-axis-label")
         .attr("x",  yScale(0) - 40)
-        .attr("y", -(xAxisEnd+30)) // Adjust position as needed
+        .attr("y", -(xAxisEnd+35))
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .attr("transform", "rotate(90)")
-        .style("font-size", "8px")
+        .style("font-size", "10px")
         .text("Number of keywords/filter"); 
 
       function drawKeywords(context) {
@@ -782,14 +774,19 @@
               publist[index].title.length > 0 &&
               publist[index].title != "undefined"
             ) {
-              return publist[index].title.substr(0, 30);
+              return publist[index].title.substr(0, 25);
             }
             index++;
           }
-          return publist[0].doi.substr(0, 30);
+          return publist[0].doi.substr(0, 25);
         })
         .style("fill", "black")
-        .style("font-size", "8px");
+        .style("font-size", "10px");
+
+      //Legende: Timeline-legende
+      svg.append("text").attr("x",xScale(session[session.length - 1].date)-70).attr("y",getPubLineHeight(uniqueDois.length)).text("Elapsed time (seconds)")        .style("fill", "black")
+        .style("font-size", "10px");
+
 
       //PubPointEvents = Events, die als Punkt auf der Pubtimeline erscheinen sollen
       let pubPointEvents = [
@@ -925,6 +922,7 @@
             ) {
               let pos = d.posInSuggestions;
               //bottom 30 ganz weiß, dann in 5er Inkrementen jeweils 1 von 4 px wegnehmen
+              barHeight = 16
               if (pos > 30) {
                 return barHeight - 15;
               } else {
@@ -1064,7 +1062,7 @@
               .attr("y", yPosition + 3)
               .text("Activation")
               .style("fill", "black")
-              .style("font-size", "8px");
+              .style("font-size", "10px");
             legend1Drawn = true;
           } else if (!legend2Drawn && eventsRowTwo.includes(event.event)) {
             svg
@@ -1073,7 +1071,7 @@
               .attr("y", yPosition + 3)
               .text("Pub Interactions")
               .style("fill", "black")
-              .style("font-size", "8px");
+              .style("font-size", "10px");
             legend2Drawn = true;
           } else if (!legend3Drawn && eventsRowThree.includes(event.event)) {
             svg
@@ -1082,7 +1080,7 @@
               .attr("y", yPosition + 3)
               .text("Interface Actions")
               .style("fill", "black")
-              .style("font-size", "8px");
+              .style("font-size", "10px");
             legend3Drawn = true;
           }
 
@@ -1139,9 +1137,10 @@
             .attr("fill", (event) => {
               return getIconColors(event.event);
             })
-            .attr("stroke", "black")
+            .attr("stroke", event => {
+              console.log(event.activationSourceComponent);
+              return getStrokeColors(event)})
             .attr("stroke-width", 1)
-
             .attr("cx", (event) => xScale(new Date(event.date)))
             .attr(
               "cy",
@@ -1153,6 +1152,8 @@
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
+
+          
 
           d3.select(this)
             .append("image")
