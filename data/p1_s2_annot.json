@@ -1,0 +1,189 @@
+[
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 62.918205353885504,
+		"patternEnd": 74.90598252226285,
+		"duration": 11.987777168377342,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 62.918205353885504,
+		"patternEnd": 74.90598252226285,
+		"duration": 11.987777168377342,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 75.25856420368571,
+		"patternEnd": 85.13085128352587,
+		"duration": 9.872287079840163,
+		"eventCount": 1,
+		"patternId": 2,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 75.25856420368571,
+		"patternEnd": 85.13085128352587,
+		"duration": 9.872287079840163,
+		"eventCount": 1,
+		"patternId": 2,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 85.13085128352587,
+		"patternEnd": 97.82379181474894,
+		"duration": 12.692940531223073,
+		"eventCount": 0,
+		"patternId": 4,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 85.13085128352587,
+		"patternEnd": 97.82379181474894,
+		"duration": 12.692940531223073,
+		"eventCount": 0,
+		"patternId": 4,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 96.76604677048034,
+		"patternEnd": 149.6532989839098,
+		"duration": 52.88725221342945,
+		"eventCount": 16,
+		"patternId": 6,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 96.76604677048034,
+		"patternEnd": 149.6532989839098,
+		"duration": 52.88725221342945,
+		"eventCount": 16,
+		"patternId": 6,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 155.64718756809847,
+		"patternEnd": 171.86594491355015,
+		"duration": 16.218757345451678,
+		"eventCount": 2,
+		"patternId": 8,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 155.64718756809847,
+		"patternEnd": 171.86594491355015,
+		"duration": 16.218757345451678,
+		"eventCount": 2,
+		"patternId": 8,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 187.02695721473327,
+		"patternEnd": 245.20293464950564,
+		"duration": 58.17597743477236,
+		"eventCount": 4,
+		"patternId": 10,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 187.02695721473327,
+		"patternEnd": 245.20293464950564,
+		"duration": 58.17597743477236,
+		"eventCount": 4,
+		"patternId": 10,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 256.48554845503725,
+		"patternEnd": 263.1846004020717,
+		"duration": 6.699051947034434,
+		"eventCount": 3,
+		"patternId": 12,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 256.48554845503725,
+		"patternEnd": 263.1846004020717,
+		"duration": 6.699051947034434,
+		"eventCount": 3,
+		"patternId": 12,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 343.92578392802926,
+		"patternEnd": 373.89522684897264,
+		"duration": 29.96944292094338,
+		"eventCount": 4,
+		"patternId": 20,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 343.92578392802926,
+		"patternEnd": 373.89522684897264,
+		"duration": 29.96944292094338,
+		"eventCount": 4,
+		"patternId": 20,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 293.4263947915187,
+		"patternEnd": 335.05924660128983,
+		"duration": 41.632851809771125,
+		"eventCount": 5,
+		"patternId": 16,
+		"patternSetName": "p1_s2_annot",
+		"sessionName": "p1_s2"
+	}
+]

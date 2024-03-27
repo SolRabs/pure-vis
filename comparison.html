@@ -41,7 +41,11 @@
 
       async function readJSON() {
         //filenames = ["p1_t1_s1_annot_Solveig", "p1_t2_s2_annot_Solveig", "p1_t2_s2_annot_Solveig"];
-        filenames = ["p1_s1_s1","p2_s1_s1","p2_s1_sVideo1","p3_s1_s1","p4_s1_s1","p4_s1_sVideo1"]
+        //filenames = ["p0_s1_s_filler","p1_s1_annot","p2_s1_annot","p3_s1_annot","p4_s1_annot","p5_s1_annot","p6_s1_annot","p7_s1_annot","p0_s2_annot"]
+        //all, s1,s2,s3
+
+        
+        filenames =["p0_s1_annot","p1_s1_annot","p2_s1_annot","p3_s1_annot","p4_s1_annot","p5_s1_annot","p6_s1_annot","p7_s1_annot","p8_s1_annot","p0_s2_annot","p0_s2_annot","p1_s2_annot","p2_s2_annot","p3_s2_annot","p4_s2_annot","p5_s2_annot","p6_s2_annot","p7_s2_annot","p8_s2_annot","p0_s3_annot","p1_s3_annot","p2_s3_annot","p3_s3_annot","p4_s3_annot","p5_s3_annot","p6_s3_annot","p7_s3_annot","p8_s3_annot"]
 
         const jsonFiles = filenames.map((name) => "data/" + name + ".json");
 
@@ -229,7 +233,8 @@
             return "#807c7c";
           case "curate":
           case "red":
-            return "#f8446c";
+            //return "#f8446c";
+            return "#08d4b4"
           default:
             return "#28d464";
         }

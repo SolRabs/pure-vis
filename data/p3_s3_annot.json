@@ -1,0 +1,90 @@
+[
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 148.43932416450093,
+		"patternEnd": 171.1795174561439,
+		"duration": 22.74019329164298,
+		"eventCount": 5,
+		"patternId": 0,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 148.43932416450093,
+		"patternEnd": 171.1795174561439,
+		"duration": 22.74019329164298,
+		"eventCount": 5,
+		"patternId": 0,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 170.52979764781128,
+		"patternEnd": 180.92531458113376,
+		"duration": 10.395516933322483,
+		"eventCount": 1,
+		"patternId": 2,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 170.52979764781128,
+		"patternEnd": 180.92531458113376,
+		"duration": 10.395516933322483,
+		"eventCount": 1,
+		"patternId": 2,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 180.92531458113376,
+		"patternEnd": 310.8692762476651,
+		"duration": 129.94396166653132,
+		"eventCount": 48,
+		"patternId": 4,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 180.92531458113376,
+		"patternEnd": 310.8692762476651,
+		"duration": 129.94396166653132,
+		"eventCount": 48,
+		"patternId": 4,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 310.8692762476651,
+		"patternEnd": 562.9605618807358,
+		"duration": 252.0912856330707,
+		"eventCount": 27,
+		"patternId": 6,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 310.8692762476651,
+		"patternEnd": 562.9605618807358,
+		"duration": 252.0912856330707,
+		"eventCount": 27,
+		"patternId": 6,
+		"patternSetName": "p3_s3_annot",
+		"sessionName": "p3_s3"
+	}
+]

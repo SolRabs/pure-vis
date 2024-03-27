@@ -1,0 +1,167 @@
+[
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 129.84650766085642,
+		"patternEnd": 144.4652033483412,
+		"duration": 14.618695687484774,
+		"eventCount": 9,
+		"patternId": 0,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 129.84650766085642,
+		"patternEnd": 144.4652033483412,
+		"duration": 14.618695687484774,
+		"eventCount": 9,
+		"patternId": 0,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 143.9779134920917,
+		"patternEnd": 193.6814788295399,
+		"duration": 49.703565337448225,
+		"eventCount": 3,
+		"patternId": 2,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 193.6814788295399,
+		"patternEnd": 213.66036293576911,
+		"duration": 19.978884106229202,
+		"eventCount": 7,
+		"patternId": 3,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 213.17307307951964,
+		"patternEnd": 261.41476884821935,
+		"duration": 48.241695768699714,
+		"eventCount": 2,
+		"patternId": 4,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 260.92747899196985,
+		"patternEnd": 269.21140654821124,
+		"duration": 8.283927556241395,
+		"eventCount": 1,
+		"patternId": 5,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 268.72411669196174,
+		"patternEnd": 280.4190732419496,
+		"duration": 11.694956549987864,
+		"eventCount": 6,
+		"patternId": 6,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 280.4190732419496,
+		"patternEnd": 292.11402979193736,
+		"duration": 11.69495654998775,
+		"eventCount": 1,
+		"patternId": 7,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 291.6267399356879,
+		"patternEnd": 300.39795734817875,
+		"duration": 8.771217412490842,
+		"eventCount": 4,
+		"patternId": 8,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 299.91066749192925,
+		"patternEnd": 346.20320383563103,
+		"duration": 46.292536343701784,
+		"eventCount": 7,
+		"patternId": 9,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 345.7159139793816,
+		"patternEnd": 353.02526182312397,
+		"duration": 7.309347843742387,
+		"eventCount": 4,
+		"patternId": 10,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 357.89816038561884,
+		"patternEnd": 375.44059521060063,
+		"duration": 17.542434824981797,
+		"eventCount": 2,
+		"patternId": 11,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 374.9533053543511,
+		"patternEnd": 381.775363341844,
+		"duration": 6.82205798749294,
+		"eventCount": 4,
+		"patternId": 12,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 381.775363341844,
+		"patternEnd": 428.55518954179524,
+		"duration": 46.77982619995123,
+		"eventCount": 6,
+		"patternId": 13,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 501.1613781229696,
+		"patternEnd": 532.3479289229372,
+		"duration": 31.186550799967563,
+		"eventCount": 5,
+		"patternId": 14,
+		"patternSetName": "p6_s3_annot",
+		"sessionName": "p6_s3"
+	}
+]

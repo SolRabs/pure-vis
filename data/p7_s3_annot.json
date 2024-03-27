@@ -1,0 +1,200 @@
+[
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 102.4987177313231,
+		"patternEnd": 119.02596535578505,
+		"duration": 16.52724762446195,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 102.4987177313231,
+		"patternEnd": 119.02596535578505,
+		"duration": 16.52724762446195,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 119.02596535578505,
+		"patternEnd": 129.29965982504518,
+		"duration": 10.273694469260136,
+		"eventCount": 2,
+		"patternId": 2,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 119.02596535578505,
+		"patternEnd": 129.29965982504518,
+		"duration": 10.273694469260136,
+		"eventCount": 2,
+		"patternId": 2,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 157.44064902345335,
+		"patternEnd": 163.24751981042647,
+		"duration": 5.806870786973121,
+		"eventCount": 0,
+		"patternId": 4,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 157.44064902345335,
+		"patternEnd": 163.24751981042647,
+		"duration": 5.806870786973121,
+		"eventCount": 0,
+		"patternId": 4,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 163.24751981042647,
+		"patternEnd": 178.43472033020234,
+		"duration": 15.187200519775871,
+		"eventCount": 3,
+		"patternId": 6,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 163.24751981042647,
+		"patternEnd": 178.43472033020234,
+		"duration": 15.187200519775871,
+		"eventCount": 3,
+		"patternId": 6,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 240.97025188222054,
+		"patternEnd": 256.1574524019964,
+		"duration": 15.187200519775871,
+		"eventCount": 2,
+		"patternId": 12,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 240.97025188222054,
+		"patternEnd": 256.1574524019964,
+		"duration": 15.187200519775871,
+		"eventCount": 2,
+		"patternId": 12,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 223.54963952130117,
+		"patternEnd": 232.0366045176465,
+		"duration": 8.486964996345336,
+		"eventCount": 1,
+		"patternId": 12,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 206.12902716038184,
+		"patternEnd": 224.4430042577586,
+		"duration": 18.31397709737675,
+		"eventCount": 1,
+		"patternId": 11,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 286.5318534415481,
+		"patternEnd": 332.54013736910434,
+		"duration": 46.00828392755625,
+		"eventCount": 5,
+		"patternId": 12,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 343.70719657482186,
+		"patternEnd": 364.2545855133421,
+		"duration": 20.547388938520214,
+		"eventCount": 4,
+		"patternId": 13,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "Go through author list and check out scholars of unknown authors",
+		"patternStart": 363.8079031451134,
+		"patternEnd": 426.34343469713156,
+		"duration": 62.53553155201814,
+		"eventCount": 2,
+		"patternId": 14,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 437.9571762710778,
+		"patternEnd": 448.230870740338,
+		"duration": 10.273694469260192,
+		"eventCount": 1,
+		"patternId": 15,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 453.59105915908236,
+		"patternEnd": 460.2912946825129,
+		"duration": 6.7002355234305355,
+		"eventCount": 1,
+		"patternId": 16,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 469.2249420470869,
+		"patternEnd": 504.5128491371543,
+		"duration": 35.28790709006739,
+		"eventCount": 1,
+		"patternId": 17,
+		"patternSetName": "p7_s3_annot",
+		"sessionName": "p7_s3"
+	}
+]

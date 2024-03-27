@@ -82,8 +82,13 @@
       }
 
       const session = await d3.csv("data/" + params["session"] + ".csv");
-      const providedPatternSet = await d3.json("data/" + params["patternSet"]+".json")
-      return [session, providedPatternSet];
+      try {
+        const providedPatternSet = await d3.json("data/" + params["patternSet"]+".json")
+        return [session, providedPatternSet];
+      } catch (error) {
+        //no pattern set provided
+        return [session, []]
+      }
     }
 
     async function main() {
@@ -1382,7 +1387,7 @@
         detectedPatterns = providedPatternSet
         drawPatterns();
       }
-      
+
       d3.select("#saveButton").on("click", function (d) {
         //save start and end of pattern in terms of timestamp to later compare absolute timings
         let start = xScale.invert(currentBrushEvent.selection[0]);

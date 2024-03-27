@@ -1,0 +1,178 @@
+[
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 213.9884929078769,
+		"patternEnd": 436.0841131692171,
+		"duration": 222.09562026134023,
+		"eventCount": 23,
+		"patternId": 1,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 437.38856276876265,
+		"patternEnd": 468.2814883600019,
+		"duration": 30.892925591239248,
+		"eventCount": 4,
+		"patternId": 2,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 537.943347789567,
+		"patternEnd": 568.8362733808063,
+		"duration": 30.892925591239305,
+		"eventCount": 9,
+		"patternId": 3,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 688.527853436486,
+		"patternEnd": 727.3462793249315,
+		"duration": 38.81842588844552,
+		"eventCount": 3,
+		"patternId": 5,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 872.6966514761244,
+		"patternEnd": 955.4190608282148,
+		"duration": 82.72240935209038,
+		"eventCount": 12,
+		"patternId": 6,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "Tried to derive keywords from publications in selected (misunderstanding keywords as tags)",
+		"patternStart": 468.99148008718055,
+		"patternEnd": 475.926292847236,
+		"duration": 6.934812760055479,
+		"eventCount": 1,
+		"patternId": 7,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 486.82385575589467,
+		"patternEnd": 493.75866851595015,
+		"duration": 6.934812760055479,
+		"eventCount": 2,
+		"patternId": 8,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 513.5724192589659,
+		"patternEnd": 521.0025757875967,
+		"duration": 7.430156528630846,
+		"eventCount": 2,
+		"patternId": 9,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 570.0416088765604,
+		"patternEnd": 577.4717654051913,
+		"duration": 7.430156528630846,
+		"eventCount": 0,
+		"patternId": 10,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 506.6376064989103,
+		"patternEnd": 512.581731721815,
+		"duration": 5.944125222904688,
+		"eventCount": 1,
+		"patternId": 11,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 618.5852981969488,
+		"patternEnd": 633.4456112542105,
+		"duration": 14.860313057261692,
+		"eventCount": 2,
+		"patternId": 13,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 728.3369819787745,
+		"patternEnd": 855.1449867340746,
+		"duration": 126.80800475530009,
+		"eventCount": 8,
+		"patternId": 15,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 953.8428285589926,
+		"patternEnd": 975.7708720902198,
+		"duration": 21.928043531227217,
+		"eventCount": 4,
+		"patternId": 15,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 853.1362582674308,
+		"patternEnd": 873.4400022778264,
+		"duration": 20.303744010395576,
+		"eventCount": 2,
+		"patternId": 16,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 633.8558229551592,
+		"patternEnd": 689.8941564238509,
+		"duration": 56.03833346869169,
+		"eventCount": 6,
+		"patternId": 16,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "",
+		"patternStart": 154.687464309825,
+		"patternEnd": 187.17345472645783,
+		"duration": 32.48599041663283,
+		"eventCount": 7,
+		"patternId": 15,
+		"patternSetName": "p4_s1_annot",
+		"sessionName": "p4_s1"
+	}
+]

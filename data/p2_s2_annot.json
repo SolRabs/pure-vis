@@ -1,0 +1,101 @@
+[
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 103.16540572296384,
+		"patternEnd": 118.67899970556982,
+		"duration": 15.513593982605983,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 103.16540572296384,
+		"patternEnd": 118.67899970556982,
+		"duration": 15.513593982605983,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 187.78500926445096,
+		"patternEnd": 207.05947451556747,
+		"duration": 19.27446525111651,
+		"eventCount": 3,
+		"patternId": 2,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 187.78500926445096,
+		"patternEnd": 207.05947451556747,
+		"duration": 19.27446525111651,
+		"eventCount": 3,
+		"patternId": 2,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "Compare suggested with selected and remove similar papers",
+		"patternStart": 259.2415633661512,
+		"patternEnd": 299.67092950263947,
+		"duration": 40.429366136488284,
+		"eventCount": 2,
+		"patternId": 4,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 298.73071168551184,
+		"patternEnd": 399.3340181181688,
+		"duration": 100.60330643265695,
+		"eventCount": 10,
+		"patternId": 5,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 398.8638805164342,
+		"patternEnd": 471.26065243526205,
+		"duration": 72.39677191882782,
+		"eventCount": 9,
+		"patternId": 6,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "red",
+		"patternDesc": "Curate in network",
+		"patternStart": 470.3204346181344,
+		"patternEnd": 483.01337514935756,
+		"duration": 12.692940531223144,
+		"eventCount": 2,
+		"patternId": 7,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 483.01337514935756,
+		"patternEnd": 523.9128501944097,
+		"duration": 40.8994750450521,
+		"eventCount": 3,
+		"patternId": 8,
+		"patternSetName": "p2_p2_annot",
+		"sessionName": "p2_s2"
+	}
+]

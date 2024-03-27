@@ -7,7 +7,7 @@
 		"duration": 96.40900791235545,
 		"eventCount": 13,
 		"patternId": 1,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -18,7 +18,7 @@
 		"duration": 3.8953134510042275,
 		"eventCount": 1,
 		"patternId": 3,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -29,7 +29,7 @@
 		"duration": 9.860012172854567,
 		"eventCount": 1,
 		"patternId": 8,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -40,7 +40,7 @@
 		"duration": 4.382227632379795,
 		"eventCount": 1,
 		"patternId": 12,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -51,7 +51,7 @@
 		"duration": 16.643550624133155,
 		"eventCount": 1,
 		"patternId": 8,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -62,7 +62,7 @@
 		"duration": 7.3455146451198345,
 		"eventCount": 1,
 		"patternId": 8,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -73,7 +73,7 @@
 		"duration": 5.876411716095845,
 		"eventCount": 1,
 		"patternId": 11,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -84,18 +84,7 @@
 		"duration": 39.035286087710034,
 		"eventCount": 1,
 		"patternId": 12,
-		"patternSetName": "p1_s1_s1",
-		"sessionName": "p1_s1"
-	},
-	{
-		"patternName": "Bug",
-		"patternDesc": "Network visualisation disappeared.  Else: code as network",
-		"patternStart": 230.01866686082542,
-		"patternEnd": 264.1753099606326,
-		"duration": 34.156643099807184,
-		"eventCount": 3,
-		"patternId": 10,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -106,7 +95,7 @@
 		"duration": 5.876411716095873,
 		"eventCount": 1,
 		"patternId": 11,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -117,7 +106,7 @@
 		"duration": 10.650996235423776,
 		"eventCount": 1,
 		"patternId": 12,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -128,7 +117,7 @@
 		"duration": 18.363786612799515,
 		"eventCount": 4,
 		"patternId": 13,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -139,7 +128,7 @@
 		"duration": 53.62225690937464,
 		"eventCount": 4,
 		"patternId": 12,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	},
 	{
@@ -150,7 +139,7 @@
 		"duration": 30.116610044991262,
 		"eventCount": 1,
 		"patternId": 13,
-		"patternSetName": "p1_s1_s1",
+		"patternSetName": "p1_s1_annot",
 		"sessionName": "p1_s1"
 	}
 ]

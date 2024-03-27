@@ -1,0 +1,90 @@
+[
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 128.20516912056112,
+		"patternEnd": 140.91605426038086,
+		"duration": 12.710885139819737,
+		"eventCount": 2,
+		"patternId": 1,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 120.26086590817378,
+		"patternEnd": 129.1584855060476,
+		"duration": 8.897619597873828,
+		"eventCount": 1,
+		"patternId": 2,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 29.0602601811493,
+		"patternEnd": 38.91119616450959,
+		"duration": 9.85093598336029,
+		"eventCount": 1,
+		"patternId": 3,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 200.02167016054264,
+		"patternEnd": 234.9766042950469,
+		"duration": 34.95493413450427,
+		"eventCount": 4,
+		"patternId": 5,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 254.0429320047765,
+		"patternEnd": 307.42863019674786,
+		"duration": 53.38569819197136,
+		"eventCount": 5,
+		"patternId": 6,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 307.42863019674786,
+		"patternEnd": 392.59156063354015,
+		"duration": 85.1629304367923,
+		"eventCount": 13,
+		"patternId": 7,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 140.59828213188536,
+		"patternEnd": 200.65721441753362,
+		"duration": 60.05893228564827,
+		"eventCount": 1,
+		"patternId": 6,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 61.15525000801201,
+		"patternEnd": 120.89641016516477,
+		"duration": 59.741160157152756,
+		"eventCount": 0,
+		"patternId": 7,
+		"patternSetName": "p5_s2_f",
+		"sessionName": "p5_s2"
+	}
+]

@@ -1,0 +1,68 @@
+[
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 73.72154620624543,
+		"patternEnd": 93.21314045622513,
+		"duration": 19.4915942499797,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p2_s3_annot",
+		"sessionName": "p2_s3"
+	},
+	{
+		"patternName": "yellow",
+		"patternDesc": "",
+		"patternStart": 73.72154620624543,
+		"patternEnd": 93.21314045622513,
+		"duration": 19.4915942499797,
+		"eventCount": 1,
+		"patternId": 0,
+		"patternSetName": "p2_s3_annot",
+		"sessionName": "p2_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 93.21314045622513,
+		"patternEnd": 177.02699573113782,
+		"duration": 83.81385527491268,
+		"eventCount": 36,
+		"patternId": 2,
+		"patternSetName": "p2_s3_annot",
+		"sessionName": "p2_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 93.21314045622513,
+		"patternEnd": 177.02699573113782,
+		"duration": 83.81385527491268,
+		"eventCount": 36,
+		"patternId": 2,
+		"patternSetName": "p2_s3_annot",
+		"sessionName": "p2_s3"
+	},
+	{
+		"patternName": "blue",
+		"patternDesc": "",
+		"patternStart": 254.9933727310566,
+		"patternEnd": 381.039015547592,
+		"duration": 126.04564281653538,
+		"eventCount": 30,
+		"patternId": 4,
+		"patternSetName": "p2_s3_annot",
+		"sessionName": "p2_s3"
+	},
+	{
+		"patternName": "grey",
+		"patternDesc": "",
+		"patternStart": 380.38929573925935,
+		"patternEnd": 441.46295772252904,
+		"duration": 61.07366198326969,
+		"eventCount": 7,
+		"patternId": 5,
+		"patternSetName": "p2_s3_annot",
+		"sessionName": "p2_s3"
+	}
+]
