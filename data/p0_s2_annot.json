@@ -1,27 +1,5 @@
 [
 	{
-		"patternName": "grey",
-		"patternDesc": "Turn off all network nodes",
-		"patternStart": 0,
-		"patternEnd": 62.336439362684125,
-		"duration": 62.336439362684125,
-		"eventCount": 12,
-		"patternId": 0,
-		"patternSetName": "p0_s2_annot",
-		"sessionName": "p0_s2"
-	},
-	{
-		"patternName": "grey",
-		"patternDesc": "Turn off all network nodes",
-		"patternStart": 0,
-		"patternEnd": 62.336439362684125,
-		"duration": 62.336439362684125,
-		"eventCount": 12,
-		"patternId": 0,
-		"patternSetName": "p0_s2_annot",
-		"sessionName": "p0_s2"
-	},
-	{
 		"patternName": "blue",
 		"patternDesc": "",
 		"patternStart": 120.00314171090261,
