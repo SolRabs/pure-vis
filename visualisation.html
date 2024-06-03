@@ -83,19 +83,21 @@
 
       const session = await d3.csv("data/" + params["session"] + ".csv");
       try {
-        const providedPatternSet = await d3.json("data/" + params["patternSet"]+".json")
+        const providedPatternSet = await d3.json(
+          "data/" + params["patternSet"] + ".json"
+        );
         return [session, providedPatternSet];
       } catch (error) {
         //no pattern set provided
-        return [session, []]
+        return [session, []];
       }
     }
 
     async function main() {
       let providedData = await loadData();
-      let session = providedData[0]
-      let providedPatternSet = providedData [1]
-      
+      let session = providedData[0];
+      let providedPatternSet = providedData[1];
+
       //let session = await loadData();
 
       //Zeit umrechnen in Sekunden seit Start
@@ -111,7 +113,7 @@
       session.map((event) => (event.date = event.date - start));
 
       alternativeRemoveDoubleFilterEvents(session);
- 
+
       let actionevents = [
         "Pub qd for selected",
         "Pub imported",
@@ -136,7 +138,7 @@
         "Network nodes shown updated",
         "Network: shown authors updated",
         "Network: shown suggested updated",
-        "Keyword dragged"
+        "Keyword dragged",
       ];
       let unfilteredActionEvents = session.filter((event) =>
         actionevents.includes(event.event)
@@ -391,9 +393,9 @@
       });
 
       //Select Button
-     // var patterns = ["custom","seed", "keywords","ranking","pub character","filter","refinement","clusters","timeline","authors", "curate"]
-     var patterns = ["custom","blue","grey","yellow","red"] 
-     // add the options to the button
+      // var patterns = ["custom","seed", "keywords","ranking","pub character","filter","refinement","clusters","timeline","authors", "curate"]
+      var patterns = ["custom", "blue", "grey", "yellow", "red"];
+      // add the options to the button
       d3.select("#selectButton")
         .selectAll("myOptions")
         .data(patterns)
@@ -494,6 +496,9 @@
         .attr("transform", "translate(130," + topPadding + ")")
         .call(yAxis);
 
+
+
+
       //Area chart number of selected Publications
       let updateEvents = session.filter((event) => event.event == "Update");
       svg
@@ -517,7 +522,68 @@
         .attr("height", function (d) {
           return 100 - yScale(d.actionDetails);
         })
-        .attr("fill", "#10d4b4");
+        .attr("fill", "#10d4b4")
+
+
+
+
+//Area chart number of selected Publications from user perspective
+let userPerspectiveAreaChart = session.filter(
+        (event) =>
+          event.event == "Pub qd for selected" ||
+          (event.event == "Pub excluded" &&
+            event.activationSourceComponent == "selected") ||
+          event.event == "Update"
+      );
+      console.log(userPerspectiveAreaChart);
+      
+      let actualSelectedPubsCounter = 0;
+      let actualSelectedPubsCounter2 = 0;
+
+      svg
+        .selectAll("userperspect")
+        .data(userPerspectiveAreaChart)
+        .enter()
+        .append("rect")
+        .attr("x", function (d) {
+          return xScale(d.date);
+        })
+        .attr("y", function (d) {
+          if (d.event == "Update") {
+            actualSelectedPubsCounter = d.actionDetails;
+            return 10 + yScale(d.actionDetails);
+          } else if (d.event == "Pub excluded") {
+            actualSelectedPubsCounter--;
+            return 10 + yScale(actualSelectedPubsCounter);
+          } else if (d.event == "Pub qd for selected")
+            actualSelectedPubsCounter++;
+          return 10 + yScale(actualSelectedPubsCounter);
+        })
+        .attr("width", (d, i) => {
+          if (userPerspectiveAreaChart[i + 1]) {
+            return xScale(userPerspectiveAreaChart[i + 1].date) - xScale(d.date);
+          } else {
+            return xScale(session[session.length - 1].date) - xScale(d.date);
+          }
+        })
+        .attr("height", function (d) {
+          console.log(actualSelectedPubsCounter2);
+          if (d.event == "Update") {
+            actualSelectedPubsCounter2 = d.actionDetails
+            return 100 - yScale(d.actionDetails);
+          } else if (d.event == "Pub excluded") {
+            actualSelectedPubsCounter2 --;
+            return 100 - yScale(actualSelectedPubsCounter2);
+          } else if (d.event == "Pub qd for selected")
+          actualSelectedPubsCounter2++;
+            return 100 - yScale(actualSelectedPubsCounter2);
+        })
+        .attr("fill", "#408cd4")
+        .attr("opacity", 0.7);
+
+
+
+
 
       //line chart für Keywords
       var keywordScale = d3
@@ -555,32 +621,32 @@
       svg
         .append("g")
         .attr("class", "keyword-axis")
-        .attr("transform", "translate(" + (xAxisEnd) + "," + topPadding + ")")
+        .attr("transform", "translate(" + xAxisEnd + "," + topPadding + ")")
         .call(keywordAxis);
 
       // Append selected-axis label
       svg
         .append("text")
         .attr("class", "y-axis-label")
-        .attr("x", - yScale(0) + 40)
-        .attr("y", xScale(0)-35) 
+        .attr("x", -yScale(0) + 40)
+        .attr("y", xScale(0) - 35)
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .style("font-size", "10px")
-        .text("Number of selected"); 
+        .text("Number of selected");
 
-       // Append keyword-axis label
-       svg
+      // Append keyword-axis label
+      svg
         .append("text")
         .attr("class", "y-axis-label")
-        .attr("x",  yScale(0) - 40)
-        .attr("y", -(xAxisEnd+35))
+        .attr("x", yScale(0) - 40)
+        .attr("y", -(xAxisEnd + 35))
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .attr("transform", "rotate(90)")
         .style("font-size", "10px")
-        .text("Number of keywords/filter"); 
+        .text("Number of keywords/filter");
 
       function drawKeywords(context) {
         context.moveTo(legendPadding, getStatusLineHeight());
@@ -793,9 +859,13 @@
         .style("font-size", "10px");
 
       //Legende: Timeline-legende
-      svg.append("text").attr("x",xScale(session[session.length - 1].date)-70).attr("y",getPubLineHeight(uniqueDois.length)).text("Elapsed time (seconds)")        .style("fill", "black")
+      svg
+        .append("text")
+        .attr("x", xScale(session[session.length - 1].date) - 70)
+        .attr("y", getPubLineHeight(uniqueDois.length))
+        .text("Elapsed time (seconds)")
+        .style("fill", "black")
         .style("font-size", "10px");
-
 
       //PubPointEvents = Events, die als Punkt auf der Pubtimeline erscheinen sollen
       let pubPointEvents = [
@@ -931,7 +1001,7 @@
             ) {
               let pos = d.posInSuggestions;
               //bottom 30 ganz weiß, dann in 5er Inkrementen jeweils 1 von 4 px wegnehmen
-              barHeight = 16
+              barHeight = 16;
               if (pos > 30) {
                 return barHeight - 15;
               } else {
@@ -1040,7 +1110,7 @@
             "Network nodes shown updated",
             "Network: shown authors updated",
             "Network: shown suggested updated",
-            "Keyword dragged"
+            "Keyword dragged",
           ];
 
           function getRowHeight(event) {
@@ -1146,9 +1216,10 @@
             .attr("fill", (event) => {
               return getIconColors(event.event);
             })
-            .attr("stroke", event => {
+            .attr("stroke", (event) => {
               console.log(event.activationSourceComponent);
-              return getStrokeColors(event)})
+              return getStrokeColors(event);
+            })
             .attr("stroke-width", 1)
             .attr("cx", (event) => xScale(new Date(event.date)))
             .attr(
@@ -1161,8 +1232,6 @@
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
-
-          
 
           d3.select(this)
             .append("image")
@@ -1367,8 +1436,8 @@
             end > xScale(new Date(event.date))
         );
         currentEventSelection = selected;
-        //just take the currentBrushEvent for saving pattern 
-        currentBrushEvent = brushevent
+        //just take the currentBrushEvent for saving pattern
+        currentBrushEvent = brushevent;
         console.log(currentBrushEvent);
       }
 
@@ -1377,14 +1446,12 @@
         currentPattern = d3.select(this).property("value");
       });
 
-      
-      
       var detectedPatterns = [];
       var patternsAsJson = [];
 
-      if (providedPatternSet){
-        patternsAsJson = providedPatternSet
-        detectedPatterns = providedPatternSet
+      if (providedPatternSet) {
+        patternsAsJson = providedPatternSet;
+        detectedPatterns = providedPatternSet;
         drawPatterns();
       }
 
@@ -1449,10 +1516,7 @@
           })
           .attr("y", patternLineLocation)
           .attr("width", (d) => {
-            return (
-              xScale(d.patternEnd) -
-              xScale(d.patternStart) 
-            );
+            return xScale(d.patternEnd) - xScale(d.patternStart);
           })
           .attr("height", function (d) {
             return patternLineHeight * 0.75;
