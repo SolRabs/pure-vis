@@ -496,9 +496,6 @@
         .attr("transform", "translate(130," + topPadding + ")")
         .call(yAxis);
 
-
-
-
       //Area chart number of selected Publications
       let updateEvents = session.filter((event) => event.event == "Update");
       svg
@@ -522,13 +519,10 @@
         .attr("height", function (d) {
           return 100 - yScale(d.actionDetails);
         })
-        .attr("fill", "#10d4b4")
+        .attr("fill", "#10d4b4");
 
-
-
-
-//Area chart number of selected Publications from user perspective
-let userPerspectiveAreaChart = session.filter(
+      //Area chart number of selected Publications from user perspective
+      let userPerspectiveAreaChart = session.filter(
         (event) =>
           event.event == "Pub qd for selected" ||
           (event.event == "Pub excluded" &&
@@ -536,7 +530,7 @@ let userPerspectiveAreaChart = session.filter(
           event.event == "Update"
       );
       console.log(userPerspectiveAreaChart);
-      
+
       let actualSelectedPubsCounter = 0;
       let actualSelectedPubsCounter2 = 0;
 
@@ -561,7 +555,9 @@ let userPerspectiveAreaChart = session.filter(
         })
         .attr("width", (d, i) => {
           if (userPerspectiveAreaChart[i + 1]) {
-            return xScale(userPerspectiveAreaChart[i + 1].date) - xScale(d.date);
+            return (
+              xScale(userPerspectiveAreaChart[i + 1].date) - xScale(d.date)
+            );
           } else {
             return xScale(session[session.length - 1].date) - xScale(d.date);
           }
@@ -569,21 +565,17 @@ let userPerspectiveAreaChart = session.filter(
         .attr("height", function (d) {
           console.log(actualSelectedPubsCounter2);
           if (d.event == "Update") {
-            actualSelectedPubsCounter2 = d.actionDetails
+            actualSelectedPubsCounter2 = d.actionDetails;
             return 100 - yScale(d.actionDetails);
           } else if (d.event == "Pub excluded") {
-            actualSelectedPubsCounter2 --;
+            actualSelectedPubsCounter2--;
             return 100 - yScale(actualSelectedPubsCounter2);
           } else if (d.event == "Pub qd for selected")
-          actualSelectedPubsCounter2++;
-            return 100 - yScale(actualSelectedPubsCounter2);
+            actualSelectedPubsCounter2++;
+          return 100 - yScale(actualSelectedPubsCounter2);
         })
         .attr("fill", "#408cd4")
         .attr("opacity", 0.7);
-
-
-
-
 
       //line chart für Keywords
       var keywordScale = d3
@@ -669,12 +661,36 @@ let userPerspectiveAreaChart = session.filter(
         return context;
       }
 
+      //draw keyword line
       svg
         .append("path")
         .style("stroke", "#ffe48c")
         .style("stroke-width", 3)
         .style("fill", "none")
         .attr("d", drawKeywords(d3.path()));
+
+      //draw keyword bubbles
+      svg
+        .selectAll("dr")
+        .data(
+          session.filter(
+            (event) =>
+              event.event == "Keywords updated" 
+          )
+        )
+        .enter()
+        .append("circle") 
+        .attr("cx", (event) => {
+          return xScale(event.date)}) 
+        .attr("cy", (event) => {
+          return           keywordScale(
+                event.actionDetails
+                  .split("_")
+                  .filter((str) => str.trim() !== "").length
+              ) + topPadding;
+        }) 
+        .attr("r", 5) 
+        .style("fill", "#ffe48c"); 
 
       function drawFilter(context) {
         context.moveTo(legendPadding, getStatusLineHeight());
@@ -702,6 +718,7 @@ let userPerspectiveAreaChart = session.filter(
         return context;
       }
 
+      //draw filter lines
       svg
         .append("path")
         .style("stroke", "#f0f4fc")
