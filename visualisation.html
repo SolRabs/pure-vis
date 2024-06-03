@@ -532,7 +532,6 @@
             event.activationSourceComponent == "network") && session.some(otherEvent => event.doi == otherEvent.doi && otherEvent.event == "Pub added" ) ||
           event.event == "Update"
       );
-      console.log(userPerspectiveAreaChart);
 
       let actualSelectedPubsCounter = 0;
       let actualSelectedPubsCounter2 = 0;
@@ -729,6 +728,30 @@
         .style("stroke-dasharray", (3, 3))
         .style("fill", "none")
         .attr("d", drawFilter(d3.path()));
+
+      //draw filter bubbles
+      svg
+        .selectAll("dr")
+        .data(
+          session.filter(
+            (event) =>
+              event.event == "Filter updated" || event.event == "Filter removed"
+          )
+        )
+        .enter()
+        .append("circle") 
+        .attr("cx", (event) => {
+          return xScale(event.date)}) 
+        .attr("cy", (event) => {
+          return           keywordScale(
+                event.actionDetails
+                  .split("_")
+                  .filter((str) => str.trim() !== "").length
+              ) + topPadding;
+        }) 
+        .attr("r", 5) 
+        .style("fill", "#f0f4fc"); 
+      
 
       //Time axes for all publications that have been selected
       svg
