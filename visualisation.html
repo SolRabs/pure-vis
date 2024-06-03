@@ -113,6 +113,7 @@
       session.map((event) => (event.date = event.date - start));
 
       alternativeRemoveDoubleFilterEvents(session);
+      console.log(session);
 
       let actionevents = [
         "Pub qd for selected",
@@ -519,7 +520,7 @@
         .attr("height", function (d) {
           return 100 - yScale(d.actionDetails);
         })
-        .attr("fill", "#10d4b4");
+        .attr("fill", "#10d4b4")
 
       //Area chart number of selected Publications from user perspective
       let userPerspectiveAreaChart = session.filter(
@@ -527,6 +528,8 @@
           event.event == "Pub qd for selected" ||
           (event.event == "Pub excluded" &&
             event.activationSourceComponent == "selected") ||
+            (event.event == "Pub excluded" &&
+            event.activationSourceComponent == "network") && session.some(otherEvent => event.doi == otherEvent.doi && otherEvent.event == "Pub added" ) ||
           event.event == "Update"
       );
       console.log(userPerspectiveAreaChart);
