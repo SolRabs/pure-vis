@@ -113,7 +113,6 @@
       session.map((event) => (event.date = event.date - start));
 
       alternativeRemoveDoubleFilterEvents(session);
-      console.log(session);
 
       let actionevents = [
         "Pub qd for selected",
@@ -520,7 +519,7 @@
         .attr("height", function (d) {
           return 100 - yScale(d.actionDetails);
         })
-        .attr("fill", "#10d4b4")
+        .attr("fill", "#10d4b4");
 
       //Area chart number of selected Publications from user perspective
       let userPerspectiveAreaChart = session.filter(
@@ -528,8 +527,12 @@
           event.event == "Pub qd for selected" ||
           (event.event == "Pub excluded" &&
             event.activationSourceComponent == "selected") ||
-            (event.event == "Pub excluded" &&
-            event.activationSourceComponent == "network") && session.some(otherEvent => event.doi == otherEvent.doi && otherEvent.event == "Pub added" ) ||
+          (event.event == "Pub excluded" &&
+            event.activationSourceComponent == "network" &&
+            session.some(
+              (otherEvent) =>
+                event.doi == otherEvent.doi && otherEvent.event == "Pub added"
+            )) ||
           event.event == "Update"
       );
 
@@ -565,7 +568,6 @@
           }
         })
         .attr("height", function (d) {
-          console.log(actualSelectedPubsCounter2);
           if (d.event == "Update") {
             actualSelectedPubsCounter2 = d.actionDetails;
             return 100 - yScale(d.actionDetails);
@@ -674,25 +676,22 @@
       //draw keyword bubbles
       svg
         .selectAll("dr")
-        .data(
-          session.filter(
-            (event) =>
-              event.event == "Keywords updated" 
-          )
-        )
+        .data(session.filter((event) => event.event == "Keywords updated"))
         .enter()
-        .append("circle") 
+        .append("circle")
         .attr("cx", (event) => {
-          return xScale(event.date)}) 
+          return xScale(event.date);
+        })
         .attr("cy", (event) => {
-          return           keywordScale(
-                event.actionDetails
-                  .split("_")
-                  .filter((str) => str.trim() !== "").length
-              ) + topPadding;
-        }) 
-        .attr("r", 5) 
-        .style("fill", "#ffe48c"); 
+          return (
+            keywordScale(
+              event.actionDetails.split("_").filter((str) => str.trim() !== "")
+                .length
+            ) + topPadding
+          );
+        })
+        .attr("r", 5)
+        .style("fill", "#ffe48c");
 
       function drawFilter(context) {
         context.moveTo(legendPadding, getStatusLineHeight());
@@ -739,19 +738,20 @@
           )
         )
         .enter()
-        .append("circle") 
+        .append("circle")
         .attr("cx", (event) => {
-          return xScale(event.date)}) 
+          return xScale(event.date);
+        })
         .attr("cy", (event) => {
-          return           keywordScale(
-                event.actionDetails
-                  .split("_")
-                  .filter((str) => str.trim() !== "").length
-              ) + topPadding;
-        }) 
-        .attr("r", 5) 
-        .style("fill", "#f0f4fc"); 
-      
+          return (
+            keywordScale(
+              event.actionDetails.split("_").filter((str) => str.trim() !== "")
+                .length
+            ) + topPadding
+          );
+        })
+        .attr("r", 5)
+        .style("fill", "#f0f4fc");
 
       //Time axes for all publications that have been selected
       svg
@@ -1243,39 +1243,87 @@
             .style("pointer-events", "none");
         });
 
+      let indexOfkeywordMatches = [];
+
+      session.filter((event, index) => {
+        let keywordsMatch = false;
+        if (event.event == "Keywords updated") {
+          let keywords = event.actionDetails.split("_");
+          //see max of next 50 recommendations
+          for (let i = index + 1; i < index + 50; i++) {
+            const log = session[i];
+            if (log.event == "Pub suggested") {
+              keywords.forEach((keyword) => {
+                for (let j = 0; j <= log.title.length - keyword.length; j++) {
+                  const substring = log.title.substring(j, j + keyword.length);
+                  if (substring.toLowerCase().includes(keyword.toLowerCase())) {
+                    indexOfkeywordMatches.push(i);
+                  }
+                }
+              });
+            } else {
+              break;
+            }
+          }
+        }
+      });
+
       //Punktevents für Pubs
       svg
         .selectAll("whatever")
         .data(
-          session.filter((event) => {
-            return pubPointEvents.includes(event.event);
+          session.filter((event, index) => {
+            return (
+              pubPointEvents.includes(event.event) ||
+              indexOfkeywordMatches.includes(index)
+            );
           })
         )
         .enter()
         .each(function (event, index) {
           d3.select(this)
             .append("circle")
-            .attr("r", 6)
+            .attr("r", (event) => {
+              //if pub suggested is a point event, it matched a keyword
+              if (event.event == "Pub suggested" || event.event == "Pub filtered") {
+                return 3;
+              } else return 6;
+            })
             .attr("fill", (event) => {
+              //if pub suggested is a point event, it matched a keyword
+              if (event.event == "Pub suggested") {
+                return "#ffe48c";
+              } 
               return getIconColors(event.event);
             })
             .attr("stroke", (event) => {
-              console.log(event.activationSourceComponent);
+              //if pub suggested is a point event, it matched a keyword
+              if (event.event == "Pub suggested") {
+                return "#ffe48c";
+              }
+
               return getStrokeColors(event);
             })
             .attr("stroke-width", 1)
             .attr("cx", (event) => xScale(new Date(event.date)))
-            .attr(
-              "cy",
-              (event) =>
-                getPubLineHeight(
-                  uniqueDois.findIndex((elem) => elem == event.doi)
-                ) - 6
-            )
+            .attr("cy", (event) => {
+              //if pub suggested is a point event, it matched a keyword
+              if (event.event == "Pub suggested" || event.event == "Pub filtered") {
+                return (
+                  getPubLineHeight(
+                    uniqueDois.findIndex((elem) => elem == event.doi)
+                  ) - 4
+                );
+              }
+              return getPubLineHeight(
+                uniqueDois.findIndex((elem) => elem == event.doi)
+              ) - 7;
+            })
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
 
+            if (event.event != "Pub suggested" && event.event != "Pub filtered")
           d3.select(this)
             .append("image")
             .attr("id", "icon")
@@ -1285,7 +1333,7 @@
               (event) =>
                 getPubLineHeight(
                   uniqueDois.findIndex((elem) => elem == event.doi)
-                ) - 10.5
+                ) - 11.5
             )
             .attr("width", 9)
             .attr("height", 9)
