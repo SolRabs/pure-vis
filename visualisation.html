@@ -112,7 +112,8 @@
       let start = session[0].date;
       session.map((event) => (event.date = event.date - start));
 
-      alternativeRemoveDoubleFilterEvents(session);
+      removeDoubleFilterEvents(session);
+      console.log(session);
 
       let actionevents = [
         "Pub qd for selected",
@@ -128,7 +129,7 @@
         "Filter updated",
         "Filter removed",
         "Keywords updated",
-        "Load more",
+        "load more",
         "Refined authors",
         "Clicked author scholar",
         "Opened authors",
@@ -263,59 +264,7 @@
         d3.select("#hoveredPub").remove();
       };
 
-      //Überflüssige Filterevents (Teilworte) entfernen.
-      function removeDoubleFilterEvents(session, startIndex = 0) {
-        //Ersten Buchstabe des Filters finden
-        let firstFilterEvent = session.find(
-          (event) =>
-            event.event == "Filter updated" &&
-            session.findIndex((current) => current == event) > startindex
-        );
-
-        if (firstFilterEvent) {
-          let firstIndex = session.findIndex(
-            (event) => event == firstFilterEvent
-          );
-
-          let firstRealEvent = session.find(
-            (event, index) =>
-              event.event != "Filter updated" &&
-              event.event != "Pub filtered" &&
-              index > firstIndex
-          );
-          let indexRealEvent = session.findIndex(
-            (event) => event == firstRealEvent
-          );
-          // Finde the second to last "Filter updated" event, (=> das letzt irrelevante Filter updated event)
-          // Find the index of the next non-"Filter updated" event after the sequence
-
-          let indexOfLastIrrelevantFilterUpdated = -1;
-          for (let i = indexRealEvent - 2; i > filterIndex; i--) {
-            if (session[i].event == "Filter updated") {
-              indexOfLastIrrelevantFilterUpdated = i;
-              break;
-            }
-          }
-          for (
-            let i = filterIndex;
-            i <= indexOfLastIrrelevantFilterUpdated;
-            i++
-          ) {
-            console.log(session[i]);
-          }
-          session.splice(
-            filterIndex,
-            indexOfLastIrrelevantFilterUpdated - filterIndex
-          );
-          //Nach weiteren Filterevents suchen
-          removeDoubleFilterEvents(session, (startindex = firstIndex + 2));
-        } //Wenn es keine Filterevents mehr gibt, zurück
-        else {
-          return session;
-        }
-      }
-
-      function alternativeRemoveDoubleFilterEvents(session) {
+      function removeDoubleFilterEvents(session) {
         let startIndex = 0;
 
         while (startIndex < session.length) {
@@ -391,6 +340,50 @@
           return true;
         }
       });
+
+      function insertPubNotFilteredEvents(session, uniqueDois) {
+        for (let i = 0; i < session.length; i++) {
+          if (session[i].event == "Filter updated") {
+            //get list of all pubs that were filtered
+            let j = i + 1;
+            let filteredPubDois = new Set();
+            while (session[j].event == "Pub filtered") {
+              filteredPubDois.add(session[j].doi);
+              j++;
+            }
+                        //index of first other event = j
+                        let relevantDate = session[j - 1].date;
+
+            let notFilteredPubDois = [...uniqueDois].filter(
+              (doi) => !filteredPubDois.has(doi)
+            );
+
+            notFilteredPubDois = notFilteredPubDois.filter(doi => !session.find(event => event.doi == doi && event.date <= relevantDate && (event.event == "Pub added" || event.event == "Pub qd for selected") ))
+            //create pubNotFilteredEvents
+            let notFilteredPubEvents = [];
+            notFilteredPubDois.forEach((doi) => {
+              notFilteredPubEvents.push({
+                event: "Pub not filtered",
+                date: relevantDate,
+                doi: doi,
+                title: "",
+                author: "",
+                selectedPublicationsCount: "",
+                posInSuggestions: 500,
+                activationSourceComponent: "",
+                actionDetails: "",
+              });
+            });
+            //insert pubNotFilteredEvents
+            session.splice(i + 1, 0, ...notFilteredPubEvents);
+            i = i + 1 + notFilteredPubEvents.length;
+          }
+        }
+        return session;
+      }
+
+      insertPubNotFilteredEvents(session, uniqueDois);
+
 
       //Select Button
       // var patterns = ["custom","seed", "keywords","ranking","pub character","filter","refinement","clusters","timeline","authors", "curate"]
@@ -811,6 +804,7 @@
           case "Pub added":
             return "#f0fcfc";
           case "Pub suggested":
+          case "load more":
             return "#408cd4";
           case "Pub activated":
           case "Clicked doi":
@@ -836,7 +830,6 @@
           case "Keyword dragged":
             return "#807c7c";
           case "bookkeeping":
-          case "Load more":
           case "Update":
             return "#383434";
           case "Clicked author scholar":
@@ -943,11 +936,13 @@
         while (i < eventsOfPub.length - 1) {
           if (eventsOfPub[i].event == "Pub qd for selected") {
             let a = i + 1;
-            while (
-              eventsOfPub[a].event == "Pub suggested" ||
-              eventsOfPub[a].event == "Pub filtered"
+            console.log(eventsOfPub);
+            while ( a < eventsOfPub.length && 
+              eventsOfPub[a].event != "Pub excluded" 
             ) {
-              indexToRemove.push(a);
+              if ((eventsOfPub[a].event == "Pub suggested" || eventsOfPub[a].event == "Pub filtered" || eventsOfPub[a].event == "Pub not filtered")){
+                indexToRemove.push(a);
+              }
               a++;
             }
             i = a;
@@ -1050,6 +1045,8 @@
               } else {
                 return barHeight - pos / 2;
               }
+            } else if (d.event == "Pub not filtered") {
+              return 0; //console.log("Das hier entfernen?")
             }
             return barHeight;
           })
@@ -1127,7 +1124,7 @@
         .data(unfilteredActionEvents)
         .enter()
         .each(function (event, index) {
-          let eventsRowOne = ["Pub activated", "Load more"];
+          let eventsRowOne = ["Pub activated"];
           let eventsRowTwo = [
             "Pub qd for selected",
             "Pub added",
@@ -1154,6 +1151,7 @@
             "Network: shown authors updated",
             "Network: shown suggested updated",
             "Keyword dragged",
+            "load more",
           ];
 
           function getRowHeight(event) {
@@ -1285,7 +1283,10 @@
             .append("circle")
             .attr("r", (event) => {
               //if pub suggested is a point event, it matched a keyword
-              if (event.event == "Pub suggested" || event.event == "Pub filtered") {
+              if (
+                event.event == "Pub suggested" ||
+                event.event == "Pub filtered"
+              ) {
                 return 3;
               } else return 6;
             })
@@ -1293,7 +1294,7 @@
               //if pub suggested is a point event, it matched a keyword
               if (event.event == "Pub suggested") {
                 return "#ffe48c";
-              } 
+              }
               return getIconColors(event.event);
             })
             .attr("stroke", (event) => {
@@ -1308,37 +1309,42 @@
             .attr("cx", (event) => xScale(new Date(event.date)))
             .attr("cy", (event) => {
               //if pub suggested is a point event, it matched a keyword
-              if (event.event == "Pub suggested" || event.event == "Pub filtered") {
+              if (
+                event.event == "Pub suggested" ||
+                event.event == "Pub filtered"
+              ) {
                 return (
                   getPubLineHeight(
                     uniqueDois.findIndex((elem) => elem == event.doi)
                   ) - 4
                 );
               }
-              return getPubLineHeight(
-                uniqueDois.findIndex((elem) => elem == event.doi)
-              ) - 7;
+              return (
+                getPubLineHeight(
+                  uniqueDois.findIndex((elem) => elem == event.doi)
+                ) - 7
+              );
             })
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
 
-            if (event.event != "Pub suggested" && event.event != "Pub filtered")
-          d3.select(this)
-            .append("image")
-            .attr("id", "icon")
-            .attr("x", (event) => xScale(new Date(event.date)) - 4)
-            .attr(
-              "y",
-              (event) =>
-                getPubLineHeight(
-                  uniqueDois.findIndex((elem) => elem == event.doi)
-                ) - 11.5
-            )
-            .attr("width", 9)
-            .attr("height", 9)
-            .attr("href", (d) => getIconpath(d.event))
-            .style("pointer-events", "none");
+          if (event.event != "Pub suggested" && event.event != "Pub filtered")
+            d3.select(this)
+              .append("image")
+              .attr("id", "icon")
+              .attr("x", (event) => xScale(new Date(event.date)) - 4)
+              .attr(
+                "y",
+                (event) =>
+                  getPubLineHeight(
+                    uniqueDois.findIndex((elem) => elem == event.doi)
+                  ) - 11.5
+              )
+              .attr("width", 9)
+              .attr("height", 9)
+              .attr("href", (d) => getIconpath(d.event))
+              .style("pointer-events", "none");
         });
 
       function getIconpath(event) {
@@ -1365,7 +1371,7 @@
           case "Update":
             iconpath = "icons/update.svg";
             break;
-          case "Load more":
+          case "load more":
             iconpath = "icons/load_more.svg";
             break;
           case "Network collapsed":
@@ -1443,7 +1449,7 @@
         "Filter updated",
         "Filter removed",
         "Keywords updated",
-        "Load more",
+        "load more",
         "Refined authors",
         "Clicked author scholar",
         "Opened authors",
@@ -1467,7 +1473,7 @@
         ];
 
         //ok
-        let pass = ["Network collapsed", "Filter removed", "Load more"];
+        let pass = ["Network collapsed", "Filter removed", "load more"];
 
         //Netzwerkevents
         let networkEvents = [
